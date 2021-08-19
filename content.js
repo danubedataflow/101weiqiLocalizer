@@ -27,6 +27,16 @@ const object = {
     '我的评分': 'My rating',
     '标注难度': 'Set difficulty',
 
+    // edit problem
+    '条修改记录': 'Modification record',
+    '所有编辑记录': 'All edit records',
+    '编辑记录': 'Edit record',
+    '修改类型': 'Modification type',
+    '修改前': 'Before modification',
+    '修改后': 'After modification',
+    '题目知识点': 'Topic category',
+    '修改于': 'modified on',   // date
+
     '死活题': 'life-and-death problem',
     '手筋题': 'Tesuji problem',
     '吃子题': 'Capture problem',
@@ -110,7 +120,7 @@ const object = {
     '训练营': 'Training camp',
     '讨论区': 'Forum',
     '棋谱': 'Games',
-    '围棋知识点专辑': 'Knowledge points album',
+    '围棋知识点专辑': 'Categories album',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '帮助中心': 'Help center',
     '个人信息设置': 'Personal information settings',
@@ -198,6 +208,8 @@ const object = {
     '上一页': 'Previous page',
     '下一页': 'Next page',
 };
+
+// I translated 知识点 as 'category' (lit. 'knowledge point')
 
 recursiveReplace(document.body);
 
