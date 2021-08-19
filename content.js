@@ -27,6 +27,16 @@ const object = {
     '我的评分': 'My rating',
     '标注难度': 'Set difficulty',
 
+    '死活题': 'life-and-death problem',
+    '手筋题': 'Tesuji problem',
+    '吃子题': 'Capture problem',
+
+    '闯关结果': 'Results',
+    '棋力检测': 'Strength detection',
+    '再次闯关': 'Break through again',
+    '闯下一关': 'Break the next level',
+    '闯关成功': 'Successfully passed the barrier',
+    '闯关失败': 'Failed to break through',
 
     // problem buttons
     '对战': 'Play',
@@ -161,7 +171,7 @@ const object = {
     '更多': 'More',
     '白先': 'White to play',
     '黑先': 'Black to play',
-    '死活题': 'life-and-death',
+    '死活': 'life-and-death',
     '分': 'min',
     '秒': 'sec',
     '难度': 'Difficulty',
@@ -175,6 +185,9 @@ const object = {
     '最快': 'Fastest',
     '确定': 'OK',
     '取消': 'Cancel',
+    '正确': 'Correct',
+    '超时': 'Timeout',
+    '恭喜': 'Congratulations',
 };
 
 recursiveReplace(document.body);
