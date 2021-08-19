@@ -19,6 +19,14 @@ const object = {
     '本题已经通过': 'Problem passed',
     '本题未通过': 'Problem failed',
     '創作': 'creation',  // problem author
+    '本题收录于': 'Problem is included in',
+    '我的评论': 'My comment',
+    '添加评论': 'Add comment',
+    '隐藏题目审核': 'Hidden review',
+    '题目质量': 'Problem quality',
+    '我的评分': 'My rating',
+    '标注难度': 'Set difficulty',
+
 
     // problem buttons
     '对战': 'Play',
@@ -156,6 +164,7 @@ const object = {
     '死活题': 'life-and-death',
     '分': 'min',
     '秒': 'sec',
+    '难度': 'Difficulty',
     '職業四段': '4p',
     '级': 'kyu',
     '段': 'dan',
@@ -164,7 +173,8 @@ const object = {
     '充值': 'Recharge',
     '开始做题': 'Start problems',
     '最快': 'Fastest',
-
+    '确定': 'OK',
+    '取消': 'Cancel',
 };
 
 recursiveReplace(document.body);
@@ -177,9 +187,18 @@ function recursiveReplace(node) {
     if (node.nodeType == 3 && node.nodeName != 'SCRIPT')
     {
         // this is a text node so lets process it
+        s = node.nodeValue
         for (const [key, value] of Object.entries(object)) {
-            node.nodeValue = node.nodeValue.replace(key, value)
+            s = s.replace(key, value)
         }
+
+        // non-fixed strings
+        s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
+            function (match, year, month, day) {
+                return [ year, month, day ].join('.')
+            }
+        )
+        node.nodeValue = s
     }
     else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE')
     {
