@@ -43,6 +43,7 @@ const object = {
     '试下': 'Try',
     '研究': 'Research',
     '提交答案': 'Submit answer',
+    '上一题': 'Previous problem',
     '下一题': 'Next problem',
     '上一步': 'Undo move',
 
@@ -62,6 +63,7 @@ const object = {
     '刚创建': 'Created',
     '已完成': 'Completed',
     '正在做': 'Doing',
+    '我的作业': 'My tasks',
     '作业': 'Tasks',
     '得分': 'Score',
     '排行榜': 'Leaderboard',
@@ -111,6 +113,11 @@ const object = {
     '围棋知识点专辑': 'Knowledge points album',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '帮助中心': 'Help center',
+    '个人信息设置': 'Personal information settings',
+
+    '错题统计': 'Mistake statistics',
+    '错题详细统计': 'Detailed mistake statistics',
+    '错题重做': 'Rework mistakes',
 
     // categories
     '围棋基本技能': 'Basic Go skills',
@@ -188,40 +195,60 @@ const object = {
     '正确': 'Correct',
     '超时': 'Timeout',
     '恭喜': 'Congratulations',
+    '上一页': 'Previous page',
+    '下一页': 'Next page',
 };
 
 recursiveReplace(document.body);
+
+let observer = new MutationObserver(mutationRecords => {
+    let nodes = []
+    mutationRecords.forEach(m => {
+        if (m.type == 'characterData') {
+            nodes.push(m.target)
+        }
+        observer.disconnect()    // avoid infinite loops
+        console.log(nodes)
+        nodes.forEach(node => replaceInTextNode(node))
+        observe()
+    })
+})
+
+const observe = () => {
+    observer.observe(document, {
+        characterData: true,
+        subtree: true,
+    });
+}
+
+observe()
 
 /*
     Recurse through DOM elements.  If element is a text element process it, otherwise recurse.
 */
 function recursiveReplace(node) {
-
-    if (node.nodeType == 3 && node.nodeName != 'SCRIPT')
-    {
-        // this is a text node so lets process it
-        s = node.nodeValue
-        for (const [key, value] of Object.entries(object)) {
-            s = s.replace(key, value)
-        }
-
-        // non-fixed strings
-        s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
-            function (match, year, month, day) {
-                return [ year, month, day ].join('.')
-            }
-        )
-        node.nodeValue = s
-    }
-    else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE')
-    {
-        // this is a non-textual node so we will recurse
+    if (node.nodeType == 3 && node.nodeName != 'SCRIPT') {
+        replaceInTextNode(node)
+    } else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE') {
         var child = node.firstChild;
-        while (child)
-        {
+        while (child) {
         	recursiveReplace(child);
         	child = child.nextSibling;
         }
     }
 }
 
+function replaceInTextNode(node) {
+    s = node.nodeValue
+    for (const [key, value] of Object.entries(object)) {
+        s = s.replace(key, value)
+    }
+
+    // non-fixed strings
+    s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
+        function (match, year, month, day) {
+            return [ year, month, day ].join('.')
+        }
+    )
+    node.nodeValue = s
+}
