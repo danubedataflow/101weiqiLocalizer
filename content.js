@@ -1,4 +1,4 @@
-const object = {
+const textReplacements = {
     // problems
     '围棋闯关': 'Exam',
     '棋力测试': 'Strength Test',
@@ -247,11 +247,17 @@ const object = {
     '下一页': 'Next page',
     '列表': 'list',
     '题目': 'Topic',
-};
+}
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
-recursiveReplace(document.body);
+const imageReplacements = {
+    'https://static2.101weiqi.com/static/images/home/home1.png': 'http://gogamespace.com/custom/101weiqi/home1.png',
+    'https://static2.101weiqi.com/static/images/home/home2.png': 'http://gogamespace.com/custom/101weiqi/home2.png',
+}
+
+recursiveReplace(document.body)
+replaceImageSources(document.body)
 
 let observer = new MutationObserver(mutationRecords => {
     let nodes = []
@@ -304,8 +310,17 @@ function replaceInTextNode(node) {
         (match, number) => `Part ${number}`
     )
 
-    for (const [key, value] of Object.entries(object)) {
+    for (const [key, value] of Object.entries(textReplacements)) {
         s = s.replace(key, value)
     }
     node.nodeValue = s
+}
+
+
+function replaceImageSources(node) {
+    node.querySelectorAll('img').forEach(img => {
+        for (const [key, value] of Object.entries(imageReplacements)) {
+            img.src = img.src.replace(key, value)
+        }
+    })
 }
