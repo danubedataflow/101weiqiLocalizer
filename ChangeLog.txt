@@ -3,6 +3,10 @@ version 0.0.0.2
 - apply to "*.101weiqi.com" so it works with and without "www."
 - improved Makefile to build the zip file
 - added and improved translations
+- also replace some images
+
+  I created copies of some images and put English text on them and hosted
+  them on my gogamespace.com server. These image sources are then replaced.
 
 version 0.0.0.1
 2021.08.19
