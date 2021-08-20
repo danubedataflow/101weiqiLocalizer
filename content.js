@@ -115,7 +115,6 @@ const object = {
     '官子题目': 'Endgame',
     '吃子题目': 'Capture',
     '骗招题目': 'Trick plays',
-    '题目': 'Topic',
 
     // nav and headers
     '我的首页': 'My Home',
@@ -170,12 +169,15 @@ const object = {
     '小猪嘴': 'Small pig snout',
     '一一妙手': '1-1 point',
     '一二妙手': '1-2 point',
+    '中盘作战题': 'Middle game problems',
 
     '立': 'Descent, stand',
     '弃子': 'Sacrifice',
 
     // book and player names
     '围棋手筋辞典': 'Tesuji Dictionary',
+    '天龙图': 'Heavenly Dragons',
+
     '濑越宪作': 'Segoe Kensaku',
     '吴清源': 'Go Seigen',
 
@@ -208,11 +210,23 @@ const object = {
     '四六定式': '4-6 point joseki',
     '小类': 'subcategories',
 
+    // topic search
+    '棋形题目搜索': 'Shape search',
+    '题目搜索': 'Shape search',
+    '黑子': 'Black stone',
+    '白子': 'White stone',
+    '无棋子': 'No stone',
+    '清除全部': 'Clear all',
+    '棋形搜索': 'Shape search',
+    '题目搜索': 'Topic search',
+    '题目名称搜索': 'Title search',
+
     // others
     '更多': 'More',
     '白先': 'White to play',
     '黑先': 'Black to play',
     '死活': 'life-and-death',
+    '部分': 'Part',
     '分': 'min',
     '秒': 'sec',
     '难度': 'Difficulty',
@@ -231,6 +245,8 @@ const object = {
     '恭喜': 'Congratulations',
     '上一页': 'Previous page',
     '下一页': 'Next page',
+    '列表': 'list',
+    '题目': 'Topic',
 };
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
@@ -276,9 +292,6 @@ function recursiveReplace(node) {
 
 function replaceInTextNode(node) {
     s = node.nodeValue
-    for (const [key, value] of Object.entries(object)) {
-        s = s.replace(key, value)
-    }
 
     // non-fixed strings
     s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
@@ -287,5 +300,12 @@ function replaceInTextNode(node) {
     s = s.replace(/第\s*(\d+)\s*题/,
         (match, number) => `Problem ${number}`
     )
+    s = s.replace(/第\s*(\d+)\s*部分/,
+        (match, number) => `Part ${number}`
+    )
+
+    for (const [key, value] of Object.entries(object)) {
+        s = s.replace(key, value)
+    }
     node.nodeValue = s
 }
