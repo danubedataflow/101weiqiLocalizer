@@ -49,6 +49,10 @@ const textReplacements = {
     '手筋题': 'Tesuji problem',
     '吃子题': 'Capture problem',
     '定式题': 'Joseki problem',
+    '对杀题': 'Capturing race problem',
+    '官子题': 'Endgame problem',
+
+    '七路全局': '7x7 whole board',
 
     '闯关结果': 'Results',
     '棋力检测': 'Strength detection',
