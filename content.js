@@ -180,6 +180,38 @@ const textReplacements = {
 
     '濑越宪作': 'Segoe Kensaku',
     '吴清源': 'Go Seigen',
+    '小林光一': 'Kobayashi Koichi',
+    '武宫正树': 'Takemiya Masaki',
+    '李昌镐': 'Lee Chang-ho',
+    '李世石': 'Lee Se-dol',
+    '聂卫平': 'Nie Weiping',
+    '大竹英雄': 'Otake Hideo',
+    '赵治勋': 'Cho Chikun',
+    '秀策': 'Honinbo Shusaku',
+    '井山裕太': 'Iyama Yuta',
+    '柯洁': 'Ke Jie',
+    '古力': 'Gu Li',
+    '坂田荣男': 'Sakata Eio',
+    '孟泰龄': 'Meng Tailing',
+    '金志锡': 'Kim Ji-seok',
+    '朴廷桓': 'Park Jung-hwan',
+    '申真谞': 'Shin Jin-seo',
+    '木谷实': 'Kitani Minoru',
+    '崔精': 'Choi Jeong',
+    '张栩': 'Cho U',
+    '藤泽秀行': 'Fujisawa Shuko',
+    '加藤正夫': 'Kato Masao',
+    '林海峰': 'Rin Kaiho',
+    '王立诚': 'O Rissei',
+    '依田纪基': 'Yoda Norimoto',
+    '淡路修三': 'Awaji Shuzo',
+    '山下敬吾': 'Yamashita Keigo',
+    '山田规三生': 'Yamada Kimio',
+    '羽根直树': 'Hane Naoki',
+    '石田芳夫': 'Ishida Yoshio',
+    '安井算知': 'Yasui Sanchi',
+    '秀和': 'Honinbo Shuwa',
+    '丈和': 'Honinbo Jowa',
 
     // modern player names
     '李钦诚': 'Li Qincheng',
@@ -197,6 +229,11 @@ const textReplacements = {
     '檀啸': 'Tan Xiao',
     '唐韦星': 'Tang Weixing',
     '陳禧': 'Chen Xi',
+
+    '中国棋手': 'Chinese players',
+    '日本棋手': 'Japanese players',
+    '韩国棋手': 'Korean players',
+    '其他地区棋手': 'Other players',
 
     // Joseki
     '定式大全': 'Joseki encyclopedia',
@@ -247,6 +284,7 @@ const textReplacements = {
     '下一页': 'Next page',
     '列表': 'list',
     '题目': 'Topic',
+    '名家': 'Famous',
 }
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
