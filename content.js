@@ -1,5 +1,9 @@
 const object = {
     // problems
+    '围棋闯关': 'Exam',
+    '棋力测试': 'Strength Test',
+    '关卡': 'Checkpoint',
+    '提供': 'supplier',   // of a problem
     '我的解答': 'My answer',
     '错误': 'Mistake',
     '编号': 'Serial number',
@@ -17,6 +21,7 @@ const object = {
     '次提交解答的机会': 'opportunities to submit answers',
     '今日排行榜': "Today's Leaderboard",
     '本题已经通过': 'Problem passed',
+    '本题超时未通过': 'Problem failed by timeout',
     '本题未通过': 'Problem failed',
     '創作': 'creation',  // problem author
     '本题收录于': 'Problem is included in',
@@ -40,6 +45,7 @@ const object = {
     '死活题': 'life-and-death problem',
     '手筋题': 'Tesuji problem',
     '吃子题': 'Capture problem',
+    '定式题': 'Joseki problem',
 
     '闯关结果': 'Results',
     '棋力检测': 'Strength detection',
@@ -54,8 +60,12 @@ const object = {
     '研究': 'Research',
     '提交答案': 'Submit answer',
     '上一题': 'Previous problem',
+    '上 一 题': 'Previous problem',
     '下一题': 'Next problem',
+    '下 一 题': 'Next problem',
     '上一步': 'Undo move',
+    '上 一 定 式': 'Previous joseki',
+    '下 一 定 式': 'Next joseki',
 
     // /task/
     '尚未完成的作业': 'Unfinished tasks',
@@ -116,10 +126,12 @@ const object = {
     '最近棋谱': 'Recent games',
     '贡献较多的棋友名单': 'Top contributors',
     '题库状态': 'Problem library state',
-    '题库': 'Problem library',
+    '题库': 'Library',
     '训练营': 'Training camp',
     '讨论区': 'Forum',
-    '棋谱': 'Games',
+    '对弈': 'Game',
+    '棋谱': 'Records',
+    '棋书': 'Books',
     '围棋知识点专辑': 'Categories album',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '帮助中心': 'Help center',
@@ -135,9 +147,6 @@ const object = {
     '围棋基本手筋': 'Basic tesuji',
     '围棋经典手筋': 'Classic tesuji',
     '围棋综合手筋': 'Comprehensive tesuji',
-
-    '立': 'Descent, stand',
-    '弃子': 'Sacrifice',
 
     '吃子': 'Capture',
     '对杀': 'Capturing race',
@@ -162,6 +171,9 @@ const object = {
     '一一妙手': '1-1 point',
     '一二妙手': '1-2 point',
 
+    '立': 'Descent, stand',
+    '弃子': 'Sacrifice',
+
     // book and player names
     '围棋手筋辞典': 'Tesuji Dictionary',
     '濑越宪作': 'Segoe Kensaku',
@@ -183,6 +195,18 @@ const object = {
     '檀啸': 'Tan Xiao',
     '唐韦星': 'Tang Weixing',
     '陳禧': 'Chen Xi',
+
+    // Joseki
+    '定式大全': 'Joseki encyclopedia',
+    '星定式': 'Star-point joseki',
+    '三三定式': '3-3 point joseki',
+    '小目定式': '3-4 point joseki',
+    '目外定式': '3-5 point joseki',
+    '高目定式': '4-5 point joseki',
+    '五五定式': '5-5 point joseki',
+    '三六定式': '3-6 point joseki',
+    '四六定式': '4-6 point joseki',
+    '小类': 'subcategories',
 
     // others
     '更多': 'More',
@@ -258,9 +282,10 @@ function replaceInTextNode(node) {
 
     // non-fixed strings
     s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
-        function (match, year, month, day) {
-            return [ year, month, day ].join('.')
-        }
+        (match, year, month, day) => [ year, month, day ].join('.')
+    )
+    s = s.replace(/第\s*(\d+)\s*题/,
+        (match, number) => `Problem ${number}`
     )
     node.nodeValue = s
 }
