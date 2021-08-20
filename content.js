@@ -155,6 +155,8 @@ const textReplacements = {
     '天龙图': 'Heavenly Dragons',
     '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
 
+    '日本古典': 'Japanese classic',
+
     // Japanese players
     '秀和': 'Honinbo Shuwa',
     '丈和': 'Honinbo Jowa',
@@ -204,9 +206,19 @@ const textReplacements = {
     '向井千瑛': 'Mukai Chiaki',
 
     // Chinese players
+    '范西屏': 'Fan Xiping',
+    '施襄夏': "Shi Ding'an",
     '聂卫平': 'Nie Weiping',
-    '柯洁': 'Ke Jie',
+    '马晓春': 'Ma Xiaochun',
+    '陈祖德': 'Chen Zude',
+    '曹大元': 'Cao Dayuan',
+    '芮乃伟': 'Rui Naiwei',
+    '周鹤洋': 'Zhou Heyang',
+    '罗洗河': 'Luo Xihe',
+    '钱宇平': 'Qian Yuping',
+    '常昊': 'Chang Hao',
     '古力': 'Gu Li',
+    '柯洁': 'Ke Jie',
     '孟泰龄': 'Meng Tailing',
     '崔精': 'Choi Jeong',
     '李钦诚': 'Li Qincheng',
@@ -224,13 +236,35 @@ const textReplacements = {
     '檀啸': 'Tan Xiao',
     '唐韦星': 'Tang Weixing',
     '陳禧': 'Chen Xi',
+    '彭立尧': 'Peng Liyao',
+    '王檄': 'Wang Xi',
+    '孔杰': 'Kong Jie',
+    '江维杰': 'Jiang Weijie',
+    '谢赫': 'Xie He',
+    '范蕴若': 'Fan Yunruo',
+    '古灵益': 'Gu Lingyi',
+    '李喆': 'Li Zhe',
+    '张立': 'Zhang Li',
+    '柁嘉熹': 'Tuo Jiaxi',
+    '朴文垚': 'Piao Wenyao',
 
     // Korean players
+    '曹薰铉': 'Cho Hun-hyeon',
     '李昌镐': 'Lee Chang-ho',
     '李世石': 'Lee Se-dol',
     '金志锡': 'Kim Ji-seok',
     '朴廷桓': 'Park Jung-hwan',
     '申真谞': 'Shin Jin-seo',
+    '白洪淅': 'Paek Hong-suk',
+    '徐奉洙': 'Seo Bong-soo',
+    '刘昌赫': "Yu Ch'ang-hyeok",
+    '元晟溱': 'Weon Seong-jin',
+    '睦镇硕': 'Mok Jin-seok',
+    '崔哲瀚': "Choi Ch'eol-han",
+    '姜东润': 'Kang Dong-yun',
+    '朴永训': 'Park Yeong-hun',
+    '赵汉乘': 'Cho Han-seung',
+    '崔明勋': 'Choi Myeong-hun',
 
     '中国棋手': 'Chinese players',
     '日本棋手': 'Japanese players',
@@ -294,6 +328,13 @@ const textReplacements = {
 
     '立': 'Descent, stand',
     '弃子': 'Sacrifice',
+
+    '生之部': 'Life section',
+    '死之部': 'Death section',
+    '劫之部': 'Ko section',
+    '攻之部': 'Attack section',
+    '角之部': 'Corner section',
+    '边之部': 'Side section',
 
     // others
     '更多': 'More',
