@@ -341,6 +341,32 @@ const textReplacements = {
     '角之部': 'Corner section',
     '边之部': 'Side section',
 
+    // login, logout, register
+    '退出': 'Exit',
+    '记住我': 'Remember me',
+    '忘记密码': 'Forgot password',
+    '重设密码': 'Reset password',
+    '微信登录': 'WeChat login',
+    '还没有101帐号': "Don't have a 101 account yet",
+    '注册新用户': 'Register a new user',
+    '用户名': 'Username',
+    '此邮箱将接受激活邮件完成账号激活流程': 'This email address will receive an activation email to complete the account activation process',
+    '邮箱': 'Email',
+    '密码': 'Password',
+    '级别': 'Level',
+    '验证码': 'Verification code',
+
+    // levels
+    '启蒙': 'Enlightenment',
+    '入门': 'Getting started',
+    '初级': 'Elementary',
+    '中级': 'Intermediate',
+    '高级': 'Advanced',
+
+    '立即注册': 'Sign up now',
+    '登录': 'Sign in',
+    '注册': 'Sign up',
+
     // others
     '更多': 'More',
     '白先': 'White to play',
@@ -443,7 +469,7 @@ function replaceInTextNode(node) {
         // add a space because Chinese doesn't have spaces
         s = s.replace(key, value + ' ')
     }
-    node.nodeValue = s
+    node.nodeValue = s.trimEnd()
 }
 
 

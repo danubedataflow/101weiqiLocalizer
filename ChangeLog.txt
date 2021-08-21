@@ -1,3 +1,7 @@
+version 0.0.0.3
+2021.08.21
+- added and improved translations
+
 version 0.0.0.2
 2021.08.19
 - apply to "*.101weiqi.com" so it works with and without "www."
