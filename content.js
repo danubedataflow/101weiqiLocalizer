@@ -18,7 +18,7 @@ const textReplacements = {
     '从错题本中删除': 'Remove from mistakes book',
     '请直接用鼠标在棋盘上落子': 'Use the mouse to play stones',
     '注意': 'Notice',
-    '只有一次提交解答的机会': 'Only one opportunity to submit answers',
+    '只有一次提交解答的机会': 'Only one opportunity to submit answer',
     '只有2次提交解答的机会': 'Only two opportunities to submit answers',
     '只有': 'Only',
     '次提交解答的机会': 'opportunities to submit answers',
@@ -53,6 +53,7 @@ const textReplacements = {
     '官子题': 'Endgame problem',
 
     '七路全局': '7x7 whole board',
+    '九路全局': '9x9 whole board',
 
     '闯关结果': 'Results',
     '棋力检测': 'Strength detection',
@@ -372,11 +373,14 @@ const textReplacements = {
     '上卷': 'First volume',
     '中卷': 'Middle volume',
     '下卷': 'Last volume',
+    '官子': 'Endgame',
+    '练习': 'practice',
 }
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
 const imageReplacements = {
+    // I used Preview.app to write the text (color: Red 81, Green 109, Blue 149; font: Arial Narrow 32pt)
     'https://static2.101weiqi.com/static/images/home/home1.png': 'http://gogamespace.com/custom/101weiqi/home1.png',
     'https://static2.101weiqi.com/static/images/home/home2.png': 'http://gogamespace.com/custom/101weiqi/home2.png',
 }
@@ -436,7 +440,8 @@ function replaceInTextNode(node) {
     )
 
     for (const [key, value] of Object.entries(textReplacements)) {
-        s = s.replace(key, value)
+        // add a space because Chinese doesn't have spaces
+        s = s.replace(key, value + ' ')
     }
     node.nodeValue = s
 }
