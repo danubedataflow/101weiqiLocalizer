@@ -415,21 +415,23 @@ recursiveReplace(document.body)
 replaceImageSources(document.body)
 
 let observer = new MutationObserver(mutationRecords => {
-    let nodes = []
     mutationRecords.forEach(m => {
         if (m.type == 'characterData') {
-            nodes.push(m.target)
+            observer.disconnect()    // avoid infinite loops
+            replaceInTextNode(m.target)
+            observe()
+        } else if (m.type == 'childList') {
+            observer.disconnect()    // avoid infinite loops
+            m.addedNodes.forEach(node => recursiveReplace(node))
+            observe()
         }
-        observer.disconnect()    // avoid infinite loops
-        console.log(nodes)
-        nodes.forEach(node => replaceInTextNode(node))
-        observe()
     })
 })
 
 const observe = () => {
     observer.observe(document, {
         characterData: true,
+        childList: true,
         subtree: true,
     });
 }
@@ -467,9 +469,9 @@ function replaceInTextNode(node) {
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
-        s = s.replace(key, value + ' ')
+        s = s.replace(key, ' ' + value + ' ')
     }
-    node.nodeValue = s.trimEnd()
+    node.nodeValue = s
 }
 
 
