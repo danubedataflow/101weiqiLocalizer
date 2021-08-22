@@ -6,7 +6,6 @@ const textReplacements = {
     '围棋闯关': 'Exam',
     '棋力测试': 'Strength Test',
     '关卡': 'Checkpoint',
-    '提供': 'supplier',   // of a problem
     '我的解答': 'My answer',
     '错误': 'Mistake',
     '编号': 'Serial number',
@@ -340,6 +339,10 @@ const textReplacements = {
     '大眼杀小眼': 'Big eye kills small eye',
     '打二还一': 'Capture two recapture one',
     '龟不出头': "Crane's nest",
+    '盘龙眼': 'Two-headed dragon',
+    '老鼠偷油': 'Mouse stealing oil',
+    '攻击': 'Attack',
+    '盲点': 'Blind spot',
 
     '立': 'Descent, stand',
     '弃子': 'Sacrifice',
@@ -381,6 +384,10 @@ const textReplacements = {
     '立即注册': 'Sign up now',
     '登录': 'Sign in',
     '注册': 'Sign up',
+
+    // attributions
+    '提供': 'supplier',     // of a problem
+    '维护': 'maintenance',  // of a problem category
 
     // others
     '更多': 'More',
@@ -482,6 +489,9 @@ function replaceInTextNode(node) {
     )
     s = s.replace(/第\s*(\d+)\s*部分/,
         (match, number) => `Part ${number}`
+    )
+    s = s.replace(/共\s*(\d+)\s*道题目/,
+        (match, number) => `${number} questions in total`
     )
 
     for (const [key, value] of Object.entries(textReplacements)) {

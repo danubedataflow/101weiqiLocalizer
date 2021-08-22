@@ -1,3 +1,7 @@
+version 0.0.0.5
+2021.08.22
+- added and improved translations
+
 version 0.0.0.4
 2021.08.21
 - now catches more strings with childList-MutationObserver
