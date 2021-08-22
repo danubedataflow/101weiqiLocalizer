@@ -1,6 +1,6 @@
-// FIXME: login form; registration form;
+// FIXME:
 // https://www.101weiqi.com/chessbook/playerlist/
-//
+
 const textReplacements = {
     // problems
     '围棋闯关': 'Exam',
@@ -65,7 +65,7 @@ const textReplacements = {
     // problem buttons
     '对战': 'Play',
     '试下': 'Try',
-    '研究': 'Research',
+    '研究': 'Explore',
     '提交答案': 'Submit answer',
     '上一题': 'Previous problem',
     '上 一 题': 'Previous problem',
@@ -343,10 +343,13 @@ const textReplacements = {
 
     // login, logout, register
     '退出': 'Exit',
+    '你的用户名和密码不符，请再试一次': 'Your username and password do not match; please try again',
     '记住我': 'Remember me',
     '忘记密码': 'Forgot password',
     '重设密码': 'Reset password',
     '微信登录': 'WeChat login',
+    '微信扫码': 'WeChat scan code',
+    '公众号': 'Public account',
     '还没有101帐号': "Don't have a 101 account yet",
     '注册新用户': 'Register a new user',
     '用户名': 'Username',
@@ -373,6 +376,7 @@ const textReplacements = {
     '黑先': 'Black to play',
     '死活': 'life-and-death',
     '部分': 'Part',
+    '小时': 'hour',
     '分': 'min',
     '秒': 'sec',
     '难度': 'Difficulty',
@@ -401,6 +405,7 @@ const textReplacements = {
     '下卷': 'Last volume',
     '官子': 'Endgame',
     '练习': 'practice',
+    '101围棋网': '101 Go Net',
 }
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
