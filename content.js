@@ -158,6 +158,7 @@ const textReplacements = {
     '围棋手筋辞典': 'Tesuji Dictionary',
     '天龙图': 'Heavenly Dragons',
     '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
+    '基礎から始める 河野臨の詰碁': "Kono Rin's tsumego starting from the basics",
 
     '日本古典': 'Japanese classic',
 
