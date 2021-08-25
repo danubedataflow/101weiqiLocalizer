@@ -44,7 +44,8 @@ const textReplacements = {
     '题目知识点': 'Topic category',
     '修改于': 'modified on',   // date
 
-    '死活题': 'life-and-death problem',
+    '布局题': 'Opening problem',
+    '死活题': 'Life-and-death problem',
     '手筋题': 'Tesuji problem',
     '吃子题': 'Capture problem',
     '定式题': 'Joseki problem',
@@ -184,6 +185,19 @@ const textReplacements = {
     '系统随机选题': 'in random order',
     '按棋书章节顺序做题': 'Book chapter order',
     '选择棋书章节': 'Select a book chapter',
+
+    // print
+    '打印题目选择': 'Print problems selection',
+    '打印题目': 'Print problems',
+    '按难度选择': 'Choose by difficulty',
+    '按顺序选择': 'Select in order',
+    '打印功能只对会员开放': 'The printing function is only available to members',
+    '点击升级会员': 'Click to upgrade membership',
+    '数量': 'Quantity',
+    '最低难度': 'Lowest difficulty',
+    '最高难度': 'Highest difficulty',
+    '全部题型': 'All problem types',
+    '题型': 'Problem type',
 
     // Japanese players
     '秀和': 'Honinbo Shuwa',
@@ -451,6 +465,7 @@ const textReplacements = {
     '101围棋网': '101 Go Net',
     '每次': 'Each',
     '题目数量': 'Count',  // number of problems
+    '关闭': 'Close',    // a form
 
     '题库': 'Lib',
     '训练营': 'Camp',  // 'Training camp', but it's too long
