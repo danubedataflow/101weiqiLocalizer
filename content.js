@@ -124,7 +124,7 @@ const textReplacements = {
     '骗招题目': 'Trick plays',
 
     // nav and headers
-    '我的首页': 'My Home',
+    '我的首页': 'Home',  // 'My Home', but opt for short string
     '棋 力 测 试': 'Go Strength Test',
     '围棋闯关-棋力测试': 'Go Strength Test',  // guan
     '每日八题': 'Daily 8 problems',
@@ -132,12 +132,12 @@ const textReplacements = {
     '最近棋谱': 'Recent games',
     '贡献较多的棋友名单': 'Top contributors',
     '题库状态': 'Problem library state',
-    '题库': 'Library',
-    '训练营': 'Training camp',
+    '题库': 'Lib',
+    '训练营': 'Camp',  // 'Training camp', but it's too long
     '讨论区': 'Forum',
     '对弈': 'Game',
-    '棋谱': 'Records',
     '棋书': 'Books',
+    '棋谱': 'Records',
     '围棋知识点专辑': 'Categories album',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '帮助中心': 'Help center',
@@ -436,6 +436,7 @@ const imageReplacements = {
     'https://static2.101weiqi.com/static/images/home/home2.png': 'http://gogamespace.com/custom/101weiqi/home2.png',
 }
 
+// addStyles()
 recursiveReplace(document.body)
 replaceImageSources(document.body)
 
@@ -509,4 +510,19 @@ function replaceImageSources(node) {
             img.src = img.src.replace(key, value)
         }
     })
+}
+
+// DEACTIVATED FOR NOW
+function addStyles() {
+    // make the username fit in the nav bar
+    var styles = `
+        .navbar-brand {
+            font-size: 14px;
+        }
+    `
+
+    var styleSheet = document.createElement("style")
+    styleSheet.type = "text/css"
+    styleSheet.innerText = styles
+    document.head.appendChild(styleSheet)
 }
