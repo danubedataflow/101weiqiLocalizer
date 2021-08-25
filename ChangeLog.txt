@@ -1,3 +1,7 @@
+version 0.0.1
+UNRELEASED
+- make username fit in navbar by shortening some nav bar item labels
+
 version 0.0.0.5
 2021.08.23
 - added and improved translations
