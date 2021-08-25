@@ -80,7 +80,6 @@ const textReplacements = {
     '作业日期': 'Task date',
     '作业状态': 'State',
     '作业难度': 'Difficulty',
-    '题目数量': 'Count',  // number of problems
     '用时': 'Time spent',
     '完成时间': 'Completion date',
     '我的作业模板列表': 'My tasks template list',
@@ -132,12 +131,6 @@ const textReplacements = {
     '最近棋谱': 'Recent games',
     '贡献较多的棋友名单': 'Top contributors',
     '题库状态': 'Problem library state',
-    '题库': 'Lib',
-    '训练营': 'Camp',  // 'Training camp', but it's too long
-    '讨论区': 'Forum',
-    '对弈': 'Game',
-    '棋书': 'Books',
-    '棋谱': 'Records',
     '围棋知识点专辑': 'Categories album',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '帮助中心': 'Help center',
@@ -161,6 +154,36 @@ const textReplacements = {
     '基礎から始める 河野臨の詰碁': "Kono Rin's tsumego starting from the basics",
 
     '日本古典': 'Japanese classic',
+
+    // volumes etc.
+    '第一卷': 'Volume 1',
+    '第二卷': 'Volume 2',
+    '第三卷': 'Volume 3',
+    '第四卷': 'Volume 4',
+    '第五卷': 'Volume 5',
+    '第六卷': 'Volume 6',
+
+    // book index pages
+    '我的做题数据': 'My problem statistics',
+    '平均做题时间': 'Average problem time',
+    '统计截止于': 'Statistics as of',
+    '做题形式设置': 'Problem settings form',
+
+    // book settings form
+    '做题设置': 'Problem settings',
+    '一次生成的题目数量': 'Number of questions generated at a time',
+    '最多不超过': 'No more than',
+    '思考时间': 'Thinking time',
+    '一次机会': 'one chance',
+    '两次机会': 'two chances',
+    '设置每道题目的做题次数': 'Set the number of opportunities for each problem',
+    '设置每道题目的做题时间': 'Set the time limit for each problem',
+    '时间限制': 'Time limit',
+    '做题次序': 'Problem order',
+    '按难度顺序选题': 'in order of difficulty',
+    '系统随机选题': 'in random order',
+    '按棋书章节顺序做题': 'Book chapter order',
+    '选择棋书章节': 'Select a book chapter',
 
     // Japanese players
     '秀和': 'Honinbo Shuwa',
@@ -426,6 +449,15 @@ const textReplacements = {
     '官子': 'Endgame',
     '练习': 'practice',
     '101围棋网': '101 Go Net',
+    '每次': 'Each',
+    '题目数量': 'Count',  // number of problems
+
+    '题库': 'Lib',
+    '训练营': 'Camp',  // 'Training camp', but it's too long
+    '讨论区': 'Forum',
+    '对弈': 'Game',
+    '棋书': 'Books',
+    '棋谱': 'Records',
 }
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
