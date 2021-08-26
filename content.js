@@ -2,6 +2,103 @@
 // https://www.101weiqi.com/chessbook/playerlist/
 
 const textReplacements = {
+    // nav and headers
+    '我的首页': 'Home',  // 'My Home', but opt for short string
+    '棋 力 测 试': 'Go Strength Test',
+    '围棋闯关-棋力测试': 'Go Strength Test',  // guan
+    '每日八题': 'Daily 8 problems',
+    '我的错题本': 'My mistakes book',
+    '最近棋谱': 'Recent games',
+    '贡献较多的棋友名单': 'Top contributors',
+    '题库状态': 'Problem library state',
+    '围棋知识点专辑': 'Categories album',
+    '围棋考试/挑战赛': 'Go exam/challenge',
+    '帮助中心': 'Help center',
+    '个人信息设置': 'Personal information settings',
+
+    '错题统计': 'Mistake statistics',
+    '错题详细统计': 'Detailed mistake statistics',
+    '错题重做': 'Rework mistakes',
+
+    // book and player names
+    '玄玄棋经': 'Gengen Gokyo',
+    '棋经众妙': 'Gokyo Shumyo',
+    '官子谱': 'Kanzufu',
+    '围棋死活辞典-濑越宪作': 'Life-and-Death Dictionary (Segoe Kensaku)',
+    '李昌镐精讲围棋死活': 'Lee Chang-ho Selected Life-and-Death Problems',
+    '李昌镐精讲围棋手筋': 'Lee Chang-ho Selected Tesuji Problems',
+    '李昌镐官子技巧': "Lee Chang-ho's Endgame Skills",
+    '围棋手筋辞典': 'Tesuji Dictionary',
+    '天龙图': 'Heavenly Dragons',
+    '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
+    '基礎から始める 河野臨の詰碁': "Kono Rin's tsumego starting from the basics",
+
+    '日本古典': 'Japanese classic',
+
+    // volumes etc.
+    '第一卷': 'Volume 1',
+    '第二卷': 'Volume 2',
+    '第三卷': 'Volume 3',
+    '第四卷': 'Volume 4',
+    '第五卷': 'Volume 5',
+    '第六卷': 'Volume 6',
+
+    // book index pages
+    '我的做题数据': 'My problem statistics',
+    '平均做题时间': 'Average problem time',
+    '统计截止于': 'Statistics as of',
+    '做题形式设置': 'Problem settings form',
+
+    // book settings form
+    '做题设置': 'Problem settings',
+    '一次生成的题目数量': 'Number of questions generated at a time',
+    '最多不超过': 'No more than',
+    '思考时间': 'Thinking time',
+    '一次机会': 'one chance',
+    '两次机会': 'two chances',
+    '设置每道题目的做题次数': 'Set the number of opportunities for each problem',
+    '设置每道题目的做题时间': 'Set the time limit for each problem',
+    '时间限制': 'Time limit',
+    '做题次序': 'Problem order',
+    '按难度顺序选题': 'in order of difficulty',
+    '系统随机选题': 'in random order',
+    '按棋书章节顺序做题': 'Book chapter order',
+    '选择棋书章节': 'Select a book chapter',
+
+    // createbook
+    '创建新作业模板': 'Create a new job template',
+    '作业模板名称': 'Job template name',
+    '自动生成': 'Automatically generated',
+    '系统自动生成作业': 'The system automatically generates jobs',
+    '题目范围': 'Problem scope',
+    '不选择，则混合各种题型': "If you don't choose, problem categories will be mixed",
+    '最多75题': 'Up to 75 problems',
+    '难度范围': 'Difficulty range',
+    '不选择，则依靠棋友当前级别自动筛选': "If you don’t choose, it will be automatically selected based on the current player level",
+    '做题时间设置': 'Question time setting',
+    '如果超过时间未做完，则本题判错': 'If the time is exceeded, the problem will be judged wrong.',
+    '做题机会': 'Problem solving opportunities',
+    '每道题目的做题次数，达到这个次数没有做对则判错': 'The number of attemps for each problem. If this number is reached, it will be judged wrong.',
+    '创 建': 'Creation',
+    '不限制时间': 'unlimited time',
+    '频率': 'Frequency',
+    '单位为天，每多少天一次作业': 'How often to run the job, in days',
+    '作业生成时间': 'Job generation time',
+    '北京时间': 'Beijing time',
+
+    // print
+    '打印题目选择': 'Print problems selection',
+    '打印题目': 'Print problems',
+    '按难度选择': 'Choose by difficulty',
+    '按顺序选择': 'Select in order',
+    '打印功能只对会员开放': 'The printing function is only available to members',
+    '点击升级会员': 'Click to upgrade membership',
+    '数量': 'Quantity',
+    '最低难度': 'Lowest difficulty',
+    '最高难度': 'Highest difficulty',
+    '全部题型': 'All problem types',
+    '题型': 'Problem type',
+
     // problems
     '围棋闯关': 'Exam',
     '棋力测试': 'Strength Test',
@@ -122,82 +219,6 @@ const textReplacements = {
     '官子题目': 'Endgame',
     '吃子题目': 'Capture',
     '骗招题目': 'Trick plays',
-
-    // nav and headers
-    '我的首页': 'Home',  // 'My Home', but opt for short string
-    '棋 力 测 试': 'Go Strength Test',
-    '围棋闯关-棋力测试': 'Go Strength Test',  // guan
-    '每日八题': 'Daily 8 problems',
-    '我的错题本': 'My mistakes book',
-    '最近棋谱': 'Recent games',
-    '贡献较多的棋友名单': 'Top contributors',
-    '题库状态': 'Problem library state',
-    '围棋知识点专辑': 'Categories album',
-    '围棋考试/挑战赛': 'Go exam/challenge',
-    '帮助中心': 'Help center',
-    '个人信息设置': 'Personal information settings',
-
-    '错题统计': 'Mistake statistics',
-    '错题详细统计': 'Detailed mistake statistics',
-    '错题重做': 'Rework mistakes',
-
-    // book and player names
-    '玄玄棋经': 'Gengen Gokyo',
-    '棋经众妙': 'Gokyo Shumyo',
-    '官子谱': 'Kanzufu',
-    '围棋死活辞典-濑越宪作': 'Life-and-Death Dictionary (Segoe Kensaku)',
-    '李昌镐精讲围棋死活': 'Lee Chang-ho Selected Life-and-Death Problems',
-    '李昌镐精讲围棋手筋': 'Lee Chang-ho Selected Tesuji Problems',
-    '李昌镐官子技巧': "Lee Chang-ho's Endgame Skills",
-    '围棋手筋辞典': 'Tesuji Dictionary',
-    '天龙图': 'Heavenly Dragons',
-    '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
-    '基礎から始める 河野臨の詰碁': "Kono Rin's tsumego starting from the basics",
-
-    '日本古典': 'Japanese classic',
-
-    // volumes etc.
-    '第一卷': 'Volume 1',
-    '第二卷': 'Volume 2',
-    '第三卷': 'Volume 3',
-    '第四卷': 'Volume 4',
-    '第五卷': 'Volume 5',
-    '第六卷': 'Volume 6',
-
-    // book index pages
-    '我的做题数据': 'My problem statistics',
-    '平均做题时间': 'Average problem time',
-    '统计截止于': 'Statistics as of',
-    '做题形式设置': 'Problem settings form',
-
-    // book settings form
-    '做题设置': 'Problem settings',
-    '一次生成的题目数量': 'Number of questions generated at a time',
-    '最多不超过': 'No more than',
-    '思考时间': 'Thinking time',
-    '一次机会': 'one chance',
-    '两次机会': 'two chances',
-    '设置每道题目的做题次数': 'Set the number of opportunities for each problem',
-    '设置每道题目的做题时间': 'Set the time limit for each problem',
-    '时间限制': 'Time limit',
-    '做题次序': 'Problem order',
-    '按难度顺序选题': 'in order of difficulty',
-    '系统随机选题': 'in random order',
-    '按棋书章节顺序做题': 'Book chapter order',
-    '选择棋书章节': 'Select a book chapter',
-
-    // print
-    '打印题目选择': 'Print problems selection',
-    '打印题目': 'Print problems',
-    '按难度选择': 'Choose by difficulty',
-    '按顺序选择': 'Select in order',
-    '打印功能只对会员开放': 'The printing function is only available to members',
-    '点击升级会员': 'Click to upgrade membership',
-    '数量': 'Quantity',
-    '最低难度': 'Lowest difficulty',
-    '最高难度': 'Highest difficulty',
-    '全部题型': 'All problem types',
-    '题型': 'Problem type',
 
     // Japanese players
     '秀和': 'Honinbo Shuwa',
@@ -485,17 +506,31 @@ const imageReplacements = {
 
 // addStyles()
 recursiveReplace(document.body)
+replaceAttributes()
 replaceImageSources(document.body)
 
 let observer = new MutationObserver(mutationRecords => {
     mutationRecords.forEach(m => {
         if (m.type == 'characterData') {
             observer.disconnect()    // avoid infinite loops
-            replaceInTextNode(m.target)
+            m.target.nodeValue = replaceInString(m.target.nodeValue)
             observe()
         } else if (m.type == 'childList') {
             observer.disconnect()    // avoid infinite loops
             m.addedNodes.forEach(node => recursiveReplace(node))
+            observe()
+        } else if (m.type == 'attributes') {
+            observer.disconnect()    // avoid infinite loops
+
+            switch(m.attributeName) {
+                case "label":
+                    m.target.label = replaceInString(m.target.label)
+                    break;
+                case "title":
+                    m.target.title = replaceInString(m.target.title)
+                    break;
+            }
+
             observe()
         }
     })
@@ -506,6 +541,7 @@ const observe = () => {
         characterData: true,
         childList: true,
         subtree: true,
+        attributeFilter: [ "label", "title" ],
     });
 }
 
@@ -516,7 +552,7 @@ observe()
 */
 function recursiveReplace(node) {
     if (node.nodeType == 3 && node.nodeName != 'SCRIPT') {
-        replaceInTextNode(node)
+        node.nodeValue = replaceInString(node.nodeValue)
     } else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE') {
         var child = node.firstChild;
         while (child) {
@@ -526,9 +562,7 @@ function recursiveReplace(node) {
     }
 }
 
-function replaceInTextNode(node) {
-    s = node.nodeValue
-
+function replaceInString(s) {
     // non-fixed strings
     s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
         (match, year, month, day) => [ year, month, day ].join('.')
@@ -542,14 +576,25 @@ function replaceInTextNode(node) {
     s = s.replace(/共\s*(\d+)\s*道题目/,
         (match, number) => `${number} questions in total`
     )
+    s = s.replace(/限制(\d+)分钟/,
+        (match, limit) => `${limit} min limit`
+    )
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
         s = s.replace(key, ' ' + value + ' ')
     }
-    node.nodeValue = s
+    return s
 }
 
+function replaceAttributes() {
+    document.querySelectorAll('[label]').forEach((el) => {
+        el.label = replaceInString(el.label)
+    })
+    document.querySelectorAll('[title]').forEach((el) => {
+        el.title = replaceInString(el.title)
+    })
+}
 
 function replaceImageSources(node) {
     node.querySelectorAll('img').forEach(img => {
