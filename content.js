@@ -172,6 +172,18 @@ const textReplacements = {
     '上 一 定 式': 'Previous joseki',
     '下 一 定 式': 'Next joseki',
 
+    // problem answers and reviews
+    '隐藏评价': 'Hide review',
+    '属于正解答案': 'is a correct answer',
+    '属于变化答案': 'is a variation answer',
+    '属于失败答案': 'is a failure answer',
+    '答案有误': 'is a mistaken answer',
+    '条答案被淘汰': 'answers were eliminated',
+    '被淘汰的答案': 'Eliminated answer',
+    '正解答案': 'Correct answers',
+    '变化答案': 'Variation answers',
+    '失败答案': 'Failure answers',
+
     // /task/
     '尚未完成的作业': 'Unfinished tasks',
     '我的作业列表': 'My task list',
@@ -494,6 +506,12 @@ const textReplacements = {
     '对弈': 'Game',
     '棋书': 'Books',
     '棋谱': 'Records',
+
+    '显示': 'show',
+    '隐藏': 'hide',
+    '答案': 'answers',
+    '评价': 'Review',
+    '提交': 'submit',
 }
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
