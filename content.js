@@ -184,6 +184,17 @@ const textReplacements = {
     '变化答案': 'Variation answers',
     '失败答案': 'Failure answers',
 
+    '模仿题': 'Copying problem',
+    '播放演进过程': 'Replay moves',
+    '开始解答': 'Start to answer',
+    '解答中': 'Answering',
+    '请按照顺序在棋盘上落子': 'Please play the moves in order',
+
+    '大师的下一手': "Master's next move",
+    '布局猜子题': 'Guess opening moves',
+    '请找出此局面下的最佳一手': 'Please find the best move in this situation',
+    '中国流布局': 'Chinese opening',
+
     // /task/
     '尚未完成的作业': 'Unfinished tasks',
     '我的作业列表': 'My task list',
@@ -380,7 +391,6 @@ const textReplacements = {
     '对杀': 'Capturing race',
     '有眼杀无眼': 'Eye/no eye',
     '连接': 'Connect',
-    '切断': 'Cut',
     '大头鬼': 'Tombstone',
     '金鸡独立': 'Golden rooster',
     '倒脱靴': 'Under the stones',
@@ -414,11 +424,6 @@ const textReplacements = {
     '老鼠偷油': 'Mouse stealing oil',
     '攻击': 'Attack',
     '盲点': 'Blind spot',
-
-    '立': 'Descent, stand',
-    '弃子': 'Sacrifice',
-    '挤': 'Atekomi',
-    '断': 'Cut',
 
     '生之部': 'Life section',
     '死之部': 'Death section',
@@ -499,6 +504,16 @@ const textReplacements = {
     '每次': 'Each',
     '题目数量': 'Count',  // number of problems
     '关闭': 'Close',    // a form
+    '变化': 'Variation',
+    '应对': 'Answer',
+    '判断': 'Judgement',
+    '手筋': 'Tesuji',
+
+    '立': 'Descent, stand',
+    '弃子': 'Sacrifice',
+    '挤': 'Atekomi',
+    '断': 'Cut',
+    '扑': 'Throw-in',
 
     '题库': 'Lib',
     '训练营': 'Camp',  // 'Training camp', but it's too long

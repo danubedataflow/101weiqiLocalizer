@@ -1,3 +1,7 @@
+version 0.0.3
+2021.09.09
+- improved translations
+
 version 0.0.2
 2021.08.26
 - improved translations
