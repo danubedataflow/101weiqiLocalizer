@@ -514,6 +514,7 @@ const textReplacements = {
     '挤': 'Atekomi',
     '断': 'Cut',
     '扑': 'Throw-in',
+    '尖': 'Diagonal',
 
     '题库': 'Lib',
     '训练营': 'Camp',  // 'Training camp', but it's too long
