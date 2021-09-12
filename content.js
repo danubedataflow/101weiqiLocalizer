@@ -49,7 +49,7 @@ const textReplacements = {
     '属于失败答案': 'is a failure answer',
     '属于正解答案': 'is a correct answer',
     '系统随机选题': 'in random order',
-    '条答案被淘汰': 'answers were eliminated',
+    '条答案被淘汰': 'eliminated answers',
     '题目名称搜索': 'Title search',
     '围棋手筋辞典': 'Tesuji Dictionary',
     '棋形题目搜索': 'Shape search',
@@ -355,10 +355,12 @@ const textReplacements = {
     '金柜角': "Carpenter's square",
     '最多75题': 'Up to 75 problems',
     '只有2次提交解答的机会': 'Only two opportunities to submit answers',
+    '诘棋': 'tsumego',
     '提供': 'supplier',     // of a problem
     '提交': 'submit',
     '小类': 'subcategories',
     '显示': 'show',
+    '问题': 'problem',
     '练习': 'practice',
     '维护': 'maintenance',  // of a problem category
     '列表': 'list',
@@ -366,6 +368,8 @@ const textReplacements = {
     '小时': 'hour',
     '隐藏': 'hide',
     '創作': 'creation',  // problem author
+    '章节': 'chapter',
+    '基本': 'basic',
     '答案': 'answers',
     '张立': 'Zhang Li',
     '谢赫': 'Xie He',
@@ -426,6 +430,7 @@ const textReplacements = {
     '古力': 'Gu Li',
     '入门': 'Getting started',
     '对弈': 'Game',
+    '藤泽': 'Fujisawa',
     '频率': 'Frequency',
     '上卷': 'First volume',
     '最快': 'Fastest',
@@ -465,15 +470,21 @@ const textReplacements = {
     '高级': 'Advanced',
     '添加': 'Add',
     '秒': 'sec',
+    '对': 'right',
+    '错': 'mistaken',
     '分': 'min',
     '级': 'kyu',
     '有': 'has',
     '段': 'dan',
+    '集': 'collection',
+    '白': 'White',
     '扑': 'Throw-in',
     '尖': 'Diagonal',
     '立': 'Descent, stand',
     '断': 'Cut',
+    '黑': 'Black',
     '挤': 'Atekomi',
+    '劫' : 'Ko',
     '创 建': 'Creation',
     '上 一 题': 'Previous problem',
     '下 一 题': 'Next problem',
@@ -482,6 +493,13 @@ const textReplacements = {
     '棋 力 测 试': 'Go Strength Test',
     '101围棋网': '101 Go Net',
 }
+
+// cache regular expressions
+let re_problem_number = /第\s*(\d+)\s*题/;
+let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
+let re_part_number = /第\s*(\d+)\s*部分/;
+let re_questions_in_total = /共\s*(\d+)\s*道题目/;
+let re_min_limit = /限制(\d+)分钟/;
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
@@ -551,21 +569,11 @@ function recursiveReplace(node) {
 
 function replaceInString(s) {
     // non-fixed strings
-    s = s.replace(/(20\d\d)年(\d\d?)月(\d\d?)日/,
-        (match, year, month, day) => [ year, month, day ].join('.')
-    )
-    s = s.replace(/第\s*(\d+)\s*题/,
-        (match, number) => `Problem ${number}`
-    )
-    s = s.replace(/第\s*(\d+)\s*部分/,
-        (match, number) => `Part ${number}`
-    )
-    s = s.replace(/共\s*(\d+)\s*道题目/,
-        (match, number) => `${number} questions in total`
-    )
-    s = s.replace(/限制(\d+)分钟/,
-        (match, limit) => `${limit} min limit`
-    )
+    s = s.replace(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
+    s = s.replace(re_problem_number, (match, number) => `Problem ${number}`)
+    s = s.replace(re_part_number, (match, number) => `Part ${number}`)
+    s = s.replace(re_questions_in_total, (match, number) => `${number} questions in total`)
+    s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
