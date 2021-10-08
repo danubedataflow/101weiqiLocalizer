@@ -32,14 +32,15 @@ const textReplacements = {
     '按棋书章节顺序做题': 'Book chapter order',
     '次提交解答的机会': 'opportunities to submit answers',
     '系统自动生成作业': 'The system automatically generates jobs',
-    '我的作业模板列表': 'My tasks template list',
+    '我的作业模板列表': 'My job template list',
     '官子大全官子手筋': 'Endgame Encyclopedia - Tesuji',
-    '创建新的作业模板': 'Create a new tasks template',
+    '创建新的作业模板': 'Create a new job template',
     '使用围豆进行提问': 'Ask using Weidou',
     '按难度顺序选题': 'in order of difficulty',
-    '尚未完成的作业': 'Unfinished tasks',
+    '尚未完成的作业': 'Unfinished jobs',
     '从错题本中删除': 'Remove from mistakes book',
     '本题超时未通过': 'Problem failed by timeout',
+    '生成一份新作业': 'Generate a new assigment',
     '创建新作业模板': 'Create a new job template',
     '围棋知识点专辑': 'Categories album',
     '李昌镐官子技巧': "Lee Chang-ho's Endgame Skills",
@@ -65,7 +66,6 @@ const textReplacements = {
     '围棋死活形状': 'Life-and-death shapes',
     '上次阅读位置': 'Last read position',
     '级位题目分类': 'Kyu-level classification',
-    '作业模板名称': 'Job template name',
     '作业生成时间': 'Job generation time',
     '隐藏题目审核': 'Hidden review',
     '官子题目列表': 'Endgame album',
@@ -94,8 +94,8 @@ const textReplacements = {
     '本题收录于': 'Problem is included in',
     '本题未通过': 'Problem failed',
     '最多不超过': 'No more than',
-    '我的作业本': 'My tasks book',
     '我的错题本': 'My mistakes book',
+    '我的作业本': 'My jobs book',
     '我的收藏本': 'My collection',
     '条修改记录': 'Modification records',
     '中盘作战题': 'Middle game problems',
@@ -105,6 +105,7 @@ const textReplacements = {
     '有眼杀无眼': 'Eye/no eye',
     '按难度选择': 'Choose by difficulty',
     '中国流布局': 'Chinese opening',
+    '可立即落子': 'Can be placed immediately', // FIXME
     '大眼杀小眼': 'Big eye kills small eye',
     '今日排行榜': "Today's Leaderboard",
     '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
@@ -124,8 +125,6 @@ const textReplacements = {
     '时间限制': 'Time limit',
     '三目死活': 'Three-point life-and-death',
     '思考时间': 'Thinking time',
-    '作业列表': 'Task list',
-    '作业日期': 'Task date',
     '武宫正树': 'Takemiya Masaki',
     '高尾绅路': 'Takao Shinji',
     '左右同形': 'Symmetrical shape',
@@ -139,6 +138,7 @@ const textReplacements = {
     '起始时间': 'Start time',
     '开始做题': 'Start problems',
     '滚打包收': 'Squeeze',
+    '专项训练': 'Special training',
     '六目死活': 'Six-point life-and-death',
     '立即注册': 'Sign up now',
     '显示答案': 'Show answers',
@@ -179,11 +179,15 @@ const textReplacements = {
     '错题统计': 'Mistake statistics',
     '前田陈尔': 'Maeda Nobuaki',
     '最低难度': 'Lowest difficulty',
+    '天梯训练': 'Ladder training',
     '韩国棋手': 'Korean players',
     '小松英树': 'Komatsu Hideki',
     '小林光一': 'Kobayashi Koichi',
     '加藤正夫': 'Kato Masao',
     '定式大全': 'Joseki encyclopedia',
+    '作业模板': 'Job template',
+    '作业列表': 'Job list',
+    '作业日期': 'Job date',
     '日本棋手': 'Japanese players',
     '日本古典': 'Japanese classic',
     '井山裕太': 'Iyama Yuta',
@@ -252,6 +256,7 @@ const textReplacements = {
     '一一妙手': '1-1 point',
     '龟不出头': "Crane's nest",
     '还没有101帐号': "Don't have a 101 account yet",
+    '不限制': 'unlimited',
     '修改于': 'modified on',   // date
     '周睿羊': 'Zhou Ruiyang',
     '周鹤洋': 'Zhou Heyang',
@@ -372,9 +377,11 @@ const textReplacements = {
     '提交': 'submit',
     '小类': 'subcategories',
     '显示': 'show',
+    '道题': 'problems',
     '问题': 'problem',
     '問題': 'problem',
     '练习': 'practice',
+    '名称': 'name',
     '维护': 'maintenance',  // of a problem category
     '列表': 'list',
     '死活': 'life-and-death',
@@ -401,7 +408,6 @@ const textReplacements = {
     '超时': 'Timeout',
     '用时': 'Time spent',
     '手筋': 'Tesuji',
-    '作业': 'Tasks',
     '檀啸': 'Tan Xiao',
     '标签': 'Tags',
     '技巧': 'Skill',
@@ -444,6 +450,7 @@ const textReplacements = {
     '打劫': 'Ko',
     '柯洁': 'Ke Jie',
     '判断': 'Judgement',
+    '作业': 'Jobs',
     '中级': 'Intermediate',
     '初始': 'Initial',
     '秀和': 'Honinbo Shuwa',
@@ -470,10 +477,13 @@ const textReplacements = {
     '官子': 'Endgame',
     '邮箱': 'Email',
     '初级': 'Elementary',
+    '编辑': 'Edit',
     '每次': 'Each',
+    '每题': 'Each question',
     '做题': 'Do problems',
     '丁浩': 'Ding Hao',
     '难度': 'Difficulty',
+    '删除': 'Delete',
     '正确': 'Correct',
     '做对': 'Correct',
     '连接': 'Connect',
@@ -537,6 +547,8 @@ let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
 let re_part_number = /第\s*(\d+)\s*部分/;
 let re_questions_in_total = /共\s*(\d+)\s*道题目/;
 let re_min_limit = /限制(\d+)分钟/;
+let re_times = /为(\d+)次/;
+let re_every_n_days = /每(\d+)天一次/;
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
@@ -611,6 +623,8 @@ function replaceInString(s) {
     s = s.replace(re_part_number, (match, number) => `Part ${number}`)
     s = s.replace(re_questions_in_total, (match, number) => `${number} questions in total`)
     s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
+    s = s.replace(re_times, (match, times) => `${times} times`)
+    s = s.replace(re_every_n_days, (match, n) => `Every ${n} days`)
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
