@@ -1,5 +1,5 @@
-*** translations.tsv	2022-06-24 14:27:49.000000000 +0200
---- /Users/marcel/Downloads/x.tsv	2022-06-24 14:28:14.000000000 +0200
+*** translations.tsv	2022-06-24 15:37:58.000000000 +0200
+--- /Users/marcel/Downloads/t.tsv	2022-06-24 14:28:14.000000000 +0200
 ***************
 *** 61,66 ****
 --- 61,67 ----
@@ -31,12 +31,13 @@
   高川格	Takagawa Kaku
 --- 313,318 ----
 ***************
-*** 421,433 ****
+*** 421,434 ****
   最多75题	Up to 75 problems
   只有2次提交解答的机会	Only two opportunities to submit answers
   邮箱/用户名	email / username
 - 弱点	weakness
   诘棋	tsumego
+- 思考	think
   提供	supplier
   提交	submit
   小类	subcategories
@@ -47,7 +48,20 @@
   问题	problem
 --- 420,430 ----
 ***************
-*** 446,452 ****
+*** 436,455 ****
+  练习	practice
+  密码	password
+  名称	name
+- 方法	method
+  维护	maintenance
+  列表	list
+  死活	life-and-death
+  李喆	li Zhe
+  小时	hour
+  隐藏	hide
+- 词典	dictionary
+  創作	creation
+  章节	chapter
   得益	benefit
   基本	basic
   答案	answers
@@ -55,9 +69,9 @@
   张立	Zhang Li
   谢赫	Xie He
   白先	White to play
---- 443,448 ----
+--- 432,448 ----
 ***************
-*** 518,524 ****
+*** 521,527 ****
   聚杀	Killing
   柯洁	Ke Jie
   判断	Judgement
@@ -67,7 +81,7 @@
   秀和	Honinbo Shuwa
 --- 514,519 ----
 ***************
-*** 573,579 ****
+*** 576,582 ****
   关闭	Close
   崔精	Choi Jeong
   张栩	Cho U
@@ -77,11 +91,27 @@
   关卡	Checkpoint
 --- 568,573 ----
 ***************
-*** 620,633 ****
+*** 593,599 ****
+  盲点	Blind spot
+  黑先	Black to play
+  黑子	Black stone
+- 大全	Big Collection
+  平均	Average
+  头像	Avatar
+  攻击	Attack
+--- 584,589 ----
+***************
+*** 620,639 ****
+  下 一 题	Next problem
+  正 确 率	Correct rate
+  创 建	Creation
+- 卷	volume
+  秒	sec
   对	right
   逆	reverse
   题	problem
 - 目	points
+- 网	network
   错	mistaken
   分	min
   级	kyu
@@ -92,9 +122,9 @@
   白	White
   挖	Wedge
   托	Underneath attachment
---- 614,625 ----
+--- 610,625 ----
 ***************
-*** 653,663 ****
+*** 659,669 ****
   挤	Atekomi / angle wedge
   Zero棋谱	ZeroGo
   Master棋谱	MasterGo

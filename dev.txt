@@ -19,11 +19,8 @@ see https://github.com/bani/101weiqiLocalizer
 
 5) Update content.js
 
-    perl -lnE'@s = split /\t/; say qq!    "$s[0]" : "$s[1]",!' translations.tsv
-
-and paste that into content.js.
-
-FIXME this could be automated but works well enough for now.
+    ./use-translations
+    git diff
 
 6) Create a diff of translations
 
