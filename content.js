@@ -14,6 +14,7 @@ const textReplacements = {
     '不选择，则依靠棋友当前级别自动筛选': "If you don’t choose, it will be automatically selected based on the current player level",
     '你的用户名和密码不符，请再试一次': 'Your username and password do not match; please try again',
     '如果超过时间未做完，则本题判错': 'If the time is exceeded, the problem will be judged wrong.',
+    '本题为选择题，请选择一个选项': 'This question is multiple choice, please select an option.',
     '单位为天，每多少天一次作业': 'How often to run the job, in days',
     '请直接用鼠标在棋盘上落子': 'Use the mouse to play stones',
     '请找出此局面下的最佳一手': 'Please find the best move in this situation',
@@ -370,6 +371,7 @@ const textReplacements = {
     '施襄夏': "Shi Ding'an",
     '崔哲瀚': "Choi Ch'eol-han",
     '金柜角': "Carpenter's square",
+    '待审核' : 'pending review',
     '最多75题': 'Up to 75 problems',
     '只有2次提交解答的机会': 'Only two opportunities to submit answers',
     '诘棋': 'tsumego',
@@ -516,6 +518,9 @@ const textReplacements = {
     '应对': 'Answer',
     '高级': 'Advanced',
     '添加': 'Add',
+    '弱点' : 'weakness',
+    '先手' : 'sente',
+    '实战' : 'actual combat',
     '秒': 'sec',
     '对': 'right',
     '错': 'mistaken',
@@ -531,6 +536,9 @@ const textReplacements = {
     '断': 'Cut',
     '黑': 'Black',
     '挤': 'Atekomi',
+    '逆' : 'reverse',
+    '目' : 'points',
+    '约' : 'about',
     '劫' : 'Ko',
     '创 建': 'Creation',
     '上 一 题': 'Previous problem',
@@ -538,6 +546,11 @@ const textReplacements = {
     '上 一 定 式': 'Previous joseki',
     '下 一 定 式': 'Next joseki',
     '棋 力 测 试': 'Go Strength Test',
+    '9路' : '9x9',
+    '7路' : '7x7',
+    '5路' : '5x5',
+    '13路' : '13x13',
+    '11路' : '11x11',
     '101围棋网': '101 Go Net',
 }
 
@@ -549,6 +562,7 @@ let re_questions_in_total = /共\s*(\d+)\s*道题目/;
 let re_min_limit = /限制(\d+)分钟/;
 let re_times = /为(\d+)次/;
 let re_every_n_days = /每(\d+)天一次/;
+let re_chapter = /第(\d+)章/;
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
@@ -625,6 +639,7 @@ function replaceInString(s) {
     s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
     s = s.replace(re_times, (match, times) => `${times} times`)
     s = s.replace(re_every_n_days, (match, n) => `Every ${n} days`)
+    s = s.replace(re_chapter, (match, n) => `Chapter ${n}`)
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
