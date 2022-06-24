@@ -462,6 +462,7 @@ const textReplacements = {
     "隐藏" : "hide",
     "词典" : "dictionary",
     "創作" : "creation",
+    "正解" : "correct answer",
     "章节" : "chapter",
     "得益" : "benefit",
     "基本" : "basic",
