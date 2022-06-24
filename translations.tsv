@@ -21,6 +21,7 @@
 一次生成的题目数量	Number of questions generated at a time
 李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
 李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
+按难度顺序查阅本书	Check out this book in difficulty order
 按棋书章节顺序做题	Book chapter order
 创建一个围棋教室/棋社	Create a Go classroom/club
 次提交解答的机会	opportunities to submit answers
@@ -33,9 +34,11 @@
 基礎から始める 河野臨の詰碁	Kono Rin’s tsumego starting from the basics
 按难度顺序选题	in order of difficulty
 尚未完成的作业	Unfinished homework
+瞄准对方的弱点	Target the opponent's weakness
 从错题本中删除	Remove from mistakes book
 本题超时未通过	Problem failed by timeout
 一次选择的机会	One chance to choose
+我的棋书错题本	My mistaken problems book
 李昌镐官子技巧	Lee Chang-ho’s Endgame Skills
 生成一份新作业	Generate a new assigment
 不接受对弈邀请	Do not accept game invitations
@@ -119,6 +122,7 @@
 桥本宇太郎	Hashimoto Utaro
 布局猜子题	Guess opening moves
 藤泽库之助	Fujisawa Hosai
+收藏本棋书	Favorite this book
 有眼杀无眼	Eye/no eye
 人生十八局	Eighteen rounds of life
 按难度选择	Choose by difficulty
@@ -132,6 +136,7 @@
 围棋考试/挑战赛	Go exam/challenge
 围棋闯关-棋力测试	Go Strength Test
 两次机会	two chances
+和我相关	related to me
 题目审核	question review
 一次机会	one chance
 答案有误	is a mistaken answer
@@ -430,6 +435,7 @@
 显示	show
 先手	sente
 审核	review
+精解	refinement
 道题	problems
 问题	problem
 問題	problem
@@ -450,6 +456,7 @@
 基本	basic
 答案	answers
 实战	actual combat
+动作	action
 张立	Zhang Li
 谢赫	Xie He
 白先	White to play
