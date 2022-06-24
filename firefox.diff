@@ -1,0 +1,109 @@
+*** translations.tsv	2022-06-24 14:27:49.000000000 +0200
+--- /Users/marcel/Downloads/x.tsv	2022-06-24 14:28:14.000000000 +0200
+***************
+*** 61,66 ****
+--- 61,67 ----
+  个人信息设置	Personal information settings
+  其他地区棋手	Other players
+  其他分类题目	Other classification
++ 大师的下一手	Master's next move
+  我的分享题目	My sharing topic
+  我的作业统计	My homework stats
+  我的作业列表	My homework list
+***************
+*** 111,117 ****
+  我的作业本	My task book
+  我的记谱本	My notation book
+  我的错题本	My mistakes book
+- 我的作业本	My jobs book
+  我的收藏本	My collection
+  条修改记录	Modification records
+  中盘作战题	Middle game problems
+--- 112,117 ----
+***************
+*** 313,319 ****
+  盘龙眼	Two-headed dragon
+  柁嘉熹	Tuo Jiaxi
+  童梦成	Tong Mengcheng
+- 大头鬼	Tombstone
+  手筋题	Tesuji problem
+  唐韦星	Tang Weixing
+  高川格	Takagawa Kaku
+--- 313,318 ----
+***************
+*** 421,433 ****
+  最多75题	Up to 75 problems
+  只有2次提交解答的机会	Only two opportunities to submit answers
+  邮箱/用户名	email / username
+- 弱点	weakness
+  诘棋	tsumego
+  提供	supplier
+  提交	submit
+  小类	subcategories
+  显示	show
+- 先手	sente
+  审核	review
+  道题	problems
+  问题	problem
+--- 420,430 ----
+***************
+*** 446,452 ****
+  得益	benefit
+  基本	basic
+  答案	answers
+- 实战	actual combat
+  张立	Zhang Li
+  谢赫	Xie He
+  白先	White to play
+--- 443,448 ----
+***************
+*** 518,524 ****
+  聚杀	Killing
+  柯洁	Ke Jie
+  判断	Judgement
+- 作业	Jobs
+  中级	Intermediate
+  初始	Initial
+  秀和	Honinbo Shuwa
+--- 514,519 ----
+***************
+*** 573,579 ****
+  关闭	Close
+  崔精	Choi Jeong
+  张栩	Cho U
+- 围棋	China
+  陈贤	Chen Xian
+  陳禧	Chen Xi
+  关卡	Checkpoint
+--- 568,573 ----
+***************
+*** 620,633 ****
+  对	right
+  逆	reverse
+  题	problem
+- 目	points
+  错	mistaken
+  分	min
+  级	kyu
+  有	has
+  段	dan
+  集	collection
+- 约	about
+  白	White
+  挖	Wedge
+  托	Underneath attachment
+--- 614,625 ----
+***************
+*** 653,663 ****
+  挤	Atekomi / angle wedge
+  Zero棋谱	ZeroGo
+  Master棋谱	MasterGo
+- 9路	9x9
+- 7路	7x7
+- 5路	5x5
+- 13路	13x13
+- 11路	11x11
+  101年度错题统计分析	Community mistakes report
+  101本月错题统计分析	Community error report this month
+  101棋友最近活动	101weiqi friends recent activity
+--- 645,650 ----

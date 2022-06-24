@@ -25,3 +25,9 @@ and paste that into content.js.
 
 FIXME this could be automated but works well enough for now.
 
+6) Create a diff of translations
+
+    diff -C 3 translations.tsv ~/Downloads/t.tsv >firefox.diff
+
+So in firefox.diff you can see what is different from our translations to the
+Firefox port's translations.
