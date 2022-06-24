@@ -1,6 +1,7 @@
 version 0.0.6
 2022.06.24
 - migrate manifest.json to v3
+- separated and improved translations
 
 version 0.0.5
 2022.06.24

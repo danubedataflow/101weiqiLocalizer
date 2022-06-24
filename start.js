@@ -5,7 +5,7 @@
 */
 
 var s = document.createElement('script');
-s.src = chrome.extension.getURL('content.js');
+s.src = chrome.runtime.getURL('content.js');
 s.onload = function() {
   this.remove();
 };
