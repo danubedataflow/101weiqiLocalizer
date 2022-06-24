@@ -7,3 +7,8 @@ easier for those of us who don't read Chinese to use that site. The extension
 adds a script to 101weiqi.com's web pages which translates strings to English.
 It does not alter the functionality of 101weiqi.com in any way.
 
+## Firefox
+
+There is a [Firefox port](https://github.com/bani/101weiqiLocalizer) of this
+extension. I have backported translations from that port.
+
