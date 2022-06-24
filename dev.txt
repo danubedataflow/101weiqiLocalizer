@@ -1,0 +1,27 @@
+# Syncing with bani's spreadsheet
+
+see https://github.com/bani/101weiqiLocalizer
+
+1) Download the spreadsheet as tsv
+
+2) Convert those translations so we can compare them with ours
+
+    cat 101weiqiLocalizer\ translations\ -\ translations.tsv | \
+        tail -n +2 | cut -f 2,3 | sort -r >t.tsv
+
+3) Prepare our translations for comparisons
+
+    sort -r translations.tsv | sponge translations.tsv
+
+4) Compare and edit the translations
+
+    vimdiff translations.tsv ~/Downloads/t.tsv
+
+5) Update content.js
+
+    perl -lnE'@s = split /\t/; say qq!    "$s[0]" : "$s[1]",!' translations.tsv
+
+and paste that into content.js.
+
+FIXME this could be automated but works well enough for now.
+
