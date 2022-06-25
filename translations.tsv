@@ -32,6 +32,7 @@
 创建新的作业模板	Create a new job template
 使用围豆进行提问	Ask using Weidou
 基礎から始める 河野臨の詰碁	Kono Rin’s tsumego starting from the basics
+参与的话题列表	participated topic list
 按难度顺序选题	in order of difficulty
 尚未完成的作业	Unfinished homework
 瞄准对方的弱点	Target the opponent's weakness
@@ -93,8 +94,10 @@
 围棋基本技能	Basic Go skills
 平均做题时间	Average problem time
 所有编辑记录	All edit records
+和我相关的101棋友动作	101weiqi Friends’ Actions Related to Me
 不限制时间	unlimited time
 道类似题目	similar topics
+最后回复人	last reply
 山田规三生	Yamada Kimio
 作业本名称	Workbook name
 微信公众号	WeChat public account
@@ -135,10 +138,14 @@
 围棋教室/棋社列表	Go classroom/club list
 围棋考试/挑战赛	Go exam/challenge
 围棋闯关-棋力测试	Go Strength Test
+更新时间	update time
 两次机会	two chances
-和我相关	related to me
+开始时间	start time
 题目审核	question review
 一次机会	one chance
+最近对局	latest games
+最近对局	latest
+最后一手	last move
 答案有误	is a mistaken answer
 涛哥十佳	Yu Qingquan top 10
 依田纪基	Yoda Norimoto
@@ -278,6 +285,7 @@
 今日抢答	Answer today
 已经取消	Already cancelled
 全部题型	All problem types
+全部对局	All games
 添加评论	Add comment
 关于围豆	About Weidou
 九路全局	9x9 whole board
@@ -295,7 +303,10 @@
 还没有101帐号	Don’t have a 101 account yet
 不限制	unlimited
 待审核	pending review
+回贴数	number of replies
 修改于	modified on
+进行中	in process
+发起人	creator
 周睿羊	Zhou Ruiyang
 周鹤洋	Zhou Heyang
 结城聪	Yuki Satoshi
@@ -428,10 +439,12 @@
 邮箱/用户名	email / username
 弱点	weakness
 诘棋	tsumego
+话题	topic
 思考	think
 提供	supplier
 提交	submit
 小类	subcategories
+状态	state
 显示	show
 先手	sente
 审核	review
@@ -441,6 +454,7 @@
 問題	problem
 练习	practice
 密码	password
+手数	number of moves
 名称	name
 方法	method
 维护	maintenance
@@ -449,6 +463,7 @@
 李喆	li Zhe
 小时	hour
 隐藏	hide
+对局	game
 词典	dictionary
 創作	creation
 正解	correct answer
@@ -457,7 +472,6 @@
 基本	basic
 答案	answers
 实战	actual combat
-动作	action
 张立	Zhang Li
 谢赫	Xie He
 白先	White to play
@@ -628,6 +642,7 @@
 下 一 题	Next problem
 正 确 率	Correct rate
 创 建	Creation
+胜	win
 卷	volume
 秒	sec
 对	right
