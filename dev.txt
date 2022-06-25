@@ -19,7 +19,8 @@ see https://github.com/bani/101weiqiLocalizer
 
 5) Update content.js
 
-    ./use-translations
+    ./bin/sort-translations.pl
+    ./bin/use-translations.pl
     git diff
 
 6) Create a diff of translations

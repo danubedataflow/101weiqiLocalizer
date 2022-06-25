@@ -2,11 +2,8 @@
 // over them in this order. And we want, for example, '職業四段' to be
 // translated as '4p', not as '職業四dan'.
 //
-// Put the cursor on the opening brace, then
-//     :.+1,/}/-1!sort -r
-//
 // The contents of textReplacements was generated. Edit translations.tsv and
-// use use-translations.pl to regenerate the object.
+// use ./bin/use-translations.pl to regenerate the object.
 
 const textReplacements = {
     "每道题目的做题次数，达到这个次数没有做对则判错" : "The number of attemps for each problem. If this number is reached, it will be judged wrong.",
