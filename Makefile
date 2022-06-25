@@ -1,4 +1,8 @@
-.PHONY: dist clean
+.PHONY: use dist clean
+
+use:
+	./bin/sort-translations.pl
+	./bin/use-translations.pl
 
 dist: clean
 	mkdir -p build/101weiqiLocalizer
