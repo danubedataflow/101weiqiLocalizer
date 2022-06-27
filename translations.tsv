@@ -1,7 +1,10 @@
 非即时对局，在发出请求后，对方如果在三天内没有响应，对局邀请自动关闭。	For non-real-time games, after the request is made, if the opponent does not respond within three days, the game request will be automatically closed.
 限制时间的对局邀请，对方如果在10分钟内没有响应，对局邀请自动关闭。	For a time-limited game request, if the opponent does not respond within 10 minutes, the game request will be automatically closed.
+设置每道题目的做题次数，达到这个次数没有做对则判错	Set the number of attempts for each problem. If this number is reached, it will be judged wrong.
 约定时间的对局，在对局开始前没有响应则自动关闭。	The game at the appointed time will be automatically closed if there is no response before the game starts.
-每道题目的做题次数，达到这个次数没有做对则判错	The number of attemps for each problem. If this number is reached, it will be judged wrong.
+每道题目的做题次数，达到这个次数没有做对则判错	The number of attempts for each problem. If this number is reached, it will be judged wrong.
+打开题目，思考一段时间才能落子（只对会员有效）	You can think for a while before deciding (only possible for members)
+一次生成的题目数量，最多不超过50道。	You cannot generate more than 50 problems at once.
 此邮箱将接受激活邮件完成账号激活流程	This email address will receive an activation email to complete the account activation process
 不选择，则依靠棋友当前级别自动筛选	If you don’t choose, it will be automatically selected based on the current player level
 你的用户名和密码不符，请再试一次	Your username and password do not match; please try again
@@ -211,6 +214,7 @@ Zero棋谱	ZeroGo
 羽根直树	Hane Naoki
 羽根泰正	Hane Yasumasa
 编辑记录	Edit record
+继续做题	Keep doing problems
 简单官子	Simple endgame
 答案有误	is a mistaken answer
 立即注册	Sign up now
@@ -254,6 +258,7 @@ Zero棋谱	ZeroGo
 日韩规则	Japanese/Korean rules
 日本棋手	Japanese players
 日本古典	Japanese classic
+无需等待	No need to wait
 旋转棋盘	Rotate board
 收藏此题	Bookmark problem
 提交答案	Submit answer
@@ -349,6 +354,7 @@ Zero棋谱	ZeroGo
 高川格	Takagawa Kaku
 验证码	Verification code
 马晓春	Ma Xiaochun
+题开始	problem onwards
 陈祖德	Chen Zude
 钱宇平	Qian Yuping
 金柜角	Carpenter’s square
@@ -497,6 +503,7 @@ Zero棋谱	ZeroGo
 难度	Difficulty
 隐藏	hide
 陳禧	Chen Xi
+限时	limit
 陈贤	Chen Xian
 问题	problem
 门吃	Capture by atari
@@ -543,6 +550,7 @@ Zero棋谱	ZeroGo
 类型	Type
 签到	Sign in
 答案	answers
+等待	wait
 第四	4th
 第十	10th
 第六	6th
@@ -680,8 +688,10 @@ Zero棋谱	ZeroGo
 做对	Correct
 倒扑	Snapback
 修改	Modify
+保存	Save
 作业	Jobs
 作业	Homework
+从第	From
 中级	Intermediate
 中卷	Middle volume
 专栏	Column
@@ -699,6 +709,7 @@ Zero棋谱	ZeroGo
 集	collection
 长	Extend
 错	mistaken
+道	items
 逆	reverse
 跳	One point jump
 跨	Cut across
