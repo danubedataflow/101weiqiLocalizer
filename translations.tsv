@@ -29,6 +29,7 @@
 101本月错题统计分析	Community error report this month
 101年度错题统计分析	Community mistakes report
 落子确认关闭中，开启	Toggle move confirmation
+生成闯关题目打印页面	Generate a print page for the test questions
 打印功能只对会员开放	The printing function is only available to members
 我的本月错题统计分析	Stats of my mistakes this month
 我的年度错题统计分析	Stats of my mistakes this year
@@ -204,6 +205,7 @@ Zero棋谱	ZeroGo
 隐藏评价	Hide review
 闯关通过	Pass through
 闯关结果	Results
+闯关时间	Break through time
 闯关成功	Successfully passed the barrier
 闯关失败	Failed to break through
 闯下一关	Break the next level
