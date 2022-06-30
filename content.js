@@ -161,7 +161,7 @@ const textReplacements = {
     "棋魂之棋谱" : "Hikaru No Go",
     "桥本宇太郎" : "Hashimoto Utaro",
     "枷吃和夹吃" : "Net",
-    "条修改记录" : "Modification records",
+    "条修改记录" : "Edit records",
     "本题未通过" : "Problem failed",
     "本题收录于" : "Problem is included in",
     "有眼杀无眼" : "Eye/no eye",
