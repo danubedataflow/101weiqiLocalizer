@@ -106,6 +106,7 @@ const textReplacements = {
     "棋友证书列表" : "Certificate list",
     "条答案被淘汰" : "eliminated answers",
     "本题已经通过" : "Problem passed",
+    "本次题目完成" : "Current problems completed",
     "播放演进过程" : "Replay moves",
     "打印题目选择" : "Print problems selection",
     "所有编辑记录" : "All edit records",
@@ -151,6 +152,7 @@ const textReplacements = {
     "非即时对弈" : "non-real-time games",
     "道类似题目" : "similar topics",
     "藤泽库之助" : "Fujisawa Hosai",
+    "继续下一个" : "Continue to the next",
     "统计截止于" : "Statistics as of",
     "短时间比赛" : "Short game",
     "注册新用户" : "Register a new user",
@@ -443,6 +445,7 @@ const textReplacements = {
     "朴永训" : "Park Yeong-hun",
     "朴文垚" : "Piao Wenyao",
     "朴廷桓" : "Park Jung-hwan",
+    "本次题" : "Current problems",
     "木谷实" : "Kitani Minoru",
     "曹薰铉" : "Cho Hun-hyeon",
     "曹大元" : "Cao Dayuan",
@@ -614,6 +617,7 @@ const textReplacements = {
     "标签" : "Tags",
     "柯洁" : "Ke Jie",
     "李喆" : "li Zhe",
+    "本次" : "Current",
     "月度" : "Monthly",
     "最快" : "Fastest",
     "最后" : "Final",
@@ -721,7 +725,7 @@ const textReplacements = {
     "5路" : "5x5",
     "黑" : "Black",
     "飞" : "Knight’s move",
-    "题" : "problem",
+    "题" : "problem(s)",
     "顶" : "Hitting on the head",
     "集" : "collection",
     "长" : "Extend",
@@ -759,6 +763,7 @@ const textReplacements = {
     "卷" : "volume",
     "劫" : "Ko",
     "分" : "min",
+    "共" : "total",
 }
 
 // cache regular expressions
