@@ -6,16 +6,17 @@ see https://github.com/bani/101weiqiLocalizer
 
 2) Convert those translations so we can compare them with ours
 
-    cat 101weiqiLocalizer\ translations\ -\ translations.tsv | \
-        tail -n +2 | cut -f 2,3 | sort -r >t.tsv
+    cat ~/Downloads/101weiqiLocalizer\ translations\ -\ translations.tsv | \
+        tail -n +2 | cut -f 2,3 | sort -r >~/Downloads/firefox.tsv
 
-3) Prepare our translations for comparisons
+3) Prepare translations for comparisons
 
-    sort -r translations.tsv | sponge translations.tsv
+    make use
+    ./bin/sort-translations ~/Downloads/firefox.tsv
 
 4) Compare and edit the translations
 
-    vimdiff translations.tsv ~/Downloads/t.tsv
+    vimdiff translations.tsv ~/Downloads/firefotx.tsv
 
 5) Update content.js
 

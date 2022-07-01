@@ -3,7 +3,8 @@ use strict;
 use warnings;
 use v5.10;
 use Path::Tiny;
-my $file  = path('translations.tsv');
+my $file  = shift // 'translations.tsv';
+$file = path($file);
 my @lines = $file->lines_utf8;
 @lines =
   map  { $_->[1] }
