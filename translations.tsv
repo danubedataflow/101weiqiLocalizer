@@ -33,6 +33,7 @@
 打印功能只对会员开放	The printing function is only available to members
 我的本月错题统计分析	Stats of my mistakes this month
 我的年度错题统计分析	Stats of my mistakes this year
+围棋实战死活192题	192 real-game tsumego
 贡献较多的棋友名单	Top contributors
 李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
 李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
@@ -54,6 +55,7 @@
 次提交解答的机会	opportunities to submit answers
 我的作业模板列表	My job template list
 我最近阅读的棋书	Books I've recently read
+必殺力のつく詰碁	Tsumego to build deadly power
 官子大全官子手筋	Endgame Encyclopedia - Tesuji
 在限定时间内完成	completed within the time limit
 围棋考试/挑战赛	Go exam/challenge
@@ -77,6 +79,7 @@ Master棋谱	MasterGo
 围棋知识点专辑	Categories list
 参与的话题列表	participated topic list
 创建新作业模板	Create a new job template
+出奇制胜的妙手	Surprising winning brilliancies
 从错题本中删除	Remove from mistakes book
 不接受对弈邀请	Do not accept game requests
 下 一 定 式	Next joseki
@@ -120,6 +123,7 @@ Master棋谱	MasterGo
 官子题目列表	Endgame list
 大师的下一手	Master’s next move
 在101工作	Work at 101
+圍棋死活特訓	Special life-and-death training
 围棋综合手筋	Comprehensive tesuji
 围棋经典手筋	Classic tesuji
 围棋死活形状	Life-and-death shapes
@@ -309,6 +313,7 @@ Zero棋谱	ZeroGo
 失败答案	Failure answers
 天梯训练	Ladder training
 大竹英雄	Otake Hideo
+大平修三	Ohira Shuzo
 基础死活	Basic life-and-death
 坂田荣男	Sakata Eio
 围棋闯关	Exam
@@ -511,6 +516,7 @@ Zero棋谱	ZeroGo
 黑子	Black stone
 黑先	Black to play
 高级	Advanced
+高級	high kyu
 题目	Topic
 题库	Lib
 题型	Problem type
@@ -559,6 +565,7 @@ Zero棋谱	ZeroGo
 能救	Can save
 聚杀	Killing
 联络	Connect
+缩小	narrow
 编辑	Edit
 编号	Serial number
 维护	maintenance
@@ -594,6 +601,7 @@ Zero棋谱	ZeroGo
 确定	OK
 破眼	Destroying eyes
 研究	Explore
+眼位	eye space
 盲点	Blind spot
 白子	White stone
 白先	White to play
@@ -632,6 +640,7 @@ Zero棋谱	ZeroGo
 整形	Shape
 数量	Quantity
 教材	teaching material(s)
+攻防	attack and defense
 攻击	Attack
 擂台	Arena
 提示	Tips
@@ -639,6 +648,7 @@ Zero棋谱	ZeroGo
 提交	submit
 挖吃	Wedge
 技巧	Skill
+扩大	expand
 打劫	Ko
 扑吃	Snapback capture
 手筋	Tesuji
@@ -646,6 +656,7 @@ Zero棋谱	ZeroGo
 我的	My
 恭喜	Congratulations
 总数	Total
+急所	vital point
 思考	think
 得益	benefit
 得分	Score
@@ -693,6 +704,7 @@ Zero棋谱	ZeroGo
 取消	Cancel
 双活	Seki
 双打	Double atari
+占据	occupy
 升级	Upgrade
 創作	creation
 剩余	Remaining
@@ -721,8 +733,11 @@ Zero棋谱	ZeroGo
 作品	work
 作业	Jobs
 作业	Homework
+低級	low kyu
 从第	From
+九段	9-dan
 中级	Intermediate
+中級	middle kyu
 中卷	Middle volume
 专栏	Column
 下卷	Last volume
@@ -733,6 +748,7 @@ Zero棋谱	ZeroGo
 7路	7x7
 5路	5x5
 黑	Black
+高	high
 飞	Knight’s move
 题	problem(s)
 顶	Hitting on the head
@@ -780,4 +796,6 @@ Zero棋谱	ZeroGo
 劫	Ko
 分	min
 共	total
+低	low
+中	middle
 与	and
