@@ -1,4 +1,4 @@
-.PHONY: use dist safari clean
+.PHONY: use dist safari open-web-store clean
 
 use:
 	./bin/sort-translations.pl
@@ -11,6 +11,9 @@ dist: clean
 
 safari: dist
 	bin/make-safari-extension.sh
+
+open-web-store:
+	open "https://chrome.google.com/webstore/devconsole/"
 
 clean:
 	rm -rf build
