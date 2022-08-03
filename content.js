@@ -726,6 +726,7 @@ const textReplacements = {
     "双打" : "Double atari",
     "占据" : "occupy",
     "升级" : "Upgrade",
+    "劫材" : "ko threat",
     "創作" : "creation",
     "剩余" : "Remaining",
     "判断" : "Judgement",
