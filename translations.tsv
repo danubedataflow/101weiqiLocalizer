@@ -551,6 +551,7 @@ Zero棋谱	ZeroGo
 超时	Timeout
 购买	Buy
 谢赫	Xie He
+请利	Please
 话题	topic
 诘棋	tsumego
 试下	Try
@@ -648,6 +649,7 @@ Zero棋谱	ZeroGo
 更多	More
 晚上	night
 显示	show
+星位	Star point
 时越	Shi Yue
 早上	morning
 日本	Japan
@@ -692,6 +694,7 @@ Zero棋谱	ZeroGo
 小类	subcategories
 小目	3-4 point
 小时	hour
+封锁	seal in
 对杀	Capturing race
 对战	Play
 对弈	Game
@@ -708,6 +711,7 @@ Zero棋谱	ZeroGo
 大龙	big dragon
 大全	Big Collection
 基本	basic
+在外	outside
 围豆	Weidou
 围棋	Go
 問題	problem
@@ -753,6 +757,7 @@ Zero棋谱	ZeroGo
 倒扑	Snapback
 修改	Modify
 保存	Save
+侧靠	lean on
 作品	work
 作业	Jobs
 作业	Homework
@@ -782,12 +787,14 @@ Zero棋谱	ZeroGo
 逆	reverse
 跳	One point jump
 跨	Cut across
+请	Please
 虎	Tiger’s mouth
 菊	chrysanthemum
 胜	win
 网	network
 级	kyu
 约	about
+粘	connect
 竹	bamboo
 立	Descent, stand
 秒	sec
@@ -795,7 +802,9 @@ Zero棋谱	ZeroGo
 目	points
 白	White
 由	by
+用	use
 班	class
+爬	crawl
 点	Placement
 渡	Connect underneath
 段	dan
@@ -813,6 +822,7 @@ Zero棋谱	ZeroGo
 很	very
 征	Ladder
 尖	Diagonal
+小	small
 对	right
 好	good
 夹	Clamp
