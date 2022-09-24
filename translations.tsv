@@ -159,6 +159,9 @@ Zero棋谱	ZeroGo
 统计截止于	Statistics as of
 短时间比赛	Short game
 注册新用户	Register a new user
+此为正解图	This is a correct diagram
+此为失败图	This is a failure diagram
+此为变化图	This is a variation diagram
 正 确 率	Correct rate
 棋魂之棋谱	Hikaru No Go
 桥本宇太郎	Hashimoto Utaro
@@ -827,6 +830,7 @@ Zero棋谱	ZeroGo
 好	good
 夹	Clamp
 天	days
+图	diagram
 和	and
 双	Bamboo joint
 卷	volume
