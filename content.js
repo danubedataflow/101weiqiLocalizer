@@ -210,7 +210,6 @@ const textReplacements = {
     "下 一 题" : "Next problem",
     "上 一 题" : "Previous problem",
     "龟不出头" : "Crane’s nest",
-    "黑白选择" : "Black and white option",
     "黄莺扑蝶" : "Raccoon belly",
     "高目定式" : "4-5 point joseki",
     "高尾绅路" : "Takao Shinji",
@@ -244,7 +243,6 @@ const textReplacements = {
     "谷歌围棋" : "Google",
     "藤泽秀行" : "Fujisawa Shuko",
     "自动生成" : "Automatically generated",
-    "職業四段" : "4p",
     "老鼠偷油" : "Mouse stealing oil",
     "羽根直树" : "Hane Naoki",
     "羽根泰正" : "Hane Yasumasa",
@@ -305,7 +303,6 @@ const textReplacements = {
     "棋盘居中" : "Center board",
     "棋盘大小" : "Board size",
     "棋形搜索" : "Shape search",
-    "棋力测试" : "Strength Test",
     "棋力检测" : "Strength detection",
     "棋书查询" : "Query books",
     "标注难度" : "Set difficulty",
@@ -337,6 +334,7 @@ const textReplacements = {
     "忘记密码" : "Forgot password",
     "微信登录" : "WeChat login",
     "微信扫码" : "WeChat scan code",
+    "循序渐进" : "step-by-step",
     "彦坂直人" : "Hikosaka Naoto",
     "当湖十局" : "Danghu Ten Bureau",
     "开始解答" : "Start to answer",
@@ -360,6 +358,8 @@ const textReplacements = {
     "失败答案" : "Failure answers",
     "天梯训练" : "Ladder training",
     "大竹英雄" : "Otake Hideo",
+    "大桥拓文" : "Ohashi Hirofumi",
+    "大桥成哉" : "Ohashi Naruya",
     "大平修三" : "Ohira Shuzo",
     "基础死活" : "Basic life-and-death",
     "坂田荣男" : "Sakata Eio",
@@ -427,6 +427,7 @@ const textReplacements = {
     "金柜角" : "Carpenter’s square",
     "金志锡" : "Kim Ji-seok",
     "酒井猛" : "Sakai Takeshi",
+    "郭求真" : "Kaku Kyushin",
     "连环劫" : "Double Ko",
     "进行中" : "in process",
     "边之部" : "Side section",
@@ -465,8 +466,10 @@ const textReplacements = {
     "第二十" : "20th",
     "第三卷" : "Volume 3",
     "第三十" : "30th",
+    "第一手" : "first move",
     "第一卷" : "Volume 1",
     "童梦成" : "Tong Mengcheng",
+    "石田章" : "Ishida Akira",
     "知识点" : "Category",
     "睦镇硕" : "Mok Jin-seok",
     "相思断" : "Crosscut",
@@ -490,6 +493,7 @@ const textReplacements = {
     "柳时熏" : "Shikun Ryu",
     "柁嘉熹" : "Tuo Jiaxi",
     "林海峰" : "Rin Kaiho",
+    "林汉杰" : "Rin Kanketsu",
     "李钦诚" : "Li Qincheng",
     "李轩豪" : "Li Xuanhao",
     "李昌镐" : "Lee Chang-ho",
@@ -564,6 +568,7 @@ const textReplacements = {
     "19路" : "19x19",
     "13路" : "13x13",
     "11路" : "11x11",
+    "黑白" : "Black and white",
     "黑棋" : "black group",
     "黑子" : "Black stone",
     "黑先" : "Black to play",
@@ -590,6 +595,7 @@ const textReplacements = {
     "適合" : "suitable for",
     "道题" : "problems",
     "道策" : "Honinbo Dosaku",
+    "选择" : "choose",
     "逃子" : "Escape",
     "退出" : "Exit",
     "连笑" : "Lian Xiao",
@@ -621,6 +627,7 @@ const textReplacements = {
     "腾挪" : "Sabaki",
     "脱先" : "Tenuki",
     "能救" : "Can save",
+    "職業" : "professional",
     "聚杀" : "Killing",
     "联络" : "Connect",
     "缩小" : "narrow",
@@ -670,6 +677,7 @@ const textReplacements = {
     "白先" : "White to play",
     "登录" : "Sign in",
     "用时" : "Time spent",
+    "现在" : "now",
     "王檄" : "Wang Xi",
     "猜先" : "Guess colors (nigiri)",
     "状态" : "state",
@@ -678,6 +686,7 @@ const textReplacements = {
     "滚打" : "Squeeze",
     "清除" : "clear",
     "添加" : "Add",
+    "测试" : "test",
     "注意" : "Notice",
     "注册" : "Sign up",
     "气紧" : "Shortage of liberties (damezumari)",
@@ -693,6 +702,7 @@ const textReplacements = {
     "棋理" : "Go theory",
     "棋形" : "Shape",
     "棋友" : "Users",
+    "棋力" : "strength",
     "棋书" : "Book(s)",
     "标签" : "Tags",
     "柯洁" : "Ke Jie",
@@ -714,6 +724,7 @@ const textReplacements = {
     "数量" : "Quantity",
     "教材" : "teaching material(s)",
     "攻防" : "attack and defense",
+    "攻杀" : "attack and kill",
     "攻击" : "Attack",
     "擂台" : "Arena",
     "提示" : "Tips",
@@ -734,6 +745,7 @@ const textReplacements = {
     "得益" : "benefit",
     "得分" : "Score",
     "征子" : "Ladder",
+    "形成" : "form",
     "弱点" : "weakness",
     "张立" : "Zhang Li",
     "张栩" : "Cho U",
@@ -747,6 +759,7 @@ const textReplacements = {
     "布局" : "Opening",
     "已经" : "already",
     "崔精" : "Choi Jeong",
+    "局面" : "situation",
     "尖顶" : "Kick (kosumitsuke)",
     "小类" : "subcategories",
     "小目" : "3-4 point",
@@ -774,6 +787,7 @@ const textReplacements = {
     "在外" : "outside",
     "围豆" : "Weidou",
     "围棋" : "Go",
+    "四段" : "4-dan",
     "問題" : "problem",
     "启蒙" : "Enlightenment",
     "名称" : "name",
@@ -785,6 +799,7 @@ const textReplacements = {
     "变化" : "Variation",
     "取消" : "Cancel",
     "双活" : "Seki",
+    "双方" : "both sides",
     "双打" : "Double atari",
     "占据" : "occupy",
     "升级" : "Upgrade",
@@ -795,6 +810,7 @@ const textReplacements = {
     "删除" : "Delete",
     "初级" : "Elementary",
     "初始" : "Initial",
+    "创作" : "creation",
     "列表" : "list",
     "切断" : "Cut",
     "分钟" : "minutes",
@@ -805,6 +821,8 @@ const textReplacements = {
     "其他" : "Others",
     "关闭" : "Close",
     "关卡" : "Checkpoint",
+    "六段" : "6-dan",
+    "八段" : "8-dan",
     "全集" : "Complete Works",
     "入门" : "Getting started",
     "入門" : "introduction",
@@ -823,6 +841,8 @@ const textReplacements = {
     "作业" : "Homework",
     "低級" : "low kyu",
     "从第" : "From",
+    "五段" : "5-dan",
+    "二段" : "2-dan",
     "九段" : "9-dan",
     "中级" : "Intermediate",
     "中級" : "middle kyu",
@@ -832,8 +852,11 @@ const textReplacements = {
     "下卷" : "Last volume",
     "上方" : "top",
     "上卷" : "First volume",
+    "三段" : "3-dan",
     "丈和" : "Honinbo Jowa",
+    "七段" : "7-dan",
     "丁浩" : "Ding Hao",
+    "一段" : "1-dan",
     "9路" : "9x9",
     "7路" : "7x7",
     "5路" : "5x5",
@@ -907,9 +930,11 @@ const textReplacements = {
 }
 
 // cache regular expressions
-let re_problem_number = /第\s*(\d+)\s*题/;
-let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
+let re_problem_number_1 = /第\s*(\d+)\s*题/;
+let re_problem_number_2 = /第\s*(\d+)\s*問/;
 let re_part_number = /第\s*(\d+)\s*部分?/;
+let re_round_number = /第\s*(\d+)\s*轮/;
+let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
 let re_questions_in_total = /共\s*(\d+)\s*道题目/;
 let re_min_limit = /限制(\d+)分钟/;
 let re_times = /为(\d+)次/;
@@ -985,8 +1010,10 @@ function recursiveReplace(node) {
 function replaceInString(s) {
     // non-fixed strings
     s = s.replace(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
-    s = s.replace(re_problem_number, (match, number) => `Problem ${number}`)
+    s = s.replace(re_problem_number_1, (match, number) => `Problem ${number}`)
+    s = s.replace(re_problem_number_2, (match, number) => `Problem ${number}`)
     s = s.replace(re_part_number, (match, number) => `Part ${number}`)
+    s = s.replace(re_round_number, (match, number) => `Round ${number}`)
     s = s.replace(re_questions_in_total, (match, number) => `${number} questions in total`)
     s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
     s = s.replace(re_times, (match, times) => `${times} times`)
