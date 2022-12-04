@@ -9,11 +9,11 @@ for (path('translations.tsv')->lines_utf8({ chomp => 1 })) {
     if (/^(.*?)\t([^\t]*)$/) {
         my ($chinese, $translation) = ($1, $2);
         if ($seen{$chinese}++) {
-            warn "[$chinese] seen already\n";
+            warn "$chinese seen already\n";
         }
         push @js, qq!    "$chinese" : "$translation",!;
     } else {
-        warn "[$_] does not contain exactly one tab\n";
+        warn "$_ does not contain exactly one tab\n";
     }
 }
 my $js = join "\n", @js;
