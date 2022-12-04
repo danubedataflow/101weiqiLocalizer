@@ -99,7 +99,6 @@ Master棋谱	MasterGo
 隐藏题目审核	Hidden review
 错题重做记录	Redo mistakes record
 错题详细统计	Detailed mistake statistics
-错题详细统计	Detailed mistake statistics
 邮箱/用户名	email / username
 选择棋书章节	Select a book chapter
 选择一个选项	Choose an option
@@ -190,7 +189,6 @@ Zero棋谱	ZeroGo
 我的记谱本	My notation book
 我的收藏本	My collection
 我的作业本	My task book
-我的作业本	My jobs book
 微信公众号	WeChat public account
 布局猜子题	Guess opening moves
 山田规三生	Yamada Kimio
@@ -219,7 +217,6 @@ Zero棋谱	ZeroGo
 题目范围	Problem scope
 题目数量	Count
 题目搜索	Topic search
-题目搜索	Shape search
 题目审核	question review
 题库状态	Problem library state
 韩国棋手	Korean players
@@ -316,7 +313,6 @@ Zero棋谱	ZeroGo
 最高难度	Highest difficulty
 最近棋谱	Recent games
 最近对局	latest games
-最近对局	latest
 最后一手	last move
 最佳着手	best move
 最低难度	Lowest difficulty
@@ -383,7 +379,6 @@ Zero棋谱	ZeroGo
 变化答案	Variation answers
 取消收藏	Remove bookmark
 发出请求	Make request
-北京时间	Beijing time
 北京时间	Beijing time
 加藤正夫	Kato Masao
 加田克司	Kada Katsuji
@@ -506,7 +501,6 @@ Zero棋谱	ZeroGo
 死活题	Life-and-death problem
 死之部	Death section
 正确率	Correct rate
-正确率	Correct rate
 正在做	Doing
 模仿题	Copying problem
 柳时熏	Shikun Ryu
@@ -561,7 +555,6 @@ Zero棋谱	ZeroGo
 天龙图	Heavenly Dragons
 大猪嘴	Big pig snout / J-group
 大头鬼	Tombstone
-大头鬼	Stone tower
 大事典	Big Encyclopedia
 回贴数	number of replies
 唐韦星	Tang Weixing
@@ -658,7 +651,6 @@ Zero棋谱	ZeroGo
 藤泽	Fujisawa
 落子	move(s)
 获得	Got
-获得	Got
 致敬	pay tribute
 自己	own
 腾挪	Sabaki
@@ -674,7 +666,6 @@ Zero棋谱	ZeroGo
 缓征	loose ladder
 综合	comprehensive
 维护	maintenance
-练习	practice
 练习	practice
 级别	Level
 约战	About
@@ -821,7 +812,6 @@ Zero棋谱	ZeroGo
 对弈	Game
 对局	game
 密码	password
-密码	Password
 审核	review
 实战	actual combat
 官子	Endgame
@@ -845,7 +835,6 @@ Zero棋谱	ZeroGo
 启蒙	Enlightenment
 名称	name
 名家	Famous
-吃子	Capturing stones
 吃子	Capture
 只有	Only
 古力	Gu Li
@@ -893,7 +882,6 @@ Zero棋谱	ZeroGo
 保存	Save
 侧靠	lean on
 作品	work
-作业	Jobs
 作业	Homework
 低級	low kyu
 从第	From
@@ -914,6 +902,7 @@ Zero棋谱	ZeroGo
 丈和	Honinbo Jowa
 七段	7-dan
 丁浩	Ding Hao
+丁四	pyramid four
 一段	1-dan
 9路	9x9
 7路	7x7

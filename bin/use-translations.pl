@@ -2,11 +2,16 @@
 use strict;
 use warnings;
 use v5.10;
+use open qw(:std :utf8);
 use Path::Tiny;
-my @js;
+my (@js, %seen);
 for (path('translations.tsv')->lines_utf8({ chomp => 1 })) {
     if (/^(.*?)\t([^\t]*)$/) {
-        push @js, sprintf qq!    "%s" : "%s",!, $1, $2;
+        my ($chinese, $translation) = ($1, $2);
+        if ($seen{$chinese}++) {
+            warn "[$chinese] seen already\n";
+        }
+        push @js, qq!    "$chinese" : "$translation",!;
     } else {
         warn "[$_] does not contain exactly one tab\n";
     }
