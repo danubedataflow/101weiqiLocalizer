@@ -5,5 +5,5 @@ xcrun /Applications/Xcode.app/Contents/Developer/usr/bin/safari-web-extension-co
     --bundle-identifier "com.gogamespace.101weiqiLocalizer" \
     --copy-resources \
     --swift \
-    ./build/101weiqiLocalizer/
+    ./build.noindex/101weiqiLocalizer/
 xattr -cr ~/Documents/Developer/101weiqiLocalizer

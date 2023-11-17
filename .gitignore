@@ -1,4 +1,4 @@
-build/
+build.noindex/
 .DS_Store
 log
 *.swp

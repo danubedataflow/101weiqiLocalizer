@@ -5,8 +5,8 @@ use:
 	./bin/use-translations.pl
 
 dist: clean
-	mkdir -p build/101weiqiLocalizer
-	cp icon*.png *.js manifest.json build/101weiqiLocalizer
+	mkdir -p build.noindex/101weiqiLocalizer
+	cp icon*.png *.js manifest.json build.noindex/101weiqiLocalizer
 	cd build && zip -r 101weiqiLocalizer.zip 101weiqiLocalizer/*
 
 safari: dist
@@ -16,4 +16,4 @@ open-web-store:
 	open "https://chrome.google.com/webstore/devconsole/"
 
 clean:
-	rm -rf build
+	rm -rf build.noindex
