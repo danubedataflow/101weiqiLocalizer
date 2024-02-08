@@ -12,7 +12,7 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 设置每道题目的做题次数，达到这个次数没有做对则判错	Set the number of attempts for each problem. If this number is reached, it will be judged wrong.
 约定时间的对局，在对局开始前没有响应则自动关闭。	The game at the appointed time will be automatically closed if there is no response before the game starts.
 每道题目的做题次数，达到这个次数没有做对则判错	The number of attempts for each problem. If this number is reached, it will be judged wrong.
-棋友完成棋书作业后，将在此显示本书做题数据统计	After Go players complete their Go book homework, the statistics of the book's problem solving data will be displayed here
+棋友完成棋书作业后，将在此显示本书做题数据统计	After Go players complete their book homework, the statistics of the book's problem solving data will be displayed here
 打开题目，思考一段时间才能落子（只对会员有效）	You can think for a while before deciding (only possible for members)
 购买一年以上会员，将获得自己的专属推荐码。	If you purchase a membership for more than one year, you will get your own exclusive referral code.
 一次生成的题目数量，最多不超过50道。	You cannot generate more than 50 problems at once.
@@ -38,7 +38,7 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 和我相关的101棋友动作	101weiqi Friends’ Actions Related to Me
 一个sgf文件为一个题目	One SGF file is one problem
 请按照顺序在棋盘上落子	Please play the moves in order
-请勾选下列棋书进行挑选	Please check the boxes below to select Go books
+请勾选下列棋书进行挑选	Please check the boxes below to select books
 设置每道题目的做题次数	Set the number of opportunities for each problem
 设置每道题目的做题时间	Set the time limit for each problem
 围棋死活辞典-濑越宪作	Life-and-Death Dictionary (Segoe Kensaku)
@@ -57,7 +57,7 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 充值相应费用后升级为	After recharging the corresponding fee, upgrade to
 一按难度顺序查阅本书	Read this book in order of difficulty
 贡献较多的棋友名单	Top contributors
-请至少选择一本棋书	Please select at least one Go book
+请至少选择一本棋书	Please select at least one book
 李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
 李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
 按难度顺序查阅本书	Check out this book in difficulty order
@@ -98,6 +98,7 @@ Master棋谱	MasterGo
 金角银边草肚皮	Corner is gold, side is silver, center is grass
 瞄准对方的弱点	Target the opponent’s weakness
 生成一份新作业	Generate a new assignment
+没有检索到数据	No data retrieved
 棋 力 测 试	Go Strength Test
 李昌镐官子技巧	Lee Chang-ho’s Endgame Skills
 本题超时未通过	Problem failed by timeout
@@ -129,7 +130,7 @@ Master棋谱	MasterGo
 选择一个选项	Choose an option
 设置题目标签	Set topic tags
 被淘汰的答案	Eliminated answer(s)
-编辑棋书内容	Edit Go book content
+编辑棋书内容	Edit book content
 编辑基本信息	Edit basic information
 级位题目分类	Kyu-level classification
 级位段位证书	rank-level certificates
@@ -142,6 +143,7 @@ Master棋谱	MasterGo
 棋形题目搜索	Shape search
 棋友证书列表	Certificate list
 条答案被淘汰	Eliminated answer(s)
+条数据中检索	items searched
 本题已经通过	Problem passed
 本次题目完成	Current problems completed
 显示更多信息	Show more information
@@ -154,7 +156,7 @@ Master棋谱	MasterGo
 我的作业统计	My homework stats
 我的作业列表	My homework list
 我收藏的题目	Bookmarked problems
-我收藏的棋书	My favorite Go book
+我收藏的棋书	My favorite book
 成为银卡会员	Become a Silver member
 悬赏题目分享	Bounty topic
 弃子(棄子)	sacrifice
@@ -179,7 +181,7 @@ Master棋谱	MasterGo
 围棋基本手筋	Basic tesuji
 发出约战请求	Make a game request
 创建我的私有	Create my private
-创建我的棋书	Create my Go book
+创建我的棋书	Create my book
 具体区别参见	For specific differences, see
 其他地区棋手	Other players
 其他分类题目	Other classification
@@ -356,7 +358,7 @@ Zero棋谱	ZeroGo
 盤角曲四	bent four in the corner
 盘角板六	rectangular six in the corner
 盘角曲四	bent four in the corner
-生成棋书	Generate Go book
+生成棋书	Generate book
 生成新的	Generate new
 玄玄棋经	Gengen Gokyo
 濑越宪作	Segoe Kensaku
@@ -367,6 +369,8 @@ Zero棋谱	ZeroGo
 添加评论	Add comment
 淡路修三	Awaji Shuzo
 涛哥十佳	Yu Qingquan top 10
+没有数据	No data
+每页显示	Every page shows
 每日八题	Daily 8 problems
 每日一問	daily problems
 每方用时	Time per player
@@ -487,15 +491,15 @@ Zero棋谱	ZeroGo
 删除本书	Delete this book
 初棋無劫	there are no ko threats in the opening
 初棋无劫	there are no ko threats in the opening
-创建棋书	Create Go book
+创建棋书	Create book
 分享本题	Share this problem
 再次闯关	Break through again
-其他棋书	Other Go books
+其他棋书	Other books
 关于围豆	About Weidou
 六目死活	Six-point life-and-death
 公开题库	Public problem library
 全部题型	All problem types
-全部棋书	All Go books
+全部棋书	All books
 全部对局	All games
 入门吃子	Getting started capturing stones
 做题设置	Problem settings
@@ -697,6 +701,7 @@ Zero棋谱	ZeroGo
 林汉杰	Rin Kanketsu
 松气劫	approach ko
 東坡棋	mirror Go
+条记录	records
 李钦诚	Li Qincheng
 李轩豪	Li Xuanhao
 李昌镐	Lee Chang-ho
@@ -805,6 +810,7 @@ Zero棋谱	ZeroGo
 向小目	facing 3-4 points
 后手劫	ko (opponent captures first)
 后中先	gote with hidden sente
+后一页	Next page
 吃子题	Capture problem
 古灵益	Gu Lingyi
 发起人	creator
@@ -817,6 +823,7 @@ Zero棋谱	ZeroGo
 十番棋	ten-game match
 勝負手	all-or-nothing move
 劫之部	ko section
+前一页	Previous page
 创 建	Creation
 刚创建	Created
 刘昌赫	Yu Ch’ang-hyeok
@@ -917,6 +924,7 @@ Zero棋谱	ZeroGo
 骗着	trick play
 騰挪	sabaki
 騙著	trick play
+首页	First page
 餘味	aji
 飞挂	knight's move approach
 飞压	press
@@ -1000,6 +1008,7 @@ Zero棋谱	ZeroGo
 连笑	Lian Xiao
 连接	connect
 连扳	double hane
+进阶	advanced
 进行	conduct
 进攻	Attack
 这个	this
@@ -1028,6 +1037,7 @@ Zero棋谱	ZeroGo
 调子	momentum
 读秒	byo-yomi
 请利	Please
+说明	description
 话题	topic
 诘棋	life-and-death problem
 试下	Try
@@ -1287,13 +1297,13 @@ Zero棋谱	ZeroGo
 棋盒	stone container
 棋理	Go theory
 棋板	Go board
-棋書	Go book
+棋書	book
 棋手	player
 棋形	shape
 棋子	stone
 棋友	Users
 棋力	strength
-棋书	Go book
+棋书	Books
 梳形	comb formation
 根據	base
 根据	base
@@ -1370,6 +1380,7 @@ Zero棋谱	ZeroGo
 擂台	Arena
 撞氣	reduce self liberties
 撞气	reduce self liberties
+搜索	search
 損失	loss
 損劫	losing ko threat
 提示	Tips
@@ -1500,6 +1511,7 @@ Zero棋谱	ZeroGo
 崩溃	collapse
 崔精	Choi Jeong
 局面	situation
+尾页	Last page
 尾巴	tail
 尖顶	diagonal attachment
 尖頂	diagonal attachment
@@ -2002,6 +2014,7 @@ Zero棋谱	ZeroGo
 元	yuan
 佳	excellent
 低	low
+从	from
 亏	loss
 书	book
 中	middle
