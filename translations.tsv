@@ -5,6 +5,7 @@
 设置每道题目的做题次数，达到这个次数没有做对则判错	Set the number of attempts for each problem. If this number is reached, it will be judged wrong.
 约定时间的对局，在对局开始前没有响应则自动关闭。	The game at the appointed time will be automatically closed if there is no response before the game starts.
 每道题目的做题次数，达到这个次数没有做对则判错	The number of attempts for each problem. If this number is reached, it will be judged wrong.
+棋友完成棋书作业后，将在此显示本书做题数据统计	After Go players complete their Go book homework, the statistics of the book's problem solving data will be displayed here
 打开题目，思考一段时间才能落子（只对会员有效）	You can think for a while before deciding (only possible for members)
 购买一年以上会员，将获得自己的专属推荐码。	If you purchase a membership for more than one year, you will get your own exclusive referral code.
 一次生成的题目数量，最多不超过50道。	You cannot generate more than 50 problems at once.
@@ -16,7 +17,7 @@
 由于资源所限，错题本容量限制为	Due to resource constraints, the capacity of the error book is limited to
 如果超过时间未做完，则本题判错	If the time is exceeded, the problem will be judged wrong.
 请在棋盘上标出双方所有的死子	Please mark all dead stones on the board
-本题为选择题，请选择一个选项	This question is multiple choice, please select one option
+本题为选择题，请选择一个选项	This problem is multiple choice, please select one option
 基礎から始める 河野臨の詰碁	Kono Rin’s tsumego starting from the basics
 单位为天，每多少天一次作业	How often to run the job, in days
 刚注册的棋友都属于普通会员	Newly registered Go players are all ordinary members
@@ -36,12 +37,13 @@
 101本月错题统计分析	Community error report this month
 101年度错题统计分析	Community mistakes report
 落子确认关闭中，开启	Toggle move confirmation
-生成闯关题目打印页面	Generate a print page for the test questions
+生成闯关题目打印页面	Generate a print page for the test problems
 打印功能只对会员开放	The printing function is only available to members
 我的本月错题统计分析	Stats of my mistakes this month
 我的年度错题统计分析	Stats of my mistakes this year
 围棋实战死活192题	192 real-game tsumego
 充值相应费用后升级为	After recharging the corresponding fee, upgrade to
+一按难度顺序查阅本书	Read this book in order of difficulty
 贡献较多的棋友名单	Top contributors
 李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
 李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
@@ -52,7 +54,7 @@
 围棋死活1000题	Weiqi Life-and-Death 1000 Problems
 围棋教室/棋社动态	News
 围棋教室/棋社列表	Go classroom/club list
-一次生成的题目数量	Number of questions generated at a time
+一次生成的题目数量	Number of problems generated at a time
 もっとひと目の詰碁	More Life-and-Death at a Glance
 101棋友最近活动	101weiqi Friends’ Recent Actions
 错题重做形式设置	Redo mistakes form settings
@@ -87,9 +89,11 @@ Master棋谱	MasterGo
 我的棋书错题本	My mistaken problems book
 尚未有错题记录	No error record yet
 尚未完成的作业	Unfinished homework
+对银卡以上会员	For members with silver card or above
 围棋知识点专辑	Categories list
 参与的话题列表	participated topic list
 创建新作业模板	Create a new job template
+分享给全体棋友	Share with all Go friends
 出奇制胜的妙手	Surprising winning brilliancies
 从错题本中删除	Remove from mistakes book
 不接受对弈邀请	Do not accept game requests
@@ -104,10 +108,13 @@ Master棋谱	MasterGo
 选择棋书章节	Select a book chapter
 选择一个选项	Choose an option
 被淘汰的答案	Eliminated answer(s)
+编辑棋书内容	Edit Go book content
+编辑基本信息	Edit basic information
 级位题目分类	Kyu-level classification
 级位段位证书	rank-level certificates
 系统随机选题	in random order
 点击升级会员	Click to upgrade membership
+每天晚上统计	statistics every night
 段位题目分类	Dan-level classification
 棋盘大小分类	Board size classification
 棋形题目搜索	Shape search
@@ -148,10 +155,11 @@ Master棋谱	MasterGo
 围棋基本手筋	Basic tesuji
 发出约战请求	Make a game request
 创建我的私有	Create my private
+创建我的棋书	Create my Go book
 具体区别参见	For specific differences, see
 其他地区棋手	Other players
 其他分类题目	Other classification
-做题时间设置	Question time setting
+做题时间设置	Problem time setting
 做题形式设置	Problem settings form
 作业生成时间	Job generation time
 中国古棋规则	Old Chinese rules
@@ -185,6 +193,7 @@ Zero棋谱	ZeroGo
 桥本宇太郎	Hashimoto Utaro
 枷吃和夹吃	Net
 条修改记录	Edit record(s)
+权甲龙道场	Kweon Kap-yong Dojo
 本题未通过	Problem failed
 本题收录于	Problem is included in
 有眼殺無眼	eye kills no eye
@@ -238,7 +247,7 @@ Zero棋谱	ZeroGo
 题目范围	Problem scope
 题目数量	Count
 题目搜索	Topic search
-题目审核	question review
+题目审核	problem review
 题库状态	Problem library state
 韩国棋手	Korean players
 难度范围	Difficulty range
@@ -251,7 +260,7 @@ Zero棋谱	ZeroGo
 闯下一关	Break the next level
 错题重做	Redo mistakes
 错题统计	Mistake statistics
-错题打印	Print mistaken questions
+错题打印	Print mistaken problems
 银卡会员	silver members
 银冈棋院	Yingang Go Academy
 金鸡独立	double shortage of liberties
@@ -320,13 +329,13 @@ Zero棋谱	ZeroGo
 濑越宪作	Segoe Kensaku
 滾打包收	squeeze
 滚打包收	squeeze
-清除错题	Clear mistaken questions
+清除错题	Clear mistaken problems
 清除全部	Clear all
 添加评论	Add comment
 淡路修三	Awaji Shuzo
 涛哥十佳	Yu Qingquan top 10
 每日八题	Daily 8 problems
-每日一問	daily question
+每日一問	daily problems
 每方用时	Time per player
 武宫正树	Takemiya Masaki
 正解答案	Correct answers
@@ -385,6 +394,7 @@ Zero棋谱	ZeroGo
 开始解答	Start to answer
 开始时间	start time
 开始做题	Start problems
+幵始做题	Start doing the problems
 平均难度	Average difficulty
 帮助中心	Help center
 布局基础	Opening basics
@@ -397,6 +407,7 @@ Zero棋谱	ZeroGo
 小林光一	Kobayashi Koichi
 小松英树	Komatsu Hideki
 对弈规则	Game rules
+对外分享	Share externally
 定式大全	Joseki encyclopedia
 官子题目	Endgame
 完成时间	Completion date
@@ -436,6 +447,7 @@ Zero棋谱	ZeroGo
 前田陈尔	Maeda Nobuaki
 初棋無劫	there are no ko threats in the opening
 初棋无劫	there are no ko threats in the opening
+创建棋书	Create Go book
 分享本题	Share this problem
 再次闯关	Break through again
 关于围豆	About Weidou
@@ -444,11 +456,11 @@ Zero棋谱	ZeroGo
 全部对局	All games
 入门吃子	Getting started capturing stones
 做题设置	Problem settings
-做题记录	Question record
+做题记录	Problem record
 做题等级	Problem grade
 做题次序	Problem order
 做题机会	Problem solving opportunities
-做题时间	Question time
+做题时间	Problem time
 做题数据	Problem statistics
 修改类型	Modification type
 依田纪基	Yoda Norimoto
@@ -618,6 +630,7 @@ Zero棋谱	ZeroGo
 猴子脸	Sake bottle shape
 片冈聪	Kataoka Satoshi
 無憂劫	picnic ko
+河野临	Kono Rin
 江维杰	Jiang Weijie
 比赛共	Game total
 死活题	Life-and-death problem
@@ -1069,8 +1082,10 @@ Zero棋谱	ZeroGo
 級位	kyu-level
 精讲	intensive
 精解	refinement
+精彩	wonderful
 类型	pattern
 简单	simple
+简介	introduction
 签到	Sign in
 答案	answer(s)
 等待	wait
@@ -1181,7 +1196,7 @@ Zero棋谱	ZeroGo
 比賽	tournament
 比氣	counting liberties
 比气	counting liberties
-每题	Each question
+每题	Each problem
 每次	Each
 殺氣	reduce liberties
 殺棋	kill
@@ -1546,6 +1561,7 @@ Zero棋谱	ZeroGo
 叫吃	atari
 只有	Only
 古力	Gu Li
+古典	classical
 变着	unusual play
 变化	variation
 取消	Cancel
