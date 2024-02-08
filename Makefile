@@ -7,7 +7,7 @@ use:
 dist: clean
 	mkdir -p build.noindex/101weiqiLocalizer
 	cp icon*.png *.js manifest.json build.noindex/101weiqiLocalizer
-	cd build && zip -r 101weiqiLocalizer.zip 101weiqiLocalizer/*
+	cd build.noindex && zip -r 101weiqiLocalizer.zip 101weiqiLocalizer/*
 
 safari: dist
 	bin/make-safari-extension.sh
