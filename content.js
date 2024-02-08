@@ -6,9 +6,16 @@
 // use ./bin/use-translations.pl to regenerate the object.
 
 const textReplacements = {
+    "放到数据库之后，不会立即更新到101围棋题库里面，经过棋友的打分审核通过之后，才会进入题库" : "After being placed in the library, it will not be immediately updated to the 101weiqi problem library, but needs to pass a review by Go players first.",
+    "上传之后，需要对每一道新题目设定大概级别,题目的类型，确认无误，点击保存" : "After uploading, you need to set the approximate level and type of question for each new question, confirm it is correct, and click Save",
     "非即时对局，在发出请求后，对方如果在三天内没有响应，对局邀请自动关闭。" : "For non-real-time games, after the request is made, if the opponent does not respond within three days, the game request will be automatically closed.",
+    "一次上传的sgf压缩包内的文件数量不要超过10个，文件名称不能带有中文" : "The number of files in the SGF compressed package uploaded at one time should not exceed 10, and the file names cannot contain Chinese characters.",
     "限制时间的对局邀请，对方如果在10分钟内没有响应，对局邀请自动关闭。" : "For a time-limited game request, if the opponent does not respond within 10 minutes, the game request will be automatically closed.",
+    "可以把多个sgf文件以zip格式打包上传，也可以上传单个sgf文件。" : "Multiple SGF files can be packaged and uploaded in zip format, or a single SGF file can be uploaded.",
+    "如果上传的题目已经存在题库中，系统会使用旧的题目，不用担心重复上传" : "If the uploaded problem already exists in the problem library, the system will use the old problem, so you don’t have to worry about uploading it again.",
+    "上传的文件包大小不能超过100K，单个sgf文件不能超过10K" : "The size of the uploaded file package cannot exceed 100K, and the size of a single SGF file cannot exceed 10K",
     "银卡以上会员将会统计会员在每本棋书中的做题数量/正确率信息。" : "Silver card members or above get correct-rate statistics for each book.",
+    "sgf中的分支如果是正解，需要在正解的最后一步写上说明" : "If a branch in the SGF file is a correct solution, you need to write an explanation On the last node",
     "由于错题详细统计和错题重做功能消耗系统资源较多，需要" : "Because detailed mistake statistics consumes a lot of resources, it is necessary to",
     "设置每道题目的做题次数，达到这个次数没有做对则判错" : "Set the number of attempts for each problem. If this number is reached, it will be judged wrong.",
     "约定时间的对局，在对局开始前没有响应则自动关闭。" : "The game at the appointed time will be automatically closed if there is no response before the game starts.",
@@ -19,11 +26,13 @@ const textReplacements = {
     "一次生成的题目数量，最多不超过50道。" : "You cannot generate more than 50 problems at once.",
     "此邮箱将接受激活邮件完成账号激活流程" : "This email address will receive an activation email to complete the account activation process",
     "会员卡/围豆为虚拟产品，不支持退款。" : "Membership cards/weidou are virtual products and cannot be refunded.",
+    "可同时输入多个数字编号，以空格分隔" : "Multiple numbers can be entered at the same time, separated by spaces",
     "不选择，则依靠棋友当前级别自动筛选" : "If you don’t choose, it will be automatically selected based on the current player level",
     "你的用户名和密码不符，请再试一次" : "Your username and password do not match; please try again",
     "请在图中三角标位置选择最佳着手" : "Please choose the best triangled move",
     "由于资源所限，错题本容量限制为" : "Due to resource constraints, the capacity of the error book is limited to",
     "如果超过时间未做完，则本题判错" : "If the time is exceeded, the problem will be judged wrong.",
+    "否则系统会将此分支标为失败解答" : "otherwise the system will mark this branch as a failed solution",
     "请在棋盘上标出双方所有的死子" : "Please mark all dead stones on the board",
     "本题为选择题，请选择一个选项" : "This problem is multiple choice, please select one option",
     "基礎から始める 河野臨の詰碁" : "Kono Rin’s tsumego starting from the basics",
@@ -33,8 +42,11 @@ const textReplacements = {
     "请直接用鼠标在棋盘上落子" : "Use the mouse to play stones",
     "请找出此局面下的最佳一手" : "Please find the best move in this situation",
     "请在棋盘上标出双方的弱棋" : "Please mark all weak stones on the board",
+    "请勾选下列知识点进行挑选" : "Please check the boxes below to select categories",
     "和我相关的101棋友动作" : "101weiqi Friends’ Actions Related to Me",
+    "一个sgf文件为一个题目" : "One SGF file is one problem",
     "请按照顺序在棋盘上落子" : "Please play the moves in order",
+    "请勾选下列棋书进行挑选" : "Please check the boxes below to select Go books",
     "设置每道题目的做题次数" : "Set the number of opportunities for each problem",
     "设置每道题目的做题时间" : "Set the time limit for each problem",
     "围棋死活辞典-濑越宪作" : "Life-and-Death Dictionary (Segoe Kensaku)",
@@ -53,6 +65,7 @@ const textReplacements = {
     "充值相应费用后升级为" : "After recharging the corresponding fee, upgrade to",
     "一按难度顺序查阅本书" : "Read this book in order of difficulty",
     "贡献较多的棋友名单" : "Top contributors",
+    "请至少选择一本棋书" : "Please select at least one Go book",
     "李昌镐精讲围棋死活" : "Lee Chang-ho Selected Life-and-Death Problems",
     "李昌镐精讲围棋手筋" : "Lee Chang-ho Selected Tesuji Problems",
     "按难度顺序查阅本书" : "Check out this book in difficulty order",
@@ -70,17 +83,21 @@ const textReplacements = {
     "设置比赛计时范围" : "Set the game time range",
     "級位練習600題" : "Kyu-level Practice 600 Problems",
     "系统自动生成作业" : "The system automatically generates homework",
+    "的最近训练营对局" : "recent training camp games",
     "生成作业打印页面" : "Generate print page",
     "次提交解答的机会" : "opportunities to submit answers",
+    "提交题目答案权重" : "Submit problem answer weight",
     "我的作业模板列表" : "My job template list",
     "我最近阅读的棋书" : "Books I've recently read",
     "必殺力のつく詰碁" : "Tsumego to build deadly power",
+    "审核题目答案权重" : "Review problem answer weight",
     "官子大全官子手筋" : "Endgame Encyclopedia - Tesuji",
     "基礎力のつく死活" : "Life-and-death for basic strength",
     "在限定时间内完成" : "completed within the time limit",
     "围棋考试/挑战赛" : "Go exam/challenge",
     "创建新的作业模板" : "Create a new job template",
     "使用围豆进行提问" : "Ask using Weidou",
+    "上传题目许可协议" : "Problem upload license agreement",
     "一人使用一半时间" : "Each player uses half the time",
     "Master棋谱" : "MasterGo",
     "101棋谱库研究" : "Repository research",
@@ -106,15 +123,19 @@ const textReplacements = {
     "从错题本中删除" : "Remove from mistakes book",
     "不接受对弈邀请" : "Do not accept game requests",
     "下 一 定 式" : "Next joseki",
+    "上传sgf文件" : "Upload SGF file",
     "上 一 定 式" : "Previous joseki",
     "一次选择的机会" : "One chance to choose",
+    "题目数字编号" : "Problem ID",
     "题目名称搜索" : "Title search",
     "隐藏题目审核" : "Hidden review",
     "错题重做记录" : "Redo mistakes record",
     "错题详细统计" : "Detailed mistake statistics",
+    "银卡以上会员" : "Silver card members or above",
     "邮箱/用户名" : "email / username",
     "选择棋书章节" : "Select a book chapter",
     "选择一个选项" : "Choose an option",
+    "设置题目标签" : "Set topic tags",
     "被淘汰的答案" : "Eliminated answer(s)",
     "编辑棋书内容" : "Edit Go book content",
     "编辑基本信息" : "Edit basic information",
@@ -122,6 +143,7 @@ const textReplacements = {
     "级位段位证书" : "rank-level certificates",
     "系统随机选题" : "in random order",
     "点击升级会员" : "Click to upgrade membership",
+    "清除所有题目" : "Clear all problems",
     "每天晚上统计" : "statistics every night",
     "段位题目分类" : "Dan-level classification",
     "棋盘大小分类" : "Board size classification",
@@ -130,6 +152,7 @@ const textReplacements = {
     "条答案被淘汰" : "Eliminated answer(s)",
     "本题已经通过" : "Problem passed",
     "本次题目完成" : "Current problems completed",
+    "显示更多信息" : "Show more information",
     "播放演进过程" : "Replay moves",
     "扭十字长一方" : "extend in a crosscut",
     "扭十字長一方" : "extend in a crosscut",
@@ -150,6 +173,7 @@ const textReplacements = {
     "小棋仙训练营" : "Little Go Fairy Training Camp",
     "官子题目列表" : "Endgame list",
     "大师的下一手" : "Master’s next move",
+    "在题库中筛选" : "Filter problem library",
     "在101工作" : "Work at 101",
     "圍棋死活特訓" : "Special life-and-death training",
     "圍棋死活入門" : "Introductory Life-and-death",
@@ -167,6 +191,7 @@ const textReplacements = {
     "具体区别参见" : "For specific differences, see",
     "其他地区棋手" : "Other players",
     "其他分类题目" : "Other classification",
+    "关闭手动输入" : "Close problem ID input",
     "做题时间设置" : "Problem time setting",
     "做题形式设置" : "Problem settings form",
     "作业生成时间" : "Job generation time",
@@ -192,6 +217,7 @@ const textReplacements = {
     "继续下一个" : "Continue to the next",
     "统计截止于" : "Statistics as of",
     "短时间比赛" : "Short game",
+    "知识点列表" : "List of categories",
     "烏龜不出頭" : "crane's nest",
     "注册新用户" : "Register a new user",
     "此为正解图" : "This is a correct diagram",
@@ -213,6 +239,9 @@ const textReplacements = {
     "收藏本棋书" : "Favorite this book",
     "按顺序选择" : "Select in order",
     "按难度选择" : "Choose by difficulty",
+    "按难度显示" : "Show by difficulty",
+    "按难度排序" : "Sort by difficulty",
+    "按章节显示" : "Show by chapter",
     "抱吃和包吃" : "Atari and capture",
     "我的错题本" : "My mistakes book",
     "我的记谱本" : "My notation book",
@@ -249,6 +278,7 @@ const textReplacements = {
     "黃鶯撲蝶" : "raccoon belly",
     "高目定式" : "4-5 point joseki",
     "高尾绅路" : "Takao Shinji",
+    "高于等于" : "higher than or equal to",
     "高中國流" : "high Chinese opening",
     "高中国流" : "high Chinese opening",
     "骗招题目" : "Trick plays",
@@ -258,6 +288,7 @@ const textReplacements = {
     "题目搜索" : "Topic search",
     "题目审核" : "problem review",
     "题库状态" : "Problem library state",
+    "题型筛选" : "Problem type filtering",
     "韩国棋手" : "Korean players",
     "难度范围" : "Difficulty range",
     "隐藏评价" : "Hide review",
@@ -381,6 +412,7 @@ const textReplacements = {
     "无需等待" : "No need to wait",
     "旋转棋盘" : "Rotate board",
     "收藏此题" : "Bookmark problem",
+    "提交评论" : "Submit comment",
     "提交答案" : "Submit answer",
     "打印题目" : "Print problems",
     "打二還一" : "capture two recapture one",
@@ -390,6 +422,7 @@ const textReplacements = {
     "我的首页" : "Home",
     "我生成的" : "My generated",
     "成长足迹" : "Growth Footprint",
+    "恭喜答对" : "congratulations on the correct answer",
     "思考时间" : "Thinking time",
     "忘记密码" : "Forgot password",
     "微信登录" : "WeChat login",
@@ -403,6 +436,7 @@ const textReplacements = {
     "当湖十局" : "Danghu Ten Bureau",
     "开始解答" : "Start to answer",
     "开始时间" : "start time",
+    "开始挑选" : "Start selecting",
     "开始做题" : "Start problems",
     "幵始做题" : "Start doing the problems",
     "平均难度" : "Average difficulty",
@@ -431,6 +465,8 @@ const textReplacements = {
     "大桥拓文" : "Oohashi Hirofumi",
     "大桥成哉" : "Oohashi Naruya",
     "大平修三" : "Oohira Shuzo",
+    "增加题目" : "Add problem",
+    "增加章节" : "Add chapter",
     "場合定式" : "situational joseki",
     "基础死活" : "Basic life-and-death",
     "坂田荣男" : "Sakata Eio",
@@ -456,14 +492,18 @@ const textReplacements = {
     "加田克司" : "Kada Katsuji",
     "加入时间" : "join time",
     "前田陈尔" : "Maeda Nobuaki",
+    "删除本书" : "Delete this book",
     "初棋無劫" : "there are no ko threats in the opening",
     "初棋无劫" : "there are no ko threats in the opening",
     "创建棋书" : "Create Go book",
     "分享本题" : "Share this problem",
     "再次闯关" : "Break through again",
+    "其他棋书" : "Other Go books",
     "关于围豆" : "About Weidou",
     "六目死活" : "Six-point life-and-death",
+    "公开题库" : "Public problem library",
     "全部题型" : "All problem types",
+    "全部棋书" : "All Go books",
     "全部对局" : "All games",
     "入门吃子" : "Getting started capturing stones",
     "做题设置" : "Problem settings",
@@ -499,6 +539,7 @@ const textReplacements = {
     "专项训练" : "Special training",
     "不提五目" : "five points without capturing",
     "不提三目" : "three points without capturing",
+    "上传文件" : "Upload file",
     "上下同形" : "symmetrical position",
     "三目死活" : "Three-point life-and-death",
     "三目正中" : "center of three stones",
@@ -515,6 +556,7 @@ const textReplacements = {
     "一一妙手" : "1-1 point",
     "鬆氣劫" : "approach ko",
     "高川格" : "Takagawa Kaku",
+    "骗招题" : "Cheating problems",
     "验证码" : "Verification code",
     "马晓春" : "Ma Xiaochun",
     "题开始" : "problem onwards",
@@ -650,6 +692,7 @@ const textReplacements = {
     "死之部" : "Death section",
     "正确率" : "Correct rate",
     "正在做" : "Doing",
+    "欣赏题" : "Appreciation problem",
     "模仿题" : "Copying problem",
     "模仿棋" : "mirror Go",
     "梅花六" : "rabbity six",
@@ -810,6 +853,7 @@ const textReplacements = {
     "修改后" : "After modification",
     "修改前" : "Before modification",
     "修改于" : "modified on",
+    "保 存" : "Save",
     "伊凌涛" : "Yi Lingtao",
     "交叉點" : "point",
     "交叉点" : "point",
@@ -931,6 +975,7 @@ const textReplacements = {
     "镇头" : "capping play",
     "错误" : "mistake",
     "铁柱" : "iron pillar",
+    "针对" : "for",
     "鐵柱" : "iron pillar",
     "鎮頭" : "capping play",
     "錯誤" : "mistake",
@@ -1095,6 +1140,7 @@ const textReplacements = {
     "精讲" : "intensive",
     "精解" : "refinement",
     "精彩" : "wonderful",
+    "精妙" : "exquisite",
     "类型" : "pattern",
     "简单" : "simple",
     "简介" : "introduction",
@@ -1119,6 +1165,7 @@ const textReplacements = {
     "空間" : "space",
     "穩當" : "stable",
     "稳当" : "stable",
+    "移动" : "move",
     "秤砣" : "two-stone edge squeeze",
     "秒钟" : "seconds",
     "私信" : "Private messages",
@@ -1278,6 +1325,7 @@ const textReplacements = {
     "月卡" : "monthly card",
     "最快" : "Fastest",
     "最后" : "Final",
+    "替换" : "replace",
     "書本" : "book",
     "更多" : "More",
     "曲尺" : "carpenter's square",
@@ -1321,7 +1369,7 @@ const textReplacements = {
     "收氣" : "reduce liberties",
     "收气" : "reduce liberties",
     "收後" : "last play",
-    "收官" : "play endgame",
+    "收官" : "endgame",
     "收后" : "last play",
     "支付" : "payment",
     "攔逼" : "checking extension",
@@ -1380,6 +1428,7 @@ const textReplacements = {
     "手段" : "technique",
     "手数" : "number of moves",
     "手割" : "reorder sequence",
+    "或者" : "or",
     "我的" : "My",
     "成立" : "possible",
     "成功" : "success",
@@ -1552,6 +1601,7 @@ const textReplacements = {
     "围棋" : "Go",
     "回提" : "recapture",
     "回手" : "take back",
+    "回复" : "reply",
     "四段" : "4-dan",
     "四劫" : "quadruple ko",
     "單關" : "one-space jump",
@@ -1565,6 +1615,7 @@ const textReplacements = {
     "后悔" : "regret",
     "名称" : "name",
     "名家" : "Famous",
+    "同意" : "Agree to",
     "合格" : "pass (a test)",
     "吃虧" : "loss",
     "吃子" : "Capture",
@@ -1633,6 +1684,7 @@ const textReplacements = {
     "初級" : "beginner level",
     "初段" : "1 dan",
     "初始" : "Initial",
+    "创建" : "create(d)",
     "创作" : "creation",
     "列表" : "list",
     "切斷" : "cut",
@@ -1641,7 +1693,7 @@ const textReplacements = {
     "分断" : "separate",
     "分投" : "splitting move",
     "分先" : "even game",
-    "分享" : "share",
+    "分享" : "share(d)",
     "刀五" : "bulky five",
     "出頭" : "getting ahead",
     "出路" : "way out",
@@ -1699,6 +1751,7 @@ const textReplacements = {
     "作业" : "Homework",
     "余味" : "aji",
     "低級" : "low kyu",
+    "低于" : "lower than",
     "佈局" : "opening",
     "伸腿" : "monkey jump",
     "伸氣" : "increase liberties",
@@ -1967,16 +2020,19 @@ const textReplacements = {
 }
 
 // cache regular expressions
-let re_problem_number_1 = /第\s*(\d+)\s*题/;
-let re_problem_number_2 = /第\s*(\d+)\s*問/;
-let re_part_number = /第\s*(\d+)\s*部分?/;
-let re_round_number = /第\s*(\d+)\s*轮/;
-let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
-let re_problems_in_total = /共\s*(\d+)\s*道题目/;
-let re_min_limit = /限制(\d+)分钟/;
-let re_times = /为(\d+)次/;
-let re_every_n_days = /每(\d+)天一次/;
-let re_chapter = /第(\d+)章/;
+let re_problem_number_1 = /第\s*(\d+)\s*题/g;
+let re_problem_number_2 = /第\s*(\d+)\s*問/g;
+let re_part_number = /第\s*(\d+)\s*部分?/g;
+let re_round_number = /第\s*(\d+)\s*轮/g;
+let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/g;
+let re_problems_in_total = /共\s*(\d+)\s*道题目/g;
+let re_min_limit = /限制(\d+)分钟/g;
+let re_times = /为(\d+)次/g;
+let re_every_n_days = /每(\d+)天一次/g;
+let re_chapter = /第(\d+)章/g;
+let re_books_in_total = /共(\d+)本/g;
+let re_got_number = /获得了(\d+)个/g;
+let re_level = /第(\d+)关/g;
 
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
@@ -2046,20 +2102,23 @@ function recursiveReplace(node) {
 
 function replaceInString(s) {
     // non-fixed strings
-    s = s.replace(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
-    s = s.replace(re_problem_number_1, (match, number) => `Problem ${number}`)
-    s = s.replace(re_problem_number_2, (match, number) => `Problem ${number}`)
-    s = s.replace(re_part_number, (match, number) => `Part ${number}`)
-    s = s.replace(re_round_number, (match, number) => `Round ${number}`)
-    s = s.replace(re_problems_in_total, (match, number) => `${number} problems in total`)
-    s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
-    s = s.replace(re_times, (match, times) => `${times} times`)
-    s = s.replace(re_every_n_days, (match, n) => `Every ${n} days`)
-    s = s.replace(re_chapter, (match, n) => `Chapter ${n}`)
+    s = s.replaceAll(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
+    s = s.replaceAll(re_problem_number_1, (match, number) => `Problem ${number}`)
+    s = s.replaceAll(re_problem_number_2, (match, number) => `Problem ${number}`)
+    s = s.replaceAll(re_part_number, (match, number) => `Part ${number}`)
+    s = s.replaceAll(re_round_number, (match, number) => `Round ${number}`)
+    s = s.replaceAll(re_problems_in_total, (match, number) => `${number} problems in total`)
+    s = s.replaceAll(re_min_limit, (match, limit) => `${limit} min limit`)
+    s = s.replaceAll(re_times, (match, times) => `${times} times`)
+    s = s.replaceAll(re_every_n_days, (match, n) => `Every ${n} days`)
+    s = s.replaceAll(re_chapter, (match, n) => `Chapter ${n}`)
+    s = s.replaceAll(re_books_in_total, (match, n) => `${n} books in total`)
+    s = s.replaceAll(re_got_number, (match, n) => `Got ${n}`)
+    s = s.replaceAll(re_level, (match, n) => `Level ${n}`)
 
     for (const [key, value] of Object.entries(textReplacements)) {
         // add a space because Chinese doesn't have spaces
-        s = s.replace(key, ' ' + value + ' ')
+        s = s.replaceAll(key, ' ' + value + ' ')
     }
     return s
 }
@@ -2070,6 +2129,12 @@ function replaceAttributes() {
     })
     document.querySelectorAll('[title]').forEach((el) => {
         el.title = replaceInString(el.title)
+    })
+    document.querySelectorAll('input[value]').forEach((el) => {
+        el.value = replaceInString(el.value)
+    })
+    document.querySelectorAll('input[placeholder]').forEach((el) => {
+        el.placeholder = replaceInString(el.placeholder)
     })
 }
 
