@@ -180,6 +180,7 @@ const textReplacements = {
     "高权限棋友" : "Power users",
     "题目知识点" : "Topic category",
     "韩国流布局" : "Korean opening",
+    "非常难搞的" : "very difficult",
     "非即时对弈" : "non-real-time games",
     "道类似题目" : "similar topic(s)",
     "迷你中國流" : "Mini-Chinese opening",
@@ -275,6 +276,7 @@ const textReplacements = {
     "金雞獨立" : "double shortage of liberties",
     "金卡会员" : "gold card members",
     "重设密码" : "Reset password",
+    "重新收藏" : "Re-bookmark",
     "重做设置" : "Redo settings",
     "逃子方向" : "Escape direction",
     "边角常型" : "Corner shape",
@@ -406,6 +408,7 @@ const textReplacements = {
     "平均难度" : "Average difficulty",
     "帮助中心" : "Help center",
     "布局基础" : "Opening basics",
+    "已经收藏" : "Already favorited",
     "已经取消" : "Already cancelled",
     "左右同形" : "symmetrical shape",
     "左右同型" : "symmetrical shape",
@@ -466,6 +469,7 @@ const textReplacements = {
     "做题设置" : "Problem settings",
     "做题记录" : "Problem record",
     "做题等级" : "Problem grade",
+    "做题次数" : "Number of problems answered",
     "做题次序" : "Problem order",
     "做题机会" : "Problem solving opportunities",
     "做题时间" : "Problem time",
@@ -1637,6 +1641,7 @@ const textReplacements = {
     "分断" : "separate",
     "分投" : "splitting move",
     "分先" : "even game",
+    "分享" : "share",
     "刀五" : "bulky five",
     "出頭" : "getting ahead",
     "出路" : "way out",
@@ -1846,6 +1851,7 @@ const textReplacements = {
     "比" : "compare",
     "殺" : "kill",
     "段" : "dan",
+    "次" : "times",
     "棄" : "discard",
     "梅" : "plum",
     "枷" : "net",
@@ -1966,7 +1972,7 @@ let re_problem_number_2 = /第\s*(\d+)\s*問/;
 let re_part_number = /第\s*(\d+)\s*部分?/;
 let re_round_number = /第\s*(\d+)\s*轮/;
 let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/;
-let re_questions_in_total = /共\s*(\d+)\s*道题目/;
+let re_problems_in_total = /共\s*(\d+)\s*道题目/;
 let re_min_limit = /限制(\d+)分钟/;
 let re_times = /为(\d+)次/;
 let re_every_n_days = /每(\d+)天一次/;
@@ -2045,7 +2051,7 @@ function replaceInString(s) {
     s = s.replace(re_problem_number_2, (match, number) => `Problem ${number}`)
     s = s.replace(re_part_number, (match, number) => `Part ${number}`)
     s = s.replace(re_round_number, (match, number) => `Round ${number}`)
-    s = s.replace(re_questions_in_total, (match, number) => `${number} questions in total`)
+    s = s.replace(re_problems_in_total, (match, number) => `${number} problems in total`)
     s = s.replace(re_min_limit, (match, limit) => `${limit} min limit`)
     s = s.replace(re_times, (match, times) => `${times} times`)
     s = s.replace(re_every_n_days, (match, n) => `Every ${n} days`)
