@@ -58,6 +58,7 @@ const textReplacements = {
     "101年度错题统计分析" : "Community mistakes report",
     "落子确认关闭中，开启" : "Toggle move confirmation",
     "生成闯关题目打印页面" : "Generate a print page for the test problems",
+    "添加此题到我的棋书中" : "Add this problem to my book",
     "打印功能只对会员开放" : "The printing function is only available to members",
     "我的本月错题统计分析" : "Stats of my mistakes this month",
     "我的年度错题统计分析" : "Stats of my mistakes this year",
@@ -250,8 +251,10 @@ const textReplacements = {
     "我的收藏本" : "My collection",
     "我的作业本" : "My task book",
     "微信公众号" : "WeChat public account",
+    "应该怎样走" : "how to proceed",
     "布局猜子题" : "Guess opening moves",
     "山田规三生" : "Yamada Kimio",
+    "定式的变型" : "joseki variations",
     "大眼杀小眼" : "Big eye kills small eye",
     "复盘挑战赛" : "Replay challenge",
     "可立即落子" : "Can be placed immediately",
@@ -453,11 +456,13 @@ const textReplacements = {
     "左右同型" : "symmetrical shape",
     "山田晋次" : "Yamada Shinji",
     "山下敬吾" : "Yamashita Keigo",
+    "尚未安定" : "not yet settled",
     "小目定式" : "3-4 point joseki",
     "小林光一" : "Kobayashi Koichi",
     "小松英树" : "Komatsu Hideki",
     "对弈规则" : "Game rules",
     "对外分享" : "Share externally",
+    "实战手筋" : "real-game tesuji",
     "定式大全" : "Joseki encyclopedia",
     "官子题目" : "Endgame",
     "完成时间" : "Completion date",
@@ -559,6 +564,7 @@ const textReplacements = {
     "一次机会" : "one chance",
     "一二妙手" : "1-2 point",
     "一一妙手" : "1-1 point",
+    "魔术师" : "magician",
     "鬆氣劫" : "approach ko",
     "高川格" : "Takagawa Kaku",
     "骗招题" : "Cheating problems",
@@ -780,7 +786,7 @@ const textReplacements = {
     "實戰手" : "situational move",
     "宽气劫" : "approach ko",
     "宽带钩" : "long l group with outside liberties",
-    "实战手" : "situational move",
+    "实战手" : "real-game move",
     "定式题" : "Joseki problem",
     "官子题" : "Endgame problem",
     "官子谱" : "Kanzufu",
@@ -822,6 +828,7 @@ const textReplacements = {
     "后中先" : "gote with hidden sente",
     "后一页" : "Next page",
     "吃子题" : "Capture problem",
+    "右上角" : "upper right corner",
     "古灵益" : "Gu Lingyi",
     "发起人" : "creator",
     "双飞燕" : "4-4 point double low approach",
@@ -950,6 +957,7 @@ const textReplacements = {
     "類型" : "pattern",
     "順序" : "sequence",
     "韩国" : "Korea",
+    "需要" : "need",
     "雪崩" : "avalanche",
     "雙虎" : "trumpet connection",
     "雙活" : "seki",
@@ -1072,6 +1080,7 @@ const textReplacements = {
     "詰棋" : "life-and-death problem",
     "解说" : "Commentary",
     "解答" : "answer",
+    "角上" : "corner",
     "规则" : "rules",
     "见合" : "miai",
     "規則" : "rules",
@@ -1558,6 +1567,7 @@ const textReplacements = {
     "实接" : "solid connection",
     "实战" : "actual combat",
     "实地" : "solid territory",
+    "定形" : "shape",
     "定式" : "joseki",
     "定型" : "settle",
     "官着" : "endgame",
@@ -1721,6 +1731,7 @@ const textReplacements = {
     "冷著" : "unexpected move",
     "冷着" : "unexpected move",
     "决战" : "decisive battle",
+    "再补" : "repair",
     "内气" : "liberties surrounded exclusively by one player's stones",
     "其他" : "Others",
     "关闭" : "Close",
@@ -1820,6 +1831,7 @@ const textReplacements = {
     "丁浩" : "Ding Hao",
     "丁四" : "pyramid four",
     "一段" : "1-dan",
+    "一手" : "one move",
     "9路" : "9x9",
     "7路" : "7x7",
     "5路" : "5x5",
@@ -2017,6 +2029,7 @@ const textReplacements = {
     "刚" : "just",
     "分" : "min",
     "冲" : "push through",
+    "册" : "volume(s)",
     "关" : "one-space jump",
     "共" : "total",
     "兰" : "orchid",
@@ -2033,6 +2046,7 @@ const textReplacements = {
     "与" : "and",
     "下" : "lower",
     "上" : "upper",
+    "。" : ".",
 }
 
 // cache regular expressions
@@ -2045,6 +2059,7 @@ let re_problems_in_total = /共\s*(\d+)\s*道题目/g;
 let re_min_limit = /限制(\d+)分钟/g;
 let re_times = /为(\d+)次/g;
 let re_every_n_days = /每(\d+)天一次/g;
+let re_volume = /第(\d+)册/g;
 let re_chapter = /第(\d+)章/g;
 let re_books_in_total = /共(\d+)本/g;
 let re_got_number = /获得了(\d+)个/g;
@@ -2129,6 +2144,7 @@ function replaceInString(s) {
     s = s.replaceAll(re_min_limit, (match, limit) => `${limit} min limit`)
     s = s.replaceAll(re_times, (match, times) => `${times} times`)
     s = s.replaceAll(re_every_n_days, (match, n) => `Every ${n} days`)
+    s = s.replaceAll(re_volume, (match, n) => `Volume ${n}`)
     s = s.replaceAll(re_chapter, (match, n) => `Chapter ${n}`)
     s = s.replaceAll(re_books_in_total, (match, n) => `${n} books in total`)
     s = s.replaceAll(re_got_number, (match, n) => `Got ${n}`)
