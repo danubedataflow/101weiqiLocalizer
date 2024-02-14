@@ -904,6 +904,7 @@ const textReplacements = {
     "二连星" : "two-star point opening",
     "二手劫" : "two-step ko",
     "习题集" : "Problem set",
+    "中级篇" : "intermediate level",
     "中國流" : "Chinese opening",
     "中国流" : "Chinese opening",
     "个围豆" : "weidou",
@@ -997,6 +998,7 @@ const textReplacements = {
     "陈贤" : "Chen Xian",
     "阶梯" : "ladder",
     "防守" : "defend",
+    "闯关" : "break through",
     "问题" : "problem",
     "门吃" : "capture by atari",
     "開花" : "ponnuki",
@@ -1087,6 +1089,7 @@ const textReplacements = {
     "诀窍" : "secrets of success",
     "讲义" : "handout",
     "记谱" : "Notation",
+    "记录" : "record",
     "让子" : "handicap",
     "认输" : "resign",
     "计算" : "calculate",
@@ -1906,6 +1909,7 @@ const textReplacements = {
     "谱" : "game record",
     "请" : "Please",
     "证" : "rank diploma",
+    "训" : "training",
     "譜" : "game record",
     "角" : "corner",
     "觑" : "peep",
@@ -1920,6 +1924,7 @@ const textReplacements = {
     "聚" : "placement inside opponent's eye",
     "网" : "network",
     "缓" : "slow",
+    "练" : "practice",
     "级" : "kyu",
     "约" : "about",
     "緩" : "slow",
@@ -2019,6 +2024,7 @@ const textReplacements = {
     "室" : "house",
     "守" : "defend",
     "子" : "stone",
+    "妙" : "exquisite",
     "好" : "good",
     "夾" : "clamp (pincer)",
     "夹" : "clamp (pincer)",
@@ -2072,11 +2078,11 @@ const textReplacements = {
 }
 
 // cache regular expressions
+let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/g;
 let re_problem_number_1 = /第\s*(\d+)\s*题/g;
 let re_problem_number_2 = /第\s*(\d+)\s*問/g;
 let re_part_number = /第\s*(\d+)\s*部分?/g;
 let re_round_number = /第\s*(\d+)\s*轮/g;
-let re_date = /(20\d\d)年(\d\d?)月(\d\d?)日/g;
 let re_problems_in_total = /共\s*(\d+)\s*道题目/g;
 let re_min_limit = /限制(\d+)分钟/g;
 let re_times = /为(\d+)次/g;
@@ -2085,7 +2091,7 @@ let re_volume = /第(\d+)册/g;
 let re_chapter = /第(\d+)章/g;
 let re_books_in_total = /共(\d+)本/g;
 let re_got_number = /获得了(\d+)个/g;
-let re_level = /第(\d+)关/g;
+let re_level = /第\s*(\d+)\s*关/g;
 let re_from_to = /从\s*(\d+)\s*到/g;
 let re_results = /共\s*([,\d]+)\s*条数据/g;
 
@@ -2122,6 +2128,12 @@ let observer = new MutationObserver(mutationRecords => {
                 case "title":
                     m.target.title = replaceInString(m.target.title)
                     break;
+                case "value":
+                    m.target.value = replaceInString(m.target.value)
+                    break;
+                case "placeholder":
+                    m.target.placeholder = replaceInString(m.target.placeholder)
+                    break;
             }
 
             observe()
@@ -2157,6 +2169,19 @@ function recursiveReplace(node) {
 
 function replaceInString(s) {
     // non-fixed strings
+
+    // first replace Chinese numbers with our numbers so the following regexes work
+    s = s.replaceAll(/\s*〇\s*/g, (match) => '0');
+    s = s.replaceAll(/\s*一\s*/g, (match) => '1');
+    s = s.replaceAll(/\s*二\s*/g, (match) => '2');
+    s = s.replaceAll(/\s*三\s*/g, (match) => '3');
+    s = s.replaceAll(/\s*四\s*/g, (match) => '4');
+    s = s.replaceAll(/\s*五\s*/g, (match) => '5');
+    s = s.replaceAll(/\s*六\s*/g, (match) => '6');
+    s = s.replaceAll(/\s*七\s*/g, (match) => '7');
+    s = s.replaceAll(/\s*八\s*/g, (match) => '8');
+    s = s.replaceAll(/\s*九\s*/g, (match) => '9');
+
     s = s.replaceAll(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
     s = s.replaceAll(re_problem_number_1, (match, number) => `Problem ${number}`)
     s = s.replaceAll(re_problem_number_2, (match, number) => `Problem ${number}`)
