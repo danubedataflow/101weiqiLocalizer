@@ -54,3 +54,16 @@ Previously I had this code at the start of replaceInString():
 
 But that converted '上一题' to '上1题', so it didn't translate to "Previous
 problem" but to "upper 1 problem(s)".
+
+It would be better to first convert Chinese numbers, for example from '第一题'
+to '第1题' so that the regexes in replaceInString() can match. For strings in
+translations.tsv that contain Chinese numbers you have to replace that number
+with the Arabic numeral. So for example you'd have to translate '上1题' to
+'Previous problem'.
+
+An even better alternative is to try to use translatinos.tsv first and only
+then replace the Chinese numbers in case there was no translation. That way
+'上一题' would be translated to 'Previous problem' but '第一关' would stay the
+same, and then it would be converted to '第1关' and via the regex eventually be
+translated to 'Level 1'.
+
