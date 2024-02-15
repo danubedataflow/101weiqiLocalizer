@@ -227,6 +227,11 @@ const textReplacements = {
     "芝野龍之介" : "Shibano Ryunosuke",
     "继续下一个" : "Continue to the next",
     "统计截止于" : "Statistics as of",
+    "第 四 关" : "Level 4",
+    "第 五 关" : "Level 5",
+    "第 二 关" : "Level 2",
+    "第 三 关" : "Level 3",
+    "第 一 关" : "Level 1",
     "短时间比赛" : "Short game",
     "知识点列表" : "List of categories",
     "烏龜不出頭" : "crane's nest",
@@ -2169,18 +2174,6 @@ function recursiveReplace(node) {
 
 function replaceInString(s) {
     // non-fixed strings
-
-    // first replace Chinese numbers with our numbers so the following regexes work
-    s = s.replaceAll(/\s*〇\s*/g, (match) => '0');
-    s = s.replaceAll(/\s*一\s*/g, (match) => '1');
-    s = s.replaceAll(/\s*二\s*/g, (match) => '2');
-    s = s.replaceAll(/\s*三\s*/g, (match) => '3');
-    s = s.replaceAll(/\s*四\s*/g, (match) => '4');
-    s = s.replaceAll(/\s*五\s*/g, (match) => '5');
-    s = s.replaceAll(/\s*六\s*/g, (match) => '6');
-    s = s.replaceAll(/\s*七\s*/g, (match) => '7');
-    s = s.replaceAll(/\s*八\s*/g, (match) => '8');
-    s = s.replaceAll(/\s*九\s*/g, (match) => '9');
 
     s = s.replaceAll(re_date, (match, year, month, day) => [ year, month, day ].join('.'))
     s = s.replaceAll(re_problem_number_1, (match, number) => `Problem ${number}`)

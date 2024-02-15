@@ -30,3 +30,27 @@ see https://github.com/bani/101weiqiLocalizer
 
 So in firefox.diff you can see what is different from our translations to the
 Firefox port's translations.
+
+# Enhancements
+
+## Proper conversion of Chinese number characters
+
+Adapt ad use chinese-numbers.js. With this you could remove various manual translations
+like 'Level 1'.
+
+Previously I had this code at the start of replaceInString():
+
+    // first replace Chinese numbers with our numbers so the following regexes work
+    s = s.replaceAll(/\s*〇\s*/g, (match) => '0');
+    s = s.replaceAll(/\s*一\s*/g, (match) => '1');
+    s = s.replaceAll(/\s*二\s*/g, (match) => '2');
+    s = s.replaceAll(/\s*三\s*/g, (match) => '3');
+    s = s.replaceAll(/\s*四\s*/g, (match) => '4');
+    s = s.replaceAll(/\s*五\s*/g, (match) => '5');
+    s = s.replaceAll(/\s*六\s*/g, (match) => '6');
+    s = s.replaceAll(/\s*七\s*/g, (match) => '7');
+    s = s.replaceAll(/\s*八\s*/g, (match) => '8');
+    s = s.replaceAll(/\s*九\s*/g, (match) => '9');
+
+But that converted '上一题' to '上1题', so it didn't translate to "Previous
+problem" but to "upper 1 problem(s)".
