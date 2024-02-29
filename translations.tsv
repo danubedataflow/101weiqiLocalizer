@@ -931,6 +931,7 @@ Zero棋谱	ZeroGo
 一間跳	one-space jump
 一間拆	one-space extension
 一方地	one-sided territory
+一手棋	move
 一手劫	direct ko
 19路	19x19
 13路	13x13
@@ -1386,6 +1387,7 @@ Zero棋谱	ZeroGo
 方四	square four
 方向	direction
 新手	new move
+断是	definitely
 斗方	carpenter's square
 文憑	diploma
 文凭	diploma
@@ -1492,6 +1494,7 @@ Zero棋谱	ZeroGo
 急所	vital point
 思考	think
 快棋	blitz game
+必然	inevitable
 微信	WeChat
 復盤	game review
 得益	benefit
@@ -1940,6 +1943,7 @@ Zero棋谱	ZeroGo
 眼	eye
 目	point(s)
 盘	game(s)
+的	of
 白	white
 由	by
 用	use
