@@ -8,6 +8,14 @@ https://www.101weiqi.com/chessbook/playerlist/
 Chrome Web Store Developer Console
 https://chrome.google.com/webstore/devconsole/
 
+Process:
+- increase version number in manifest and Changelog
+- make dist (makes zip file)
+- https://chrome.google.com/webstore/devconsole/
+- Package > click "Upload new package"
+- upload zip file
+- click "Submit for Review"
+
 可以	can
 满意	satisfy
 心满	fully	?
@@ -18,7 +26,7 @@ add safari instructions
 generate new safari extension; deploy to iPhone, iPad
 
 
-opens Xcode. Run > there are two errors. Run again and one error goes away. But one remains: "Code signing fails with error 'resource fork, Finder information, or similar detritus not allowed."
+open Xcode. Run > there are two errors. Run again and one error goes away. But one remains: "Code signing fails with error 'resource fork, Finder information, or similar detritus not allowed."
 
 in Xcode: Cmd-Shift-K to clean the build
 Run again
