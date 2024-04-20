@@ -39,6 +39,7 @@ const textReplacements = {
     "如果超过时间未做完，则本题判错" : "If the time is exceeded, the problem will be judged wrong.",
     "否则系统会将此分支标为失败解答" : "otherwise the system will mark this branch as a failed solution",
     "请在棋盘上标出双方所有的死子" : "Please mark all dead stones on the board",
+    "用于上课，以及课后布置作业。" : "Used for class and homework assignments after class.",
     "本题为选择题，请选择一个选项" : "This problem is multiple choice, please select one option",
     "基礎から始める 河野臨の詰碁" : "Kono Rin’s tsumego starting from the basics",
     "仅仅指定班级的棋友能提交解答" : "Only players in designated classes can submit solutions",
@@ -274,6 +275,7 @@ const textReplacements = {
     "布局猜子题" : "Guess opening moves",
     "山田规三生" : "Yamada Kimio",
     "定式的变型" : "joseki variations",
+    "官子新辞典" : "New Endgame Dictionary",
     "大眼杀小眼" : "Big eye kills small eye",
     "复盘挑战赛" : "Replay challenge",
     "可立即落子" : "Can be placed immediately",
@@ -289,6 +291,7 @@ const textReplacements = {
     "乌龟不出头" : "crane's nest",
     "中盘作战题" : "Middle game problems",
     "中国流布局" : "Chinese opening",
+    "两者得其一" : "get one of the two",
     "两扳长一气" : "Two hane for one liberty",
     "不限定时间" : "Unlimited time",
     "不限制时间" : "unlimited time",
@@ -345,11 +348,13 @@ const textReplacements = {
     "谷歌围棋" : "Google",
     "请正确的" : "Please perfectly",
     "记注意好" : "take care",
+    "补断棋强" : "connecting makes strong",
     "藤泽秀行" : "Fujisawa Shuko",
     "藤沢秀行" : "Fujisawa Hideyuki",
     "蒼鷹搏兔" : "raccoon belly",
     "落点分布" : "Drop point distribution",
     "自动生成" : "Automatically generated",
+    "育苗工程" : "Seedling project",
     "老鼠偷油" : "mouse stealing oil",
     "羽根直树" : "Hane Naoki",
     "羽根泰正" : "Hane Yasumasa",
@@ -390,6 +395,7 @@ const textReplacements = {
     "第三十一" : "31st",
     "立即注册" : "Sign up now",
     "石田芳夫" : "Ishida Yoshio",
+    "目的官子" : "point endgame",
     "目外定式" : "3-5 point joseki",
     "盤角板六" : "rectangular six in the corner",
     "盤角曲四" : "bent four in the corner",
@@ -406,11 +412,13 @@ const textReplacements = {
     "添加评论" : "Add comment",
     "淡路修三" : "Awaji Shuzo",
     "涛哥十佳" : "Yu Qingquan top 10",
+    "活棋不攻" : "don't attack living groups",
     "没有数据" : "No data",
     "每页显示" : "Every page shows",
     "每日八题" : "Daily 8 problems",
     "每日一問" : "daily problems",
     "每方用时" : "Time per player",
+    "死棋不杀" : "don't kill dead groups",
     "武宫正树" : "Takemiya Masaki",
     "正解答案" : "Correct answers",
     "次数设置" : "Times settings",
@@ -433,6 +441,7 @@ const textReplacements = {
     "最近对局" : "latest games",
     "最后一手" : "last move",
     "最佳着手" : "best move",
+    "最佳次序" : "best order",
     "最低难度" : "Lowest difficulty",
     "更新时间" : "update time",
     "普通会员" : "ordinary members",
@@ -445,6 +454,7 @@ const textReplacements = {
     "日本古典" : "Japanese classic",
     "无需等待" : "No need to wait",
     "旋转棋盘" : "Rotate board",
+    "断多棋弱" : "cutting makes weak",
     "收藏此题" : "Bookmark problem",
     "提交评论" : "Submit comment",
     "提交范围" : "Submit scope",
@@ -764,6 +774,7 @@ const textReplacements = {
     "本身劫" : "local ko threat",
     "本次题" : "Current problems",
     "木谷实" : "Kitani Minoru",
+    "最佳呢" : "the best",
     "曹薰铉" : "Cho Hun-hyeon",
     "曹大元" : "Cao Dayuan",
     "星定式" : "Star-point joseki",
@@ -794,6 +805,7 @@ const textReplacements = {
     "手筋题" : "Tesuji problem",
     "我执黑" : "I am black",
     "我执白" : "I am white",
+    "怎样下" : "how to play",
     "循環劫" : "double ko",
     "循环劫" : "double ko",
     "徐奉洙" : "Seo Bong-soo",
@@ -864,6 +876,7 @@ const textReplacements = {
     "后中先" : "gote with hidden sente",
     "后一页" : "Next page",
     "吃子题" : "Capture problem",
+    "叶老师" : "Teacher Ye",
     "右上角" : "upper right corner",
     "古灵益" : "Gu Lingyi",
     "发起人" : "creator",
@@ -907,6 +920,7 @@ const textReplacements = {
     "修改于" : "modified on",
     "保 存" : "Save",
     "伊凌涛" : "Yi Lingtao",
+    "从零到" : "from zero to",
     "交叉點" : "point",
     "交叉点" : "point",
     "五间拆" : "five-space extension",
@@ -1452,6 +1466,7 @@ const textReplacements = {
     "提劫" : "taking the ko",
     "提供" : "contributor",
     "提交" : "submit",
+    "控制" : "control",
     "掛角" : "corner approach",
     "授子" : "handicap",
     "授先" : "one stone handicap",
@@ -1778,6 +1793,7 @@ const textReplacements = {
     "冷着" : "unexpected move",
     "决战" : "decisive battle",
     "再补" : "repair",
+    "内部" : "internal",
     "内气" : "liberties surrounded exclusively by one player's stones",
     "其他" : "Others",
     "关闭" : "Close",
@@ -2096,6 +2112,7 @@ const textReplacements = {
     "与" : "and",
     "下" : "lower",
     "上" : "upper",
+    "三" : "three",
     "。" : ".",
 }
 
@@ -2111,6 +2128,7 @@ let re_times = /为(\d+)次/g;
 let re_every_n_days = /每(\d+)天一次/g;
 let re_volume = /第(\d+)册/g;
 let re_chapter = /第(\d+)章/g;
+let re_shape = /第(\d+)型/g;
 let re_books_in_total = /共(\d+)本/g;
 let re_got_number = /获得了(\d+)个/g;
 let re_level = /第\s*(\d+)\s*关/g;
@@ -2203,6 +2221,7 @@ function replaceInString(s) {
     s = s.replaceAll(re_every_n_days, (match, n) => `Every ${n} days`)
     s = s.replaceAll(re_volume, (match, n) => `Volume ${n}`)
     s = s.replaceAll(re_chapter, (match, n) => `Chapter ${n}`)
+    s = s.replaceAll(re_shape, (match, n) => `Shape ${n}`)
     s = s.replaceAll(re_books_in_total, (match, n) => `${n} books in total`)
     s = s.replaceAll(re_got_number, (match, n) => `Got ${n}`)
     s = s.replaceAll(re_level, (match, n) => `Level ${n}`)
