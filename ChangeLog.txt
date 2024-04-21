@@ -1,3 +1,9 @@
+version 0.1.7
+2024.04.21
+- improved translations
+- replace serial numbers (like 'Q-12345') with links to the problem pages for
+  those serial numbers
+
 version 0.1.6
 2024.04.19
 - improved translations
