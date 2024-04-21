@@ -2198,6 +2198,7 @@ observe()
 function recursiveReplace(node) {
     if (node.nodeType == 3 && node.nodeName != 'SCRIPT') {
         node.nodeValue = replaceInString(node.nodeValue)
+        linkSerialNumbers(node);
     } else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE') {
         var child = node.firstChild;
         while (child) {
@@ -2256,6 +2257,40 @@ function replaceImageSources(node) {
             img.src = img.src.replace(key, value)
         }
     })
+}
+
+/*
+ * Convert a serial number (like 'Q-12345') to a link for that problem's page.
+ *
+ * The serial number will be part of a text node, like 'before Q-12345 after'.
+ * Parse the parts of the string, create text nodes for the 'before' and
+ * 'after' parts and a link element for the serial number. Then replace the
+ * original text node with those three elements.
+ */
+
+function linkSerialNumbers(textNode) {
+    const match = /^(?<before>.*)Q-(?<serial>\d+)(?<after>.*)$/.exec(
+        textNode.textContent);
+
+    /*
+     * Without this, linkSerialNumbers() for some reason produces an endless
+     * loop. Even without the endless loop, we need to make sure that the regex
+     * matched.
+     */
+    if (match === null) return;
+
+    const groups = match.groups;
+    const textBefore = document.createTextNode(' ' + groups.before +
+        ' ');
+    const textAfter = document.createTextNode(' ' + groups.after +
+        ' ');
+
+    const link = document.createElement('a');
+    const linkText = document.createTextNode('Q-' + groups.serial);
+    link.appendChild(linkText);
+    link.setAttribute('href', 'https://www.101weiqi.com/q/' + groups.serial);
+
+    textNode.replaceWith(textBefore, link, textAfter);
 }
 
 // DEACTIVATED FOR NOW
