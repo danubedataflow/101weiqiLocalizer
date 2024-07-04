@@ -396,6 +396,7 @@ Zero棋谱	ZeroGo
 盤角曲四	bent four in the corner
 盘角板六	rectangular six in the corner
 盘角曲四	bent four in the corner
+白▲刚下	white just played ▲
 生成棋书	Generate book
 生成新的	Generate new
 玄玄棋经	Gengen Gokyo
@@ -979,6 +980,7 @@ Zero棋谱	ZeroGo
 點眼	placement inside opponent's eye
 點目	counting
 點方	eye-stealing tesuji
+黒棋	black
 黑白	Black and white
 黑棋	black group
 黑方	black player
@@ -1957,6 +1959,7 @@ Zero棋谱	ZeroGo
 角	corner
 觑	peep
 覷	peep
+要	should
 衝	push through
 虧	loss
 虎	tiger's mouth
