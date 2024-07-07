@@ -1002,6 +1002,7 @@ Zero棋谱	ZeroGo
 黑方	black player
 黑子	Black stone
 黑先	Black to play
+白死	White dies
 鬼手	ghost move
 鬥方	carpenter's square
 鬆氣	increase liberties
@@ -2144,6 +2145,9 @@ Zero棋谱	ZeroGo
 上	upper
 三	three
 。	.
+
+# Miscellaneous
+这是	this is
 
 # Generating growth footprint
 结束时间	End time
