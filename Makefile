@@ -1,7 +1,6 @@
 .PHONY: use dist safari open-web-store clean
 
 use:
-	./bin/sort-translations.pl
 	./bin/use-translations.pl
 
 dist: clean

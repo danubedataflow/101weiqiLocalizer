@@ -1,36 +1,3 @@
-# Syncing with bani's spreadsheet
-
-see https://github.com/bani/101weiqiLocalizer
-
-1) Download the spreadsheet as tsv
-
-2) Convert those translations so we can compare them with ours
-
-    cat ~/Downloads/101weiqiLocalizer\ translations\ -\ translations.tsv | \
-        tail -n +2 | cut -f 2,3 | sort -r >~/Downloads/firefox.tsv
-
-3) Prepare translations for comparisons
-
-    make use
-    ./bin/sort-translations ~/Downloads/firefox.tsv
-
-4) Compare and edit the translations
-
-    vimdiff translations.tsv ~/Downloads/firefotx.tsv
-
-5) Update content.js
-
-    ./bin/sort-translations.pl
-    ./bin/use-translations.pl
-    git diff
-
-6) Create a diff of translations
-
-    diff -C 3 translations.tsv ~/Downloads/t.tsv >firefox.diff
-
-So in firefox.diff you can see what is different from our translations to the
-Firefox port's translations.
-
 # Enhancements
 
 ## Proper conversion of Chinese number characters

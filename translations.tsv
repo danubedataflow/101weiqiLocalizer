@@ -12,7 +12,7 @@
 sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a branch in the SGF file is a correct solution, you need to write an explanation On the last node
 由于错题详细统计和错题重做功能消耗系统资源较多，需要	Because detailed mistake statistics consumes a lot of resources, it is necessary to
 设置每道题目的做题次数，达到这个次数没有做对则判错	Set the number of attempts for each problem. If this number is reached, it will be judged wrong.
- 公开题库（包含101围棋所有入库题目，未经筛选）	Public problem collection (contains all 101weiqi problems, without screening)
+公开题库（包含101围棋所有入库题目，未经筛选）	Public problem collection (contains all 101weiqi problems, without screening)
 约定时间的对局，在对局开始前没有响应则自动关闭。	The game at the appointed time will be automatically closed if there is no response before the game starts.
 精品题库（9万题，人工筛选，逐题审核，质量保证）	Excellent problem collection (90,000 questions, manual screening, question-by-question review, quality assurance)
 每道题目的做题次数，达到这个次数没有做对则判错	The number of attempts for each problem. If this number is reached, it will be judged wrong.
@@ -1167,6 +1167,7 @@ Zero棋谱	ZeroGo
 補强	reinforce
 装劫	threatening a ko
 裂型	split shape
+补遗	Addendum
 补棋	Fix the shape
 补强	reinforce
 虧損	loss
@@ -1301,6 +1302,7 @@ Zero棋谱	ZeroGo
 白先	White to play
 發展	develop
 登录	Sign in
+疑问	question
 用时	Time spent
 现在	now
 王檄	Wang Xi
@@ -1869,6 +1871,7 @@ Zero棋谱	ZeroGo
 伸氣	increase liberties
 伸气	increase liberties
 优势	superior
+以上	or above
 从第	From
 交點	point
 交点	point
@@ -2141,3 +2144,19 @@ Zero棋谱	ZeroGo
 上	upper
 三	three
 。	.
+
+# Generating growth footprint
+结束时间	End time
+立即生成	Generate immediately
+生成成长足迹消耗的系统时间较多，请等待2分钟左右。	Generating growth footprints consumes a lot of system time, please wait about 2 minutes.
+普通会员只能免费生成一次成长足迹	Ordinary members can only generate growth footprints once for free
+银卡会员以上没有限制。	There is no limit for Silver Card members and above.
+以后每次收取50围豆	50 beans will be charged each time thereafter
+会显示月度成长足迹	the monthly growth footprint will be displayed
+
+# Books
+其中	among them
+无效	invalid
+成为	become
+将会持续统计	statistics will be kept
+死活训练初级篇	Life-and-death training beginner drill
