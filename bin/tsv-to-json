@@ -1,0 +1,26 @@
+#!/usr/bin/env perl
+use GoGameTools::features;
+use Path::Tiny;
+use GoGameTools::JSON;
+my $file = shift // 'translations.tsv';
+$file = path($file);
+my @lines = $file->lines_utf8({ chomp => 1 });
+
+my (%seen, %def);
+my $url = '';
+for (@lines) {
+    next unless /\S/;
+    if (/^# (https:.*)/) {
+        $url = $1;
+    }
+    if (/^(.*?)\t([^\t]*)$/) {
+        my ($chinese, $translation) = ($1, $2);
+        $def{$url}{$chinese} = $translation;
+        if ($seen{$url}{$chinese}++) {
+            warn "$chinese seen already for $url\n";
+        }
+    } else {
+        warn "$_ does not contain exactly one tab\n";
+    }
+}
+say json_encode(\%def);

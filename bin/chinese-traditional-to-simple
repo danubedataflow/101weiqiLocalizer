@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+use GoGameTools::features;
+use Path::Tiny;
+use Lingua::ZH::HanConvert qw(simple trad);
+my $file = shift // 'translations.tsv';
+$file = path($file);
+my @lines = $file->lines_utf8({ chomp => 1 });
+for (@lines) {
+    if (/^(.*?)\t([^\t]*)$/) {
+        my ($chinese, $translation) = ($1, $2);
+        my $simple = simple($chinese);
+        if ($chinese ne $simple) {
+            say "$chinese\t$translation";
+            say "--> $simple\t$translation\n";
+        }
+    } else {
+        warn "$_ does not contain exactly one tab\n";
+    }
+}
