@@ -51,7 +51,6 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 请勾选下列棋书进行挑选	Please check the boxes below to select books
 设置每道题目的做题次数	Set the number of opportunities for each problem
 设置每道题目的做题时间	Set the time limit for each problem
-围棋死活辞典-濑越宪作	Life-and-Death Dictionary (Segoe Kensaku)
 只有一次提交解答的机会	Only one opportunity to submit answer
 只有2次提交解答的机会	Only two opportunities to submit answers
 创建一个围棋教室/棋社	Create a Go classroom/club
@@ -65,32 +64,26 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 所有棋友都能提交解答	All players can submit answers
 我的本月错题统计分析	Stats of my mistakes this month
 我的年度错题统计分析	Stats of my mistakes this year
-围棋实战死活192题	192 real-game tsumego
 充值相应费用后升级为	After recharging the corresponding fee, upgrade to
-依据棋友当前水平设置	 set according to current level
+依据棋友当前水平设置	set according to current level
 一按难度顺序查阅本书	Read this book in order of difficulty
 贡献较多的棋友名单	Top contributors
 请至少选择一本棋书	Please select at least one book
 请直接在棋盘上落子	Please place the stones on the board
-李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
-李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
 按难度顺序查阅本书	Check out this book in difficulty order
 按棋书章节顺序做题	Book chapter order
 对方接受后开始对局	After the opponent accepts, the match begins
 围棋闯关-棋力测试	Go Strength Test
-围棋死活1000题	Weiqi Life-and-Death 1000 Problems
 围棋教室/棋社动态	News
 围棋教室/棋社列表	Go classroom/club list
 分享时带上本题答案	Please bring the answer to this problem when sharing
 做一题/签到 设置	Doing problem settings
 之后，才能开始做题	After that, you can start doing the questions
 一次生成的题目数量	Number of problems generated at a time
-もっとひと目の詰碁	More Life-and-Death at a Glance
 101棋友最近活动	101weiqi Friends’ Recent Actions
 错题重做形式设置	Redo mistakes form settings
 还没有101帐号	Don’t have a 101 account yet
 设置比赛计时范围	Set the game time range
-級位練習600題	Kyu-level Practice 600 Problems
 系统自动生成作业	The system automatically generates homework
 的最近训练营对局	recent training camp games
 生成作业打印页面	Generate print page
@@ -99,10 +92,8 @@ sgf中的分支如果是正解，需要在正解的最后一步写上说明	If a
 提交题目答案权重	Submit problem answer weight
 我的作业模板列表	My job template list
 我最近阅读的棋书	Books I've recently read
-必殺力のつく詰碁	Tsumego to build deadly power
 审核题目答案权重	Review problem answer weight
 官子大全官子手筋	Endgame Encyclopedia - Tesuji
-基礎力のつく死活	Life-and-death for basic strength
 在限定时间内完成	completed within the time limit
 围棋考试/挑战赛	Go exam/challenge
 创建新的作业模板	Create a new job template
@@ -119,10 +110,8 @@ Master棋谱	MasterGo
 生きるか死ぬか	Live or die
 没有检索到数据	No data retrieved
 棋 力 测 试	Go Strength Test
-李昌镐官子技巧	Lee Chang-ho’s Endgame Skills
 本题超时未通过	Problem failed by timeout
 按难度顺序选题	in order of difficulty
-打与逃的基本功	The Basics of Fighting and Escaping
 我的棋书错题本	My mistaken problems book
 尚未有错题记录	No error record yet
 尚未完成的作业	Unfinished homework
@@ -190,9 +179,6 @@ Master棋谱	MasterGo
 大师的下一手	Master’s next move
 在题库中筛选	Filter problem library
 在101工作	Work at 101
-圍棋死活特訓	Special life-and-death training
-圍棋死活入門	Introductory Life-and-death
-围棋综合手筋	Comprehensive tesuji
 围棋经典手筋	Classic tesuji
 围棋死活形状	Life-and-death shapes
 围棋教室棋社	Classroom club
@@ -228,7 +214,6 @@ Zero棋谱	ZeroGo
 變形中國流	Mini-Chinese opening
 角部的特性	corner characteristics
 藤泽库之助	Fujisawa Hosai
-芝野龍之介	Shibano Ryunosuke
 继续做一题	Continue doing problems
 继续下一个	Continue to the next
 统计截止于	Statistics as of
@@ -246,10 +231,9 @@ Zero棋谱	ZeroGo
 此为变化图	This is a variation diagram
 正 确 率	Correct rate
 棋魂之棋谱	Hikaru No Go
-桥本宇太郎	Hashimoto Utaro
 枷吃和夹吃	Net
 条修改记录	Edit record(s)
-权甲龙道场	Kweon Kap-yong Dojo
+道场	Dojo
 本题未通过	Problem failed
 本题收录于	Problem is included in
 本题已经被	this problem is
@@ -273,7 +257,6 @@ Zero棋谱	ZeroGo
 微信公众号	WeChat public account
 应该怎样走	how to proceed
 布局猜子题	Guess opening moves
-山田规三生	Yamada Kimio
 定式的变型	joseki variations
 官子新辞典	New Endgame Dictionary
 大眼杀小眼	Big eye kills small eye
@@ -304,20 +287,18 @@ Zero棋谱	ZeroGo
 龟不出头	Crane’s nest
 黄莺扑蝶	raccoon belly
 黃鶯撲蝶	raccoon belly
-高目定式	4-5 point joseki
-高尾绅路	Takao Shinji
 高于等于	higher than or equal to
 高中國流	high Chinese opening
 高中国流	high Chinese opening
 骗招题目	Trick plays
 题目质量	Problem quality
 题目范围	Problem scope
-题目来源	 Problem source
+题目来源	Problem source
 题目数量	Count
 题目搜索	Topic search
 题目审核	problem review
 题库状态	Problem library state
-题型设置	 Problem settings
+题型设置	Problem settings
 题型筛选	Problem type filtering
 韩国棋手	Korean players
 难度设置	Difficulty settings
@@ -350,16 +331,11 @@ Zero棋谱	ZeroGo
 请正确的	Please perfectly
 记注意好	take care
 补断棋强	connecting makes strong
-藤泽秀行	Fujisawa Shuko
-藤沢秀行	Fujisawa Hideyuki
 蒼鷹搏兔	raccoon belly
 落点分布	Drop point distribution
-芝野虎丸	Shibano Toramaru
 自动生成	Automatically generated
 育苗工程	Seedling project
 老鼠偷油	mouse stealing oil
-羽根直树	Hane Naoki
-羽根泰正	Hane Yasumasa
 编辑记录	Edit record
 缓气征吃	loose ladder (full name)
 继续做题	Keep doing problems
@@ -396,9 +372,7 @@ Zero棋谱	ZeroGo
 第三十七	37th
 第三十一	31st
 立即注册	Sign up now
-石田芳夫	Ishida Yoshio
 目的官子	point endgame
-目外定式	3-5 point joseki
 盤角板六	rectangular six in the corner
 盤角曲四	bent four in the corner
 盘角板六	rectangular six in the corner
@@ -406,8 +380,6 @@ Zero棋谱	ZeroGo
 白▲刚下	white just played ▲
 生成棋书	Generate book
 生成新的	Generate new
-玄玄棋经	Gengen Gokyo
-濑越宪作	Segoe Kensaku
 滾打包收	squeeze
 滚打包收	squeeze
 清除错题	Clear mistaken problems
@@ -422,10 +394,8 @@ Zero棋谱	ZeroGo
 每日一問	daily problems
 每方用时	Time per player
 死棋不杀	don't kill dead groups
-武宫正树	Takemiya Masaki
 正解答案	Correct answers
 次数设置	Times settings
-棋经众妙	Gokyo Shumyo
 棋盘风格	Go board style
 棋盘居中	Center board
 棋盘大小	Board size
@@ -468,7 +438,7 @@ Zero棋谱	ZeroGo
 打三還一	capture three recapture one
 打三还一	capture three recapture one
 我的首页	Home
-我的书券	 My book coupons
+我的书券	My book coupons
 我生成的	My generated
 成长足迹	Growth Footprint
 恭喜答对	congratulations on the correct answer
@@ -479,7 +449,6 @@ Zero棋谱	ZeroGo
 循序渐进	step-by-step
 後面推車	pushing from behind
 後續手段	follow-up
-彦坂直人	Hikosaka Naoto
 形勢判斷	positional judgement
 形势判断	positional judgement
 当湖十局	Danghu Ten Bureau
@@ -495,35 +464,24 @@ Zero棋谱	ZeroGo
 已经取消	Already cancelled
 左右同形	symmetrical shape
 左右同型	symmetrical shape
-山田晋次	Yamada Shinji
-山下敬吾	Yamashita Keigo
 尚未安定	not yet settled
-小目定式	3-4 point joseki
 小林光一	Kobayashi Koichi
-小松英树	Komatsu Hideki
 对弈规则	Game rules
-对局设置	 Game settings
+对局设置	Game settings
 对外分享	Share externally
 实战手筋	real-game tesuji
 定式大全	Joseki encyclopedia
 官子题目	Endgame
 完成时间	Completion date
-安井算知	Yasui Sanchi
 如何定形	How to stabilize the shape
 失败答案	Failure answers
 天梯训练	Ladder training
 天下大劫	all-dominating ko
-大西智之	Oonishi Tomoyuki
-大竹英雄	Ootake Hideo
-大桥拓文	Oohashi Hirofumi
-大桥成哉	Oohashi Naruya
-大平修三	Oohira Shuzo
 增加题目	Add problem
 增加章节	Add chapter
 場合定式	situational joseki
 基础死活	Basic life-and-death
 基本手筋	basic tesuji
-坂田荣男	Sakata Eio
 场合定式	situational joseki
 在选点中	among the selected points
 围豆奖励	Beidou rewards
@@ -533,9 +491,7 @@ Zero棋谱	ZeroGo
 四目死活	Four-point life-and-death
 四劫循環	quadruple ko
 四劫循环	quadruple ko
-四六定式	4-6 point joseki
 周围棋子	surrounding stones
-向井千瑛	Mukai Chiaki
 后面推车	pushing from behind
 后续手段	follow-up
 吃子方向	Capture direction
@@ -544,10 +500,7 @@ Zero棋谱	ZeroGo
 取消收藏	Remove bookmark
 发出请求	Make request
 北京时间	Beijing time
-加藤正夫	Kato Masao
-加田克司	Kada Katsuji
 加入时间	join time
-前田陈尔	Maeda Nobuaki
 删除本书	Delete this book
 初棋無劫	there are no ko threats in the opening
 初棋无劫	there are no ko threats in the opening
@@ -573,7 +526,6 @@ Zero棋谱	ZeroGo
 做题数量	Number of problems
 做题数据	Problem statistics
 修改类型	Modification type
-依田纪基	Yoda Norimoto
 作业难度	Difficulty
 作业状态	State
 作业模板	Job template
@@ -582,18 +534,14 @@ Zero棋谱	ZeroGo
 低中國流	low Chinese opening
 低中国流	low Chinese opening
 会员说明	Membership description
-今村俊也	Imamura Toshiya
 今日抢答	Answer today
 今日完成	Completed today
-井山裕太	Iyama Yuta
 五目死活	Five-point life-and-death
-五五定式	5-5 point joseki
 九路全局	9x9 whole board
 中国规则	Chinese rules
 中国棋手	Chinese players
 个人信息	Personal information
 两次机会	two chances
-东野弘昭	Toono Hiroaki
 专项训练	Special training
 不提五目	five points without capturing
 不提三目	three points without capturing
@@ -604,42 +552,29 @@ Zero棋谱	ZeroGo
 三子正中	center of three stones
 三劫循環	triple ko
 三劫循环	triple ko
-三六定式	3-6 point joseki
-三三定式	3-3 point joseki
 七路全局	7x7 whole board
 七死八活	Seven die, eight live
 一次读秒	One byo-yomi period
 一次机会	one chance
-一二妙手	1-2 point
-一一妙手	1-1 point
 魔术师	magician
 鬆氣劫	approach ko
-高川格	Takagawa Kaku
 骗招题	Cheating problems
 验证码	Verification code
-马晓春	Ma Xiaochun
 题开始	problem onwards
-雙飛燕	4-4 point double low approach
 雙打吃	double atari
 雙叫吃	double atari
 雙倒撲	double snapback
 隨手棋	hasty move
 随手棋	hasty move
-陈祖德	Chen Zude
 问应手	probe
 闪电四	dogleg four
 閃電四	dogleg four
 镇神头	dual ladder breaker
 错小目	rotating 3-4 points
-钱宇平	Qian Yuping
 鎮神頭	dual ladder breaker
 錯小目	rotating 3-4 points
 金櫃角	carpenter's square
 金柜角	carpenter's square
-金恩持	Kim Eun-ji
-金志锡	Kim Ji-seok
-酒井猛	Sakai Takeshi
-郭求真	Kaku Kyushin
 連環劫	double ko
 逆官子	reverse endgame move
 逆先手	reverse sente
@@ -647,19 +582,14 @@ Zero棋谱	ZeroGo
 进行中	in process
 这道题	this problem
 边之部	Side section
-超高目	4-6 point
 超时负	lose by time
 超时胜	win on time
 超大飞	very large knight's move
 超大飛	very large knight's move
-赵治勋	Cho Chikun
-赵汉乘	Cho Han-seung
 赖皮劫	many move approach ko
-赖均辅	Lai Jyun-fu
 賴皮劫	many move approach ko
 象步飞	elephant's move
 象步飛	elephant's move
-谢依旻	Xie Yimin
 试应手	probe
 记住我	Remember me
 训练营	Camp
@@ -674,24 +604,16 @@ Zero棋谱	ZeroGo
 装倒扑	threatening a snapback
 葡萄六	rabbity six
 萬年劫	ten thousand year ko
-范西屏	Fan Xiping
-范蕴若	Fan Yunruo
-苏耀国	So Yokoku
 花见劫	picnic ko
 花見劫	picnic ko
-芮乃伟	Rui Naiwei
-芈昱廷	Mi Yuting
 自然流	natural style
 脹牯牛	oshitsubushi (bloated bullock)
 脹死牛	oshitsubushi (bloated dead cow)
 胜负手	all-or-nothing move
 胀牯牛	squashing (oshitsubushi)
 胀死牛	squashing (oshitsubushi)
-聂卫平	Nie Weiping
-罗洗河	Luo Xihe
 缓气劫	approach ko
 缓征子	loose ladder
-结城聪	Yuki Satoshi
 练习册	Practice book
 緩氣劫	approach ko
 緩徵子	loose ladder
@@ -699,60 +621,26 @@ Zero棋谱	ZeroGo
 緊帶鈎	long l group without outside liberties
 紧气劫	direct ko
 紧带钩	long l group without outside liberties
-第四章	Chapter 4
-第四卷	Volume 4
-第四十	40th
-第十四	14th
-第十六	16th
-第十八	18th
-第十五	15th
-第十二	12th
-第十九	19th
-第十三	13th
-第十七	17th
-第十一	11th
-第六卷	Volume 6
-第五章	Chapter 4
-第五卷	Volume 5
-第五十	50th
-第二章	Chapter 2
-第二卷	Volume 2
-第二十	20th
-第三章	Chapter 3
-第三卷	Volume 3
-第三十	30th
-第一章	Chapter 1
 第一步	first step
 第一手	first move
-第一卷	Volume 1
-童梦成	Tong Mengcheng
 空三角	empty triangle
 秀策流	Shusaku opening
 禁著點	illegal point
 禁着点	illegal point
 礼品卡	gift card
 码充值	code recharge
-石田章	Ishida Akira
 知识点	Category
-睦镇硕	Mok Jin-seok
 看花劫	picnic ko
 相思断	Crosscut
 盘龙眼	Two-headed dragon
-白洪淅	Paek Hong-suk
 疑问手	questionable move
 疑問手	questionable move
-申真谞	Shin Jin-seo
 用户名	Username
 生死劫	all-dominating ko
 生之部	Life section
-王铭琬	O Meien
-王立诚	O Rissei
-王楚轩	Wang Chuxuan
 猴子脸	Sake bottle shape
 片冈聪	Kataoka Satoshi
 無憂劫	picnic ko
-河野临	Kono Rin
-江维杰	Jiang Weijie
 比赛共	Game total
 死活题	Life-and-death problem
 死活題	Life-and-death problem
@@ -766,32 +654,16 @@ Zero棋谱	ZeroGo
 梅花五	crossed five
 根據地	base
 根据地	base
-柳时熏	Shikun Ryu
-柁嘉熹	Tuo Jiaxi
-林海峰	Rin Kaiho
-林汉杰	Rin Kanketsu
 松气劫	approach ko
 東坡棋	mirror Go
 条记录	records
-李钦诚	Li Qincheng
-李轩豪	Li Xuanhao
-李昌镐	Lee Chang-ho
-李世石	Lee Se-dol
-朴永训	Park Yeong-hun
-朴文垚	Piao Wenyao
-朴廷桓	Park Jung-hwan
 本身劫	local ko threat
 本次题	Current problems
-木谷实	Kitani Minoru
 最佳呢	the best
-曹薰铉	Cho Hun-hyeon
-曹大元	Cao Dayuan
 星定式	Star-point joseki
 无棋子	No stone
 无忧角	enclosed corner
 无忧劫	picnic ko
-施襄夏	Shi Ding’an
-於之莹	Yu Zhiying
 新布局	new opening
 新佈局	new opening
 数目法	territory scoring
@@ -820,25 +692,17 @@ Zero棋谱	ZeroGo
 怎样下	how to play
 循環劫	double ko
 循环劫	double ko
-徐奉洙	Seo Bong-soo
 後手劫	ko (opponent captures first)
 後中先	gote with hidden sente
 待审核	pending review
 征子劫	ladder ko
-彭立尧	Peng Liyao
-廖元赫	Liao Yuanhe
 布局题	Opening problem
 已完成	Completed
 左上角	upper left corner
-崔明勋	Choi Myeong-hun
-崔哲瀚	Choi Cheol-han
-山城宏	Yamashiro Hiroshi
 小豬嘴	tripod group with extra leg
 小猪嘴	tripod group with extra leg
 小棋盤	small board
 小棋盘	small board
-小林觉	Kobayashi Satoru
-小林流	Kobayashi opening
 小伸腿	small monkey jump
 对杀题	Capturing race problem
 寬氣劫	approach ko
@@ -849,11 +713,8 @@ Zero棋谱	ZeroGo
 实战手	real-game move
 定式题	Joseki problem
 官子题	Endgame problem
-官子谱	Kanzufu
 完全与	and
 宇宙流	cosmic style
-孟泰龄	Meng Tailing
-姜东润	Kang Dong-yun
 天龙图	Heavenly Dragons
 天王山	tennouzan
 天下劫	all-dominating ko
@@ -873,18 +734,10 @@ Zero棋谱	ZeroGo
 多元劫	multiple ko
 基本功	fundamentals
 回贴数	number of replies
-四间拆	four-space extension
-四間拆	four-space extension
 四連星	yon ren sei
 四连星	yon ren sei
 單行道	one-way street
 問應手	probe
-唐韦星	Tang Weixing
-周鹤洋	Zhou Heyang
-周睿羊	Zhou Ruiyang
-吴清源	Go Seigen
-吴依铭	Wu Yiming
-吴侑珍	Oh Yu-jin
 向小目	facing 3-4 points
 后手劫	ko (opponent captures first)
 后中先	gote with hidden sente
@@ -892,9 +745,7 @@ Zero棋谱	ZeroGo
 吃子题	Capture problem
 叶老师	Teacher Ye
 右上角	upper right corner
-古灵益	Gu Lingyi
 发起人	creator
-双飞燕	4-4 point double low approach
 双打吃	double atari
 双叫吃	double atari
 双倒扑	double snapback
@@ -919,7 +770,6 @@ Zero棋谱	ZeroGo
 先手利	forcing move
 先中後	sente with hidden gote
 先中后	sente with hidden gote
-元晟溱	Weon Seong-jin
 做一题	Done problem
 假雙活	false seki
 假眼活	two-headed dragon
@@ -934,19 +784,12 @@ Zero棋谱	ZeroGo
 修改前	Before modification
 修改于	modified on
 保 存	Save
-伊凌涛	Yi Lingtao
 从零到	from zero to
 交叉點	point
 交叉点	point
-五间拆	five-space extension
-五間拆	five-space extension
 五連星	five-star-points
 五连星	five-star-points
 五子棋	gomoku narabe
-二间跳	two-space jump
-二间拆	two-space extension
-二間跳	two-space jump
-二間拆	two-space extension
 二連星	two-star point opening
 二连星	two-star point opening
 二手劫	two-step ko
@@ -968,19 +811,11 @@ Zero棋谱	ZeroGo
 上一题	Previous problem
 上一页	Previous page
 上一步	Undo move
-三间跳	three-space jump
-三间拆	three-space extension
-三間跳	three-space jump
-三間拆	three-space extension
 三連星	san ren sei
 三连星	san ren sei
 三手劫	two-move approach ko
 三年卡	three-year card
 万年劫	ten thousand year ko
-一间跳	one-space jump
-一间拆	one-space extension
-一間跳	one-space jump
-一間拆	one-space extension
 一方地	one-sided territory
 一手棋	move
 一手劫	direct ko
@@ -1006,9 +841,6 @@ Zero棋谱	ZeroGo
 鬼手	ghost move
 鬥方	carpenter's square
 鬆氣	increase liberties
-高级	high kyu
-高級	high kyu
-高目	4-5 point
 骗着	trick play
 騰挪	sabaki
 騙著	trick play
@@ -1043,10 +875,8 @@ Zero棋谱	ZeroGo
 隐藏	hide
 随手	hasty move
 陷阱	a trap
-陳禧	Chen Xi
 院生	insei
 限时	limit
-陈贤	Chen Xian
 阶梯	ladder
 防守	defend
 闯关	break through
@@ -1097,7 +927,6 @@ Zero棋谱	ZeroGo
 逃子	Escape
 退出	Exit
 追捕	chase
-连笑	Lian Xiao
 连接	connect
 连扳	double hane
 进阶	advanced
@@ -1125,7 +954,6 @@ Zero棋谱	ZeroGo
 象飛	elephant's move
 象眼	center of elephant's move
 象步	elephant's move
-谢赫	Xie He
 调子	momentum
 读秒	byo-yomi
 请利	Please
@@ -1197,10 +1025,6 @@ Zero棋谱	ZeroGo
 職業	professional
 聯棋	pair Go
 聚杀	Killing
-聚四	four-space killable eye shape
-聚六	six-space killable eye shape
-聚五	five-space killable eye shape
-聚三	three-space killable eye shape
 联络	Connect
 联棋	pair Go
 职业	professional
@@ -1245,16 +1069,6 @@ Zero棋谱	ZeroGo
 签到	Sign in
 答案	answer(s)
 等待	wait
-第四	4th
-第十	10th
-第六	6th
-第八	8th
-第五	5th
-第二	2nd
-第九	9th
-第三	3rd
-第七	7th
-第一	1st
 笨重	heavy
 章节	chapter
 章節	chapter
@@ -1268,11 +1082,6 @@ Zero棋谱	ZeroGo
 秤砣	two-stone edge squeeze
 秒钟	seconds
 私信	Private messages
-秀策	Honinbo Shusaku
-秀甫	Honinbo Shuho
-秀榮	Honinbo Shuei
-秀哉	Honinbo Shusai
-秀和	Honinbo Shuwa
 神龙	Heavenly Dragons
 确认	confirm/verify (indicates a diagram showing why the correct answer works)
 确定	OK
@@ -1294,7 +1103,6 @@ Zero棋谱	ZeroGo
 直三	straight three
 盲點	blind spot
 盲点	blind spot
-目外	3-5 point
 盤渡	bridge under
 盘渡	bridge under
 白棋	white group
@@ -1407,13 +1215,10 @@ Zero棋谱	ZeroGo
 根據	base
 根据	base
 标签	Tags
-柯洁	Ke Jie
 枷吃	net
 板六	rectangular six
 松气	increase liberties
 杰作	masterpiece
-李赫	Li He
-李喆	li Zhe
 权利	privilege
 杀气	reduce liberties
 杀棋	kill
@@ -1438,7 +1243,6 @@ Zero棋谱	ZeroGo
 晚上	night
 显示	show
 星位	star point
-时越	Shi Yue
 早上	morning
 日本	Japan
 无理	overplay
@@ -1503,11 +1307,6 @@ Zero棋谱	ZeroGo
 拦逼	checking extension
 拋劫	throw-in ko
 拆逼	checking extension
-拆四	four-space extension
-拆五	five-space extension
-拆二	two-space extension
-拆三	three-space extension
-拆一	one-space extension
 抵抗	resist
 抱吃	capturing technique by atari
 抛劫	throw-in ko
@@ -1578,8 +1377,6 @@ Zero棋谱	ZeroGo
 弱棋	weak group
 弯四	bent four
 弯三	bent three
-张立	Zhang Li
-张栩	Cho U
 引征	ladder breaker
 弈棋	play game
 弃子	Sacrifice
@@ -1602,7 +1399,6 @@ Zero棋谱	ZeroGo
 年卡	annual card
 平衡	balance
 平均	Average
-常昊	Chang Hao
 帶鈎	long L-group
 帮助	help
 带钩	long L-group
@@ -1614,7 +1410,6 @@ Zero棋谱	ZeroGo
 巧手	clever move
 崩潰	collapse
 崩溃	collapse
-崔精	Choi Jeong
 局面	situation
 尾页	Last page
 尾巴	tail
@@ -1625,7 +1420,6 @@ Zero棋谱	ZeroGo
 小飞	knight's move
 小飛	knight's move
 小类	subcategories
-小目	3-4 point
 小盤	small board
 小盘	small board
 小时	hour
@@ -1665,7 +1459,6 @@ Zero棋谱	ZeroGo
 學生	student
 学生	student
 孤棋	floating stones
-孔杰	Kong Jie
 妙着	excellent move
 妙手	excellent move
 妖刀	magic sword
@@ -1691,7 +1484,6 @@ Zero棋谱	ZeroGo
 大场	big point
 大全	Big Collection
 多解	multiple solutions
-外目	3-5 point
 外氣	outside liberty
 外气	outside liberty
 复盘	game review
@@ -1715,9 +1507,7 @@ Zero棋谱	ZeroGo
 回提	recapture
 回手	take back
 回复	reply
-四段	4-dan
 四劫	quadruple ko
-單關	one-space jump
 單官	neutral point
 單劫	half-point ko
 問題	problem
@@ -1736,7 +1526,6 @@ Zero棋谱	ZeroGo
 台象	Tower
 叫吃	atari
 只有	Only
-古力	Gu Li
 古典	classical
 变着	unusual play
 变化	variation
@@ -1772,7 +1561,6 @@ Zero棋谱	ZeroGo
 占据	occupy
 单官	neutral point
 单劫	half-point ko
-单关	one-space jump
 半劫	half-point ko
 升级	Upgrade
 包圍	surround
@@ -1828,10 +1616,8 @@ Zero棋谱	ZeroGo
 关卡	Checkpoint
 共活	seki
 共气	shared liberty
-六段	6-dan
 公氣	shared liberty
 公气	shared liberty
-八段	8-dan
 兩分	equal
 全集	Complete Works
 內氣	liberties surrounded exclusively by one player's stones
@@ -1865,7 +1651,6 @@ Zero棋谱	ZeroGo
 作品	work
 作业	Homework
 余味	aji
-低級	low kyu
 低于	lower than
 佈局	opening
 伸腿	monkey jump
@@ -1878,22 +1663,16 @@ Zero棋谱	ZeroGo
 交点	point
 交換	exchange
 交换	exchange
-五段	5-dan
-五五	5-5 point
 互破	mutual damage
 互圍	mutual surrounding of territory
 互围	mutual surrounding of territory
 亏损	loss
-二段	2-dan
 争棋	official challenge match
 书本	book
 习题	exercise
-九段	9-dan
 主動	(to take the) initiative
 主动	(to take the) initiative
 中腹	center
-中级	middle kyu
-中級	middle kyu
 中盤	middle game
 中盘	middle game
 中心	center
@@ -1911,18 +1690,12 @@ Zero棋谱	ZeroGo
 不入	suicide
 下法	move
 下卷	Last volume
-上级	high kyu
-上級	high kyu
 上方	top
 上卷	First volume
-三段	3-dan
 三劫	triple ko
-三三	3-3 point
 丈和	Honinbo Jowa
-七段	7-dan
 丁浩	Ding Hao
 丁四	pyramid four
-一段	1-dan
 一手	one move
 9路	9x9
 7路	7x7
@@ -1942,7 +1715,6 @@ Zero棋谱	ZeroGo
 雙	bamboo joint
 集	collection
 防	defend
-關	one-space jump
 长	stretch
 長	stretch
 镇	capping play
@@ -2127,7 +1899,6 @@ Zero棋谱	ZeroGo
 分	min
 冲	push through
 册	volume(s)
-关	one-space jump
 共	total
 兰	orchid
 先	first
@@ -2145,11 +1916,256 @@ Zero棋谱	ZeroGo
 上	upper
 三	three
 。	.
-
-# Miscellaneous
 这是	this is
 
-# Generating growth footprint
+# names
+山田规三生	Yamada Kimio
+芝野龍之介	Shibano Ryunosuke
+桥本宇太郎	Hashimoto Utaro
+依田纪基	Yoda Norimoto
+安井算知	Yasui Sanchi
+山下敬吾	Yamashita Keigo
+山田晋次	Yamada Shinji
+东野弘昭	Toono Hiroaki
+武宫正树	Takemiya Masaki
+高尾绅路	Takao Shinji
+芝野虎丸	Shibano Toramaru
+濑越宪作	Segoe Kensaku
+坂田荣男	Sakata Eio
+大竹英雄	Ootake Hideo
+大西智之	Oonishi Tomoyuki
+大平修三	Oohira Shuzo
+大桥成哉	Oohashi Naruya
+大桥拓文	Oohashi Hirofumi
+向井千瑛	Mukai Chiaki
+前田陈尔	Maeda Nobuaki
+小松英树	Komatsu Hideki
+加藤正夫	Kato Masao
+加田克司	Kada Katsuji
+井山裕太	Iyama Yuta
+石田芳夫	Ishida Yoshio
+今村俊也	Imamura Toshiya
+彦坂直人	Hikosaka Naoto
+羽根泰正	Hane Yasumasa
+羽根直树	Hane Naoki
+藤泽秀行	Fujisawa Hideyuki
+藤沢秀行	Fujisawa Hideyuki
+周睿羊	Zhou Ruiyang
+周鹤洋	Zhou Heyang
+结城聪	Yuki Satoshi
+於之莹	Yu Zhiying
+伊凌涛	Yi Lingtao
+山城宏	Yamashiro Hiroshi
+谢依旻	Xie Yimin
+吴依铭	Wu Yiming
+元晟溱	Weon Seong-jin
+王楚轩	Wang Chuxuan
+柁嘉熹	Tuo Jiaxi
+童梦成	Tong Mengcheng
+唐韦星	Tang Weixing
+高川格	Takagawa Kaku
+苏耀国	So Yokoku
+申真谞	Shin Jin-seo
+柳时熏	Shikun Ryu
+施襄夏	Shi Ding’an
+徐奉洙	Seo Bong-soo
+酒井猛	Sakai Takeshi
+芮乃伟	Rui Naiwei
+林汉杰	Rin Kanketsu
+林海峰	Rin Kaiho
+钱宇平	Qian Yuping
+朴文垚	Piao Wenyao
+彭立尧	Peng Liyao
+朴永训	Park Yeong-hun
+朴廷桓	Park Jung-hwan
+白洪淅	Paek Hong-suk
+吴侑珍	Oh Yu-jin
+王立诚	O Rissei
+王铭琬	O Meien
+聂卫平	Nie Weiping
+睦镇硕	Mok Jin-seok
+芈昱廷	Mi Yuting
+孟泰龄	Meng Tailing
+马晓春	Ma Xiaochun
+罗洗河	Luo Xihe
+廖元赫	Liao Yuanhe
+李轩豪	Li Xuanhao
+李钦诚	Li Qincheng
+李世石	Lee Se-dol
+李昌镐	Lee Chang-ho
+赖均辅	Lai Jyun-fu
+权甲龙	Kweon Kap-yong
+河野临	Kono Rin
+小林流	Kobayashi opening
+小林觉	Kobayashi Satoru
+木谷实	Kitani Minoru
+金志锡	Kim Ji-seok
+金恩持	Kim Eun-ji
+姜东润	Kang Dong-yun
+郭求真	Kaku Kyushin
+江维杰	Jiang Weijie
+石田章	Ishida Akira
+古灵益	Gu Lingyi
+吴清源	Go Seigen
+范蕴若	Fan Yunruo
+范西屏	Fan Xiping
+崔明勋	Choi Myeong-hun
+崔哲瀚	Choi Cheol-han
+曹薰铉	Cho Hun-hyeon
+赵汉乘	Cho Han-seung
+赵治勋	Cho Chikun
+陈祖德	Chen Zude
+曹大元	Cao Dayuan
+李喆	li Zhe
+张立	Zhang Li
+谢赫	Xie He
+时越	Shi Yue
+连笑	Lian Xiao
+李赫	Li He
+孔杰	Kong Jie
+柯洁	Ke Jie
+秀和	Honinbo Shuwa
+秀策	Honinbo Shusaku
+秀哉	Honinbo Shusai
+秀甫	Honinbo Shuho
+秀榮	Honinbo Shuei
+古力	Gu Li
+崔精	Choi Jeong
+张栩	Cho U
+陈贤	Chen Xian
+陳禧	Chen Xi
+常昊	Chang Hao
+
+# ranks
+一段	1-dan
+二段	2-dan
+三段	3-dan
+四段	4-dan
+五段	5-dan
+六段	6-dan
+七段	7-dan
+八段	8-dan
+九段	9-dan
+高级	high kyu
+高級	high kyu
+上级	high kyu
+上級	high kyu
+中级	middle kyu
+中級	middle kyu
+低級	low kyu
+
+# named points
+一二妙手	1-2 point
+一一妙手	1-1 point
+超高目	4-6 point
+高目	4-5 point
+目外	3-5 point
+小目	3-4 point
+外目	3-5 point
+五五	5-5 point
+三三	3-3 point
+高目定式	4-5 point joseki
+目外定式	3-5 point joseki
+小目定式	3-4 point joseki
+四六定式	4-6 point joseki
+五五定式	5-5 point joseki
+三六定式	3-6 point joseki
+三三定式	3-3 point joseki
+雙飛燕	4-4 point double low approach
+双飞燕	4-4 point double low approach
+
+# spaces
+二间跳	two-space jump
+二間跳	two-space jump
+二间拆	two-space extension
+二間拆	two-space extension
+三间跳	three-space jump
+三間跳	three-space jump
+三间拆	three-space extension
+三間拆	three-space extension
+一间跳	one-space jump
+一間跳	one-space jump
+一间拆	one-space extension
+一間拆	one-space extension
+四间拆	four-space extension
+四間拆	four-space extension
+五间拆	five-space extension
+五間拆	five-space extension
+拆二	two-space extension
+聚三	three-space killable eye shape
+拆三	three-space extension
+聚六	six-space killable eye shape
+單關	one-space jump
+单关	one-space jump
+拆一	one-space extension
+聚四	four-space killable eye shape
+拆四	four-space extension
+聚五	five-space killable eye shape
+拆五	five-space extension
+關	one-space jump
+关	one-space jump
+
+# volumes
+第一卷	Volume 1
+第二卷	Volume 2
+第三卷	Volume 3
+第四卷	Volume 4
+第五卷	Volume 5
+第六卷	Volume 6
+
+# chapters
+第一章	Chapter 1
+第二章	Chapter 2
+第三章	Chapter 3
+第四章	Chapter 4
+第五章	Chapter 5
+
+# ordinal numbers
+第一	1st
+第二	2nd
+第三	3rd
+第四	4th
+第五	5th
+第六	6th
+第七	7th
+第八	8th
+第九	9th
+第十	10th
+第十一	11th
+第十二	12th
+第十三	13th
+第十四	14th
+第十五	15th
+第十六	16th
+第十七	17th
+第十八	18th
+第十九	19th
+第二十	20th
+第三十	30th
+第四十	40th
+第五十	50th
+
+# book names
+死活训练初级篇	Life-and-death training beginner drill
+围棋死活辞典-濑越宪作	Life-and-Death Dictionary (Segoe Kensaku)
+围棋实战死活192题	192 real-game tsumego
+李昌镐精讲围棋死活	Lee Chang-ho Selected Life-and-Death Problems
+李昌镐精讲围棋手筋	Lee Chang-ho Selected Tesuji Problems
+围棋死活1000题	Weiqi Life-and-Death 1000 Problems
+もっとひと目の詰碁	More Life-and-Death at a Glance
+級位練習600題	Kyu-level Practice 600 Problems
+必殺力のつく詰碁	Tsumego to build deadly power
+基礎力のつく死活	Life-and-death for basic strength
+李昌镐官子技巧	Lee Chang-ho’s Endgame Skills
+打与逃的基本功	The Basics of Fighting and Escaping
+圍棋死活特訓	Special life-and-death training
+圍棋死活入門	Introductory Life-and-death
+围棋综合手筋	Comprehensive tesuji
+玄玄棋经	Gengen Gokyo
+棋经众妙	Gokyo Shumyo
+官子谱	Kanzufu
+
+# https://www.101weiqi.com/myfootprints/
 结束时间	End time
 立即生成	Generate immediately
 生成成长足迹消耗的系统时间较多，请等待2分钟左右。	Generating growth footprints consumes a lot of system time, please wait about 2 minutes.
@@ -2158,9 +2174,10 @@ Zero棋谱	ZeroGo
 以后每次收取50围豆	50 beans will be charged each time thereafter
 会显示月度成长足迹	the monthly growth footprint will be displayed
 
-# Books
-其中	among them
-无效	invalid
+# https://www.101weiqi.com/book/
 成为	become
 将会持续统计	statistics will be kept
-死活训练初级篇	Life-and-death training beginner drill
+
+# https://www.101weiqi.com/book/1356/
+其中	among them
+无效	invalid
